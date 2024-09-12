@@ -1,6 +1,6 @@
 # Vivre en ville
 ## CSSquirrel
-Ikram Rata, intégrateur, développeur front-end et project owner
+Ikrame Rata, intégrateur, développeur front-end et project owner
 
 Jérémy Duverseau, intégrateur, développeur front-end et designer
 
