@@ -1,1 +1,11 @@
+@use "partials-scss/mixins.scss";
+@use "partials-scss/variables.scss";
+@use "partials-scss/header.scss";
+@use "partials-scss/footer.scss";
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}

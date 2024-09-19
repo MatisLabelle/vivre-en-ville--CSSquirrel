@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "Schibsted Grotesk";
+  src: url(../sources/medias/fonts/Schibsted_Grotesk/SchibstedGrotesk-VariableFont_wght.ttf);
+}
+h1 {
+  font-size: 64px;
+  font-family: "Schibsted Grotesk";
+  color: black;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 64px;
+  font-family: "Schibsted Grotesk";
+  color: black;
+  font-weight: medium;
+}
+
+h3 {
+  font-size: 64px;
+  font-family: "Schibsted Grotesk";
+  color: black;
+  font-weight: normal;
+}
+
+p {
+  font-size: 16px;
+  font-family: "Schibsted Grotesk";
+  color: black;
+  font-weight: normal;
+}
+
+footer {
+  position: relative;
+  background-color: #7b7263;
+  margin: 0;
+}
+
+.grid-footer {
+  margin: 5%;
+  margin-top: 2%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  -moz-column-gap: 10%;
+       column-gap: 10%;
+  row-gap: 5%;
+}
+
+.ville-footer {
+  font-size: 36px;
+  color: white;
+  margin: 0;
+}
+
+.logo-footer {
+  width: 100px;
+  position: relative;
+  margin-top: 2%;
+  margin-left: 5%;
+}
+
+.p-footer {
+  color: white;
+}
+
+.h3-footer {
+  color: white;
+  margin-left: 5%;
+  font-size: 48px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.email-footer {
+  margin: 5%;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 800px) {
+  .email-footer {
+    margin-top: 0;
+  }
+}
+#copyright-footer {
+  position: absolute;
+  text-align: center;
+  margin-bottom: 2%;
+  font-size: 12px;
+  bottom: 2%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}/*# sourceMappingURL=style.css.map */

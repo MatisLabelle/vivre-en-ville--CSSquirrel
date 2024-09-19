@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "Schibsted Grotesk";
+  src: url(../sources/medias/fonts/Schibsted_Grotesk/SchibstedGrotesk-VariableFont_wght.ttf);
+}
+
+@mixin titre-1 {
+  font-size: 64px;
+  font-family: "Schibsted Grotesk";
+  color: black;
+  font-weight: bold;
+}
+h1 {
+  @include titre-1();
+}
+
+@mixin titre-2 {
+  font-size: 64px;
+  font-family: "Schibsted Grotesk";
+  color: black;
+  font-weight: medium;
+}
+h2 {
+  @include titre-2();
+}
+
+@mixin titre-3 {
+  font-size: 64px;
+  font-family: "Schibsted Grotesk";
+  color: black;
+  font-weight: normal;
+}
+h3 {
+  @include titre-3();
+}
+
+@mixin paragraphe {
+  font-size: 16px;
+  font-family: "Schibsted Grotesk";
+  color: black;
+  font-weight: normal;
+}
+p {
+  @include paragraphe();
+}

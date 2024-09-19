@@ -2,29 +2,39 @@
   font-family: "Schibsted Grotesk";
   src: url(../sources/medias/fonts/Schibsted_Grotesk/SchibstedGrotesk-VariableFont_wght.ttf);
 }
-
-@mixin titre-1 {
+h1 {
   font-size: 64px;
   font-family: "Schibsted Grotesk";
   color: black;
   font-weight: bold;
 }
-@mixin titre-2 {
+
+h2 {
   font-size: 64px;
   font-family: "Schibsted Grotesk";
   color: black;
   font-weight: medium;
 }
-@mixin titre-3 {
+
+h3 {
   font-size: 64px;
   font-family: "Schibsted Grotesk";
   color: black;
   font-weight: normal;
 }
 
-@mixin paragraphe {
+p {
   font-size: 24px;
   font-family: "Schibsted Grotesk";
   color: black;
   font-weight: normal;
 }
+
+footer {
+  background-color: #7b7263;
+}
+
+.grid-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}/*# sourceMappingURL=footer.css.map */

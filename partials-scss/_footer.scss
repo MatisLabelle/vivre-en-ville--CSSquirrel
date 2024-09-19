@@ -1,0 +1,63 @@
+@use "mixins.scss";
+@use "variables.scss";
+
+footer {
+  position: relative;
+  background-color: variables.$brun-footer;
+  margin: 0;
+}
+
+.grid-footer {
+  margin: 5%;
+  margin-top: 2%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  column-gap: 10%;
+  row-gap: 5%;
+}
+
+.ville-footer {
+  font-size: 36px;
+  color: white;
+  margin: 0;
+}
+.logo-footer {
+  width: 100px;
+  position: relative;
+  margin-top: 2%;
+  margin-left: 5%;
+}
+
+.p-footer {
+  color: white;
+}
+
+.h3-footer {
+  color: white;
+  margin-left: 5%;
+  font-size: 48px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.email-footer {
+  margin: 5%;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 800px) {
+  .email-footer {
+    margin-top: 0;
+  }
+}
+
+#copyright-footer {
+  position: absolute;
+  text-align: center;
+  margin-bottom: 2%;
+  font-size: 12px;
+  bottom: 2%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
