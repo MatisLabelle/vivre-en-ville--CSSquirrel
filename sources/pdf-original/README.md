@@ -1,1 +1,1 @@
-# Premier design du site fait par Jérémy Duverseau
+# Design du site fait par Jérémy Duverseau
