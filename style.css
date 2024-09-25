@@ -3,33 +3,49 @@
   font-family: "Schibsted Grotesk";
   src: url(../sources/medias/fonts/Schibsted_Grotesk/SchibstedGrotesk-VariableFont_wght.ttf);
 }
+*{
+  font-family: "Schibsted Grotesk";
+}
+
 h1 {
   font-size: 64px;
-  font-family: "Schibsted Grotesk";
   color: black;
   font-weight: bold;
 }
 
 h2 {
   font-size: 64px;
-  font-family: "Schibsted Grotesk";
   color: black;
   font-weight: medium;
 }
 
 h3 {
   font-size: 64px;
-  font-family: "Schibsted Grotesk";
   color: black;
   font-weight: normal;
 }
 
 p {
   font-size: 16px;
-  font-family: "Schibsted Grotesk";
   color: black;
   font-weight: normal;
 }
+
+/*Nav Bar bouton donner custom */
+a.btn.btn-donner-custom {
+  border-radius: 5%;
+  background-color: #FBAB1A;
+  color: white; 
+  border-color: #FBAB1A; 
+}
+
+a.btn.btn-donner-custom:hover {
+  border-radius: 25%;
+  background-color: #dc9105; 
+  border-color: #e09a16;
+  color: black; 
+}
+
 
 footer {
   position: relative;
