@@ -30,6 +30,42 @@ p {
   font-weight: normal;
 }
 
+<<<<<<< HEAD
+=======
+/*---------- NAVBAR, BOUNTON DE DON & TOPBAR ----------*/
+
+  background-color: #fbab1a;
+  color: white;
+  border-color: #fbab1a;
+  border: solid 3px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0;
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+a.btn.btn-donner-custom:hover {
+  background-color: white;
+  border-color: #e09a16;
+  border: solid 3px;
+  color: #e09a16;
+}
+
+.topbar {
+  font-size: 12px;
+  color: #636363;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.topbar:hover {
+  color: black;
+}
+
+/*---------- FOOTER ----------*/
+
+>>>>>>> parent of 87e76ae (Update Navbar + burger)
 footer {
   position: relative;
   background-color: #7b7263;
