@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSSquirrel - Vivre en ville</title>
-  <script src="main.js"></script>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSSquirrel - Vivre en ville</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
 
 <body>
   <header>
     <!--La NAV BAR-->
     <!-- Top Bar Section -->
-    <div class="bg-light pt-2 mx-5">
-      <div class="container-fluid d-flex justify-content-between align-items-center d-none d-md-block flex-row-reverse px-0">
+    <div class="bg-light pt-2">
+      <div class="container-fluid d-flex justify-content-between align-items-center d-none d-md-block flex-row-reverse">
         <div class="d-flex flex-row-reverse topbar">
-          <a href="#" class=" topbar">English</a>
+          <a href="#" class="me-3 topbar">English</a>
           <a href="#" class="me-3 topbar">Recherche</a>
           <a href="#" class="me-3 topbar">S'abonner</a>
         </div>
       </div>
 
       <!-- Main Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-expand-md md-light px-0">
-        <div class="container-fluid px-0">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-expand-md md-light">
+        <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="/sources/medias/images/LOGO.png" alt="logo navbar" style="height: 50px" />
           </a>
@@ -67,8 +70,8 @@
               </li>
               <li class="nav-item">
                 <!-- Bouton donner -->
-                <div class="d-flex m-0">
-                  <a href="#" class="btn btn-donner-custom ml-20 rounded-pill">Donner</a>
+                <div class="d-flex ms-3" style="margin: 0;">
+                  <a href="#" class="btn btn-donner-custom me-2 ml-20 rounded-pill">Donner</a>
                 </div>
               </li>
             </ul>
@@ -77,7 +80,7 @@
       </nav>
     </div>
 
-    <!--
+      <!--
          <h1>CSSquirrel</h1>
     <h2>Vivre en ville</h2>
     <p>Lien vers le site de vivre en ville: https://vivreenville.org/</p>
@@ -85,51 +88,54 @@
       Lien vers notre github:
       https://github.com/MatisLabelle/vivre-en-ville--CSSquirrel/new/main
     </p>
-    -->
-  </header>
+    --></header>
 
-  <p>
-    Notre équipe: Ikrame Rata, intégrateur, développeur front-end et project
-    owner. Jérémy Duverseau, intégrateur, développeur front-end et designer.
-    Matis Labelle, intégrateur, développeur front-end et DevOp
-  </p>
+    <main>
+      <section class="section__hero"></section>
+      <section class="section__a-propos"></section>
+      <section class="section__services"></section>
+      <section class="section__nouvelles"></section>
+      <section class="section__temoignage"></section>
+      <section class="section__info-lettre"></section>
+    </main>
 
-  <footer>
-    <img class="logo-footer" src="sources/medias/images/LOGO.png" />
-    <h3 class="h3-footer">Nous Joindre</h3>
-    <div class="grid-footer">
-      <div class="mtl">
-        <h3 class="ville-footer">Montréal</h3>
-        <p class="p-footer">Maison du développement durable</p>
-        <p class="p-footer">
-          50, rue Ste-Catherine Ouest, bur. 480 Montréal (Québec) H2X 3V4
-        </p>
-        <p class="p-footer">T. (514) 394-1125</p>
+    <footer>
+      <img class="logo-footer" src="sources/medias/images/LOGO.png" />
+      <h3 class="h3-footer">Nous Joindre</h3>
+      <div class="grid-footer">
+        <div class="mtl">
+          <h3 class="ville-footer">Montréal</h3>
+          <p class="p-footer">Maison du développement durable</p>
+          <p class="p-footer">
+            50, rue Ste-Catherine Ouest, bur. 480 Montréal (Québec) H2X 3V4
+          </p>
+          <p class="p-footer">T. (514) 394-1125</p>
+        </div>
+        <div class="quebec">
+          <h3 class="ville-footer">Québec</h3>
+          <p class="p-footer">Centre culture et environnement Frédéric Back</p>
+          <p class="p-footer">
+            870, avenue De Salaberry, bureau 311 Québec (Québec) G1R 2T9
+          </p>
+          <p class="p-footer">T. (418) 522-0011</p>
+        </div>
+        <div class="gatineau">
+          <h3 class="ville-footer">Gatineau</h3>
+          <p class="p-footer">
+            200-A, boulevard Saint-Joseph Gatineau (Québec) J8Y 3W9
+          </p>
+          <p class="p-footer">T. (819) 205-2053</p>
+        </div>
       </div>
-      <div class="quebec">
-        <h3 class="ville-footer">Québec</h3>
-        <p class="p-footer">Centre culture et environnement Frédéric Back</p>
-        <p class="p-footer">
-          870, avenue De Salaberry, bureau 311 Québec (Québec) G1R 2T9
-        </p>
-        <p class="p-footer">T. (418) 522-0011</p>
-      </div>
-      <div class="gatineau">
-        <h3 class="ville-footer">Gatineau</h3>
-        <p class="p-footer">
-          200-A, boulevard Saint-Joseph Gatineau (Québec) J8Y 3W9
-        </p>
-        <p class="p-footer">T. (819) 205-2053</p>
-      </div>
-    </div>
-    <img class="email-footer" src="sources/medias/images/Mail.png" />
-    <p id="copyright-footer" class="p-footer">
-      @2024 Vivre en ville, CSSquirrel
-    </p>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-</body>
-
+      <img class="email-footer" src="sources/medias/images/Mail.png" />
+      <p id="copyright-footer" class="p-footer">
+        @2024 Vivre en ville, CSSquirrel
+      </p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
