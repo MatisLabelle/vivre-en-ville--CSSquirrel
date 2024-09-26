@@ -34,6 +34,7 @@ p {
 =======
 /*---------- NAVBAR, BOUNTON DE DON & TOPBAR ----------*/
 
+a.btn.btn-donner-custom {
   background-color: #fbab1a;
   color: white;
   border-color: #fbab1a;
