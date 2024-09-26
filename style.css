@@ -1,11 +1,17 @@
-
 @font-face {
   font-family: "Schibsted Grotesk";
   src: url(../sources/medias/fonts/Schibsted_Grotesk/SchibstedGrotesk-VariableFont_wght.ttf);
 }
-*{
+* {
   font-family: "Schibsted Grotesk";
 }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+} /*# sourceMappingURL=style.css.map */
 
 h1 {
   font-size: 64px;
@@ -31,21 +37,39 @@ p {
   font-weight: normal;
 }
 
-/*Nav Bar bouton donner custom */
+/*---------- NAVBAR, BOUNTON DE DON & TOPBAR ----------*/
+
 a.btn.btn-donner-custom {
-  border-radius: 5%;
-  background-color: #FBAB1A;
-  color: white; 
-  border-color: #FBAB1A; 
+  background-color: #fbab1a;
+  color: white;
+  border-color: #fbab1a;
+  border: solid 3px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0;
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
 }
 
 a.btn.btn-donner-custom:hover {
-  border-radius: 25%;
-  background-color: #dc9105; 
+  background-color: white;
   border-color: #e09a16;
-  color: black; 
+  border: solid 3px;
+  color: #e09a16;
 }
 
+.topbar {
+  font-size: 12px;
+  color: #636363;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.topbar:hover {
+  color: black;
+}
+
+/*---------- FOOTER ----------*/
 
 footer {
   position: relative;
@@ -59,7 +83,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   -moz-column-gap: 10%;
-       column-gap: 10%;
+  column-gap: 10%;
   row-gap: 5%;
 }
 
@@ -108,10 +132,3 @@ footer {
   right: 0;
   margin: auto;
 }
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}/*# sourceMappingURL=style.css.map */
