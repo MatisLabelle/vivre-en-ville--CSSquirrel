@@ -69,6 +69,18 @@ a.btn.btn-donner-custom:hover {
   color: black;
 }
 
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  border: none;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  transition: opacity 1 ease-in;
+}
+
+button.navbar-toggler {
+  border: none;
+}
+
 /*---------- FOOTER ----------*/
 
 footer {
