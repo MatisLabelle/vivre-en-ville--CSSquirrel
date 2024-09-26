@@ -30,8 +30,7 @@ p {
   font-weight: normal;
 }
 
-<<<<<<< HEAD
-=======
+
 /*---------- NAVBAR, BOUNTON DE DON & TOPBAR ----------*/
 
 a.btn.btn-donner-custom {
@@ -66,7 +65,7 @@ a.btn.btn-donner-custom:hover {
 
 /*---------- FOOTER ----------*/
 
->>>>>>> parent of 87e76ae (Update Navbar + burger)
+
 footer {
   position: relative;
   background-color: #7b7263;
