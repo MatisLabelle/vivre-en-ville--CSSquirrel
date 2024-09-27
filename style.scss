@@ -1,10 +1,10 @@
-@use "partials-scss/mixins.scss";
-@use "partials-scss/variables.scss";
-@use "partials-scss/header.scss";
-@use "partials-scss/footer.scss";
-@use "partials-scss/hero.scss";
-@use "partials-scss/a-propos.scss";
-@use "partials-scss/info-lettre.scss";
+@use "partials-scss/mixins";
+@use "partials-scss/variables";
+@use "partials-scss/header";
+@use "partials-scss/footer";
+@use "partials-scss/hero";
+@use "partials-scss/a-propos";
+@use "partials-scss/info-lettre";
 
 html,
 body {
