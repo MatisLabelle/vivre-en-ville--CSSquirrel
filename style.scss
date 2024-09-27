@@ -13,6 +13,21 @@ body {
   height: 100%;
 }
 
+/*---------- STYLES GENERAUX ----------*/
+
+.ml-5rem {
+  margin-left: 5rem;
+}
+
+.mr-5rem{
+  margin-right: 5rem;
+}
+
+.mx-5rem{
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
 /*---------- NAVBAR, BOUNTON DE DON & TOPBAR ----------*/
 
 a.btn.btn-donner-custom {
@@ -43,6 +58,13 @@ a.btn.btn-donner-custom:hover {
 
 .topbar:hover {
   color: black;
+}
+
+.topbar > :nth-child(2) {
+  border-left: 1.5px solid #636363;
+  border-right: 1.5px solid #636363;
+  border-top: none;
+  border-bottom: none;
 }
 
 .nav-item.dropdown:hover .dropdown-menu {

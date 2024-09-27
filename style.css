@@ -37,7 +37,7 @@ footer {
 }
 
 .grid-footer {
-  margin: 5%;
+  margin: 5rem;
   margin-top: 2%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -56,7 +56,7 @@ footer {
   width: 80px;
   position: relative;
   margin-top: 2%;
-  margin-left: 5%;
+  margin-left: 5rem;
 }
 
 .p-footer {
@@ -66,14 +66,14 @@ footer {
 
 .h3-footer {
   color: white;
-  margin-left: 5%;
+  margin-left: 5rem;
   font-size: 36px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .email-footer {
-  margin: 5%;
+  margin: 5rem;
   margin-bottom: 0;
 }
 
@@ -112,7 +112,7 @@ a {
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin: 5%;
+  margin: 5rem;
   margin-top: 10%;
   right: 5%;
   top: 0;
@@ -381,6 +381,20 @@ body {
   height: 100%;
 }
 
+/*---------- STYLES GENERAUX ----------*/
+.ml-5rem {
+  margin-left: 5rem;
+}
+
+.mr-5rem {
+  margin-right: 5rem;
+}
+
+.mx-5rem {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
 /*---------- NAVBAR, BOUNTON DE DON & TOPBAR ----------*/
 a.btn.btn-donner-custom {
   background-color: #fbab1a;
@@ -409,6 +423,13 @@ a.btn.btn-donner-custom:hover {
 
 .topbar:hover {
   color: black;
+}
+
+.topbar > :nth-child(2) {
+  border-left: 1.5px solid #636363;
+  border-right: 1.5px solid #636363;
+  border-top: none;
+  border-bottom: none;
 }
 
 .nav-item.dropdown:hover .dropdown-menu {

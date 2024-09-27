@@ -8,7 +8,7 @@ footer {
 }
 
 .grid-footer {
-  margin: 5%;
+  margin: 5rem;
   margin-top: 2%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -25,7 +25,7 @@ footer {
   width: 80px;
   position: relative;
   margin-top: 2%;
-  margin-left: 5%;
+  margin-left: 5rem;
 }
 
 .p-footer {
@@ -35,14 +35,14 @@ footer {
 
 .h3-footer {
   color: white;
-  margin-left: 5%;
+  margin-left: 5rem;
   font-size: 36px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .email-footer {
-  margin: 5%;
+  margin: 5rem;
   margin-bottom: 0;
 }
 
@@ -84,7 +84,7 @@ a {
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin: 5%;
+  margin: 5rem;
   margin-top: 10%;
   right: 5%;
   top: 0;
