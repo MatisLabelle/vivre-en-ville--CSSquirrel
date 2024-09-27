@@ -10,22 +10,14 @@ h1 {
 }
 
 h2 {
-<<<<<<< Updated upstream:style-ancient.css
-  font-size: 64px;
-=======
   font-size: 48px;
->>>>>>> Stashed changes:style.css
   font-family: "Schibsted Grotesk";
   color: black;
   font-weight: medium;
 }
 
 h3 {
-<<<<<<< Updated upstream:style-ancient.css
-  font-size: 64px;
-=======
   font-size: 24px;
->>>>>>> Stashed changes:style.css
   font-family: "Schibsted Grotesk";
   color: black;
   font-weight: normal;
@@ -38,57 +30,6 @@ p {
   font-weight: normal;
 }
 
-<<<<<<< Updated upstream:style-ancient.css
-
-/*---------- NAVBAR, BOUNTON DE DON & TOPBAR ----------*/
-
-a.btn.btn-donner-custom {
-  background-color: #fbab1a;
-  color: white;
-  border-color: #fbab1a;
-  border: solid 3px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0;
-  transition: background-color 0.3s ease, color 0.3s ease,
-    border-color 0.3s ease;
-}
-
-a.btn.btn-donner-custom:hover {
-  background-color: white;
-  border-color: #e09a16;
-  border: solid 3px;
-  color: #e09a16;
-}
-
-.topbar {
-  font-size: 12px;
-  color: #636363;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.topbar:hover {
-  color: black;
-}
-
-.nav-item.dropdown:hover .dropdown-menu {
-  display: block;
-  border: none;
-  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15);
-  border-radius: 5px;
-  transition: opacity 1 ease-in;
-}
-
-button.navbar-toggler {
-  border: none;
-}
-
-/*---------- FOOTER ----------*/
-
-
-=======
->>>>>>> Stashed changes:style.css
 footer {
   position: relative;
   background-color: #7b7263;
@@ -158,8 +99,6 @@ footer {
   margin: auto;
 }
 
-<<<<<<< Updated upstream:style-ancient.css
-=======
 a {
   text-decoration: none !important;
 }
@@ -294,6 +233,7 @@ a {
   font-size: 36px;
   font-weight: bold;
   text-align: center;
+  color: white;
 }
 .propos__donner {
   width: 60vw;
@@ -315,6 +255,12 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.propos__mission {
+  color: white;
+}
+.propos__approche {
+  color: white;
 }
 
 .coeur-btn__1 {
@@ -428,7 +374,6 @@ a {
     right: 50px;
   }
 }
->>>>>>> Stashed changes:style.css
 html,
 body {
   margin: 0;
