@@ -1,0 +1,18 @@
+{
+  "name": "vivre-en-ville--cssquirrel",
+  "version": "1.0.0",
+  "description": "Vivre en ville refonte",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Vivre en ville"
+  },
+  "keywords": [
+    "cssquirrel"
+  ],
+  "author": "Ikrame Rata Jeremy Durverseau & Matis Labelle",
+  "license": "ISC"
+}
