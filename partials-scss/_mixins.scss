@@ -3,6 +3,11 @@
   src: url(../sources/medias/fonts/Schibsted_Grotesk/SchibstedGrotesk-VariableFont_wght.ttf);
 }
 
+@font-face {
+  font-family: "Message";
+  src: url(../sources/medias/fonts/messages-font/Messages-gnn5.ttf);
+}
+
 @mixin titre-1 {
   font-size: 64px;
   font-family: "Schibsted Grotesk";
@@ -41,4 +46,12 @@ h3 {
 }
 p {
   @include paragraphe();
+}
+
+
+/****** MARGINS ******/
+
+@mixin mx-5rem {
+  margin-left: 5rem;
+  margin-right: 5rem;
 }

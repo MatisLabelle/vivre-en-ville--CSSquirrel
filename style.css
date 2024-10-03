@@ -1,6 +1,11 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Schibsted Grotesk";
   src: url(../sources/medias/fonts/Schibsted_Grotesk/SchibstedGrotesk-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Message";
+  src: url(../sources/medias/fonts/messages-font/Messages-gnn5.ttf);
 }
 h1 {
   font-size: 64px;
@@ -30,6 +35,56 @@ p {
   font-weight: normal;
 }
 
+/****** MARGINS ******/
+/*---------- NAVBAR, BOUNTON DE DON & TOPBAR ----------*/
+a.btn.btn-donner-custom {
+  background-color: #fbab1a;
+  color: white;
+  border-color: #fbab1a;
+  border: solid 3px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+a.btn.btn-donner-custom:hover {
+  background-color: white;
+  border-color: #e09a16;
+  border: solid 3px;
+  color: #e09a16;
+}
+
+.topbar {
+  font-size: 12px;
+  color: #636363;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.topbar:hover {
+  color: black;
+}
+
+.topbar > :nth-child(2) {
+  border-left: 1.5px solid #636363;
+  border-right: 1.5px solid #636363;
+  border-top: none;
+  border-bottom: none;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  border: none;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  transition: opacity 1 ease-in;
+}
+
+button.navbar-toggler {
+  border: none;
+}
+
 footer {
   position: relative;
   background-color: #7b7263;
@@ -37,7 +92,7 @@ footer {
 }
 
 .grid-footer {
-  margin: 5%;
+  margin: 5rem;
   margin-top: 2%;
   margin-bottom: 2%;
   display: grid;
@@ -57,7 +112,7 @@ footer {
   width: 80px;
   position: relative;
   margin-top: 2%;
-  margin-left: 5%;
+  margin-left: 5rem;
 }
 
 .p-footer {
@@ -67,7 +122,7 @@ footer {
 
 .h3-footer {
   color: white;
-  margin-left: 5%;
+  margin-left: 5rem;
   font-size: 36px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -82,7 +137,7 @@ footer {
 }
 
 .email-footer {
-  margin: 5%;
+  margin: 5rem;
   margin-bottom: 0;
 }
 
@@ -121,7 +176,7 @@ a {
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin: 5%;
+  margin: 5rem;
   margin-top: 10%;
   right: 5%;
   top: 0;
@@ -387,9 +442,346 @@ a {
     right: 50px;
   }
 }
+.titre-news {
+  display: grid;
+  position: absolute;
+  top: 10px;
+  left: 100px;
+  transform: translate(-5%, -10%);
+  z-index: 1;
+  color: white;
+}
+
+.voir-plus {
+  display: grid;
+  position: absolute;
+  bottom: 10px;
+  right: 100px;
+  font-size: 19px;
+  text-decoration: underline;
+  color: white;
+  font-weight: bold;
+}
+.voir-plus a {
+  color: inherit;
+  transition: color 0.3s ease;
+}
+.voir-plus a:hover {
+  color: #fbab1a;
+}
+
+.news-section {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100vw;
+  gap: 50px;
+  padding: 80px;
+  background-color: #aad039;
+  position: relative;
+}
+
+.news-card {
+  background-color: #fff;
+  border-radius: 20px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.news-card:hover {
+  transition: all 300ms ease-in;
+  transform: scale(1.02);
+  opacity: 1;
+  border-radius: 50px;
+}
+.news-card:hover::after {
+  transition: all 300ms ease-in-out;
+}
+
+.news-image {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.news-content {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.news-title {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.news-summary {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.news-link {
+  display: inline-block;
+  padding: 10px;
+  background-color: #fbab1a;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.news-link:hover {
+  background-color: #bf7c03;
+  transition: all 300ms ease-in;
+  transform: scale(1.02);
+}
+
+@media (max-width: 1024px) {
+  .news-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .news-section {
+    grid-template-columns: 1fr;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e3f2fd;
+}
+
+.testimonial {
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  padding: 50px 0;
+  overflow: hidden;
+}
+
+.testimonial .image {
+  height: 170px;
+  width: 170px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.testimonial .slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 30px;
+  height: 100%;
+  width: 100%;
+}
+
+.slide p {
+  text-align: center;
+  padding: 0 160px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+}
+
+.slide .quote-icon {
+  font-size: 30px;
+  color: #4070f4;
+}
+
+.slide .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.details .name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.details .job {
+  font-size: 12px;
+  font-weight: 400;
+  color: #333;
+}
+
+/* swiper button css */
+.nav-btn {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  transform: translateY(30px);
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
+}
+
+.nav-btn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.nav-btn::after,
+.nav-btn::before {
+  font-size: 20px;
+  color: #fff;
+}
+
+.swiper-pagination-bullet {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #4070f4;
+}
+
+@media screen and (max-width: 768px) {
+  .slide p {
+    padding: 0 20px;
+  }
+  .nav-btn {
+    display: none;
+  }
+}
+input.accordion {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  left: -100%;
+  position: absolute;
+  top: -100%;
+}
+input.accordion + label {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+input.accordion + label span {
+  padding-right: 10px;
+}
+input.accordion + label span::before {
+  color: orange;
+  content: "+";
+}
+input.accordion ~ .services__content {
+  height: 0px;
+  opacity: 0;
+  overflow: hidden;
+  padding: 5px;
+  padding-left: 25px;
+  transition: height 500ms ease, opacity 500ms ease;
+}
+input.accordion:checked + label span::before {
+  content: "×";
+}
+input.accordion:checked ~ article {
+  height: 100%;
+  opacity: 1;
+}
+
+.services section {
+  border-bottom: 1px solid orange;
+  padding-top: 30px;
+  position: relative;
+}
+.services section:first-of-type {
+  padding-top: 0;
+}
+
+.services__container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+.services__accordion {
+  background-color: #fbab1a;
+  padding: 32px;
+  border-radius: 8px;
+}
+.services__input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  left: -100%;
+  position: absolute;
+  top: -100%;
+}
+.services__input + label {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.services__input + label span {
+  padding-right: 10px;
+}
+.services__input + label span::before {
+  color: white;
+  content: "+";
+}
+.services__input ~ .services__content {
+  height: 0px;
+  opacity: 0;
+  overflow: hidden;
+  padding: 5px;
+  padding-left: 25px;
+  transition: height 500ms ease, opacity 500ms ease;
+}
+.services__input:checked + label span::before {
+  content: "×";
+}
+.services__input:checked ~ article {
+  height: 100%;
+  opacity: 1;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
   height: 100%;
+}
+
+/*---------- STYLES GENERAUX ----------*/
+.ml-5rem {
+  margin-left: 5rem;
+}
+
+.mr-5rem {
+  margin-right: 5rem;
+}
+
+.mx-5rem {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+* {
+  font-family: "Schibsted Grotesk";
 }/*# sourceMappingURL=style.css.map */

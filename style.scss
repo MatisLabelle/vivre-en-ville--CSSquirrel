@@ -1,14 +1,38 @@
-@use "partials-scss/mixins.scss";
-@use "partials-scss/variables.scss";
-@use "partials-scss/header.scss";
-@use "partials-scss/footer.scss";
-@use "partials-scss/hero.scss";
-@use "partials-scss/a-propos.scss";
-@use "partials-scss/info-lettre.scss";
+@use "partials-scss/mixins";
+@use "partials-scss/variables";
+@use "partials-scss/navbar";
+@use "partials-scss/header";
+@use "partials-scss/footer";
+@use "partials-scss/hero";
+@use "partials-scss/a-propos";
+@use "partials-scss/info-lettre";
+@use "partials-scss/nouvelles";
+@use "partials-scss/temoignanes";
+@use "partials-scss/services";
+
 
 html,
 body {
   margin: 0;
   padding: 0;
   height: 100%;
+}
+
+/*---------- STYLES GENERAUX ----------*/
+
+.ml-5rem {
+  margin-left: 5rem;
+}
+
+.mr-5rem{
+  margin-right: 5rem;
+}
+
+.mx-5rem{
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+* {
+  font-family: "Schibsted Grotesk";;
 }
