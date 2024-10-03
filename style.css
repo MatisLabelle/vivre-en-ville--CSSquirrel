@@ -446,8 +446,8 @@ a {
 
 .titre-news {
   position: absolute;
-  -webkit-text-stroke-width: 4px;
-  -webkit-text-stroke-color: var(--icon-color, #FFF);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--icon-color, #fff);
   /* Contour blanc */
   color: transparent;
   /* Remplissage transparent */
@@ -455,6 +455,8 @@ a {
   left: 100px;
   transform: translate(-5%, -10%);
   z-index: 1;
+  font-size: 64px;
+  font-family: "Schibsted Grotesk";
 }
 
 .voir-plus {
@@ -479,6 +481,7 @@ a {
 .news-section {
   display: grid;
   margin: 0 auto;
+  margin-bottom: 10%;
   grid-template-columns: repeat(3, 1fr);
   width: 100vw;
   gap: 50px;
@@ -489,7 +492,7 @@ a {
 
 .news-card {
   background-color: #fff;
-  border: 10px solid var(--icon-color, #FFF);
+  border: 10px solid var(--icon-color, #fff);
   border-radius: 20px;
   width: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -564,6 +567,11 @@ a {
     grid-template-columns: 1fr;
   }
 }
+.section__temoignanes {
+  margin-top: 10%;
+  position: relative;
+}
+
 .temoignage-content {
   background-color: #afe0ee;
   text-align: center;

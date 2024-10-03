@@ -22,20 +22,17 @@ gsap
 
 ScrollTrigger.refresh();
 
-
-
-
 // Accordeon
 
- // Toujours 1 accordeon ouvert
- const accordionInputs = document.querySelectorAll('.services__input');
+// Toujours 1 accordeon ouvert
+const accordionInputs = document.querySelectorAll(".services__input");
 
- accordionInputs.forEach(input => {
-   input.addEventListener('change', () => {
-     accordionInputs.forEach(i => {
-       if (i !== input) {
-         i.checked = false; 
-       }
-     });
-   });
- });
+accordionInputs.forEach((input) => {
+  input.addEventListener("change", () => {
+    accordionInputs.forEach((i) => {
+      if (i !== input) {
+        i.checked = false;
+      }
+    });
+  });
+});

@@ -152,6 +152,8 @@
           fill="#FBAB1A" stroke="white" stroke-width="8" />
       </svg>
     </section>
+
+    <!-- section à propos -->
     <section class="section propos">
       <h2 class="propos__titre">À propos de nous</h2>
       <div class="propos__grid">
@@ -198,29 +200,49 @@
         </svg>
       </button>
     </section>
-    <!------- SECTION SERVICE ------->
 
+    <!------- SECTION SERVICE ------->
     <section class="section__services">
       <div class="services__container">
         <h2 class="services__titre">Nos Services</h2>
-        <section class="services__accordion">
+        <section class="services__accordion accordion_recherche">
           <input type="checkbox" class="services__input" id="item-1" />
-          <label class="services" for="item-1">
-            <h3>Recherche et innovation</h3>
-            <span></span>
-          </label>
+          <label class="services" for="item-1"><h3 class="services__sousTitre" tabindex="0">Recherche et innovation</h3> <span></span></label>
           <div class="services__content">
-            <article class="services__article"></article>
-            <button class="services__button"></button>
+            <article class="services__article">Explorer, diffuser et expérimenter les meilleures pratiques de développement de collectivités viables.</article>
+            <button class="services__button button-1">En Savoir Plus</button>
+          </div>
+        </section>
+        <section class="services__accordion">
+          <input type="checkbox" class="services__input" id="item-2" />
+          <label class="services" for="item-2"><h3 class="services__sousTitre" tabindex="0">Formation</h3> <span></span></label>
+          <div class="services__content">
+            <article class="services__article">Explorer, diffuser et expérimenter les meilleures pratiques de développement de collectivités viables.</article>
+            <button class="services__button button-2">En Savoir Plus</button>
+          </div>
+        </section>
+        <section class="services__accordion">
+          <input type="checkbox" class="services__input" id="item-3" />
+          <label class="services" for="item-3"><h3 class="services__sousTitre" tabindex="0">Conseil et accompagnment</h3> <span></span></label>
+          <div class="services__content">
+            <article class="services__article">Explorer, diffuser et expérimenter les meilleures pratiques de développement de collectivités viables.</article>
+            <button class="services__button button-3">En Savoir Plus</button>
+          </div>
+        </section>
+        <section class="services__accordion">
+          <input type="checkbox" class="services__input" id="item-4" />
+          <label class="services" for="item-4"><h3 class="services__sousTitre" tabindex="0">Sensibilisation</h3> <span></span></label>
+          <div class="services__content">
+            <article class="services__article">Explorer, diffuser et expérimenter les meilleures pratiques de développement de collectivités viables.</article>
+            <button class="services__button button-4">En Savoir Plus</button>
           </div>
         </section>
       </div>
     </section>
 
-  </main>
   <!--SECTION NOUVELLES -->
-  <section class="news-section">
-    <h1 class="titre-news">A la une</h1>
+    <section class="news-section">
+    <h2 class="titre-news">A la une</h2>
     <div class="news-card">
       <img src="./photos/road.jpg" alt="News 1" class="news-image" />
       <div class="news-content">
@@ -265,8 +287,10 @@
       <a href="#"> Voir toutes les publications > </a>
     </h3>
   </section>
+
   <!--SECTION TEMOIGNAGNES-->
-  <div class="swiper mySwiper temoignanes">
+  <section class="section__temoignages">
+    <div class="swiper mySwiper temoignanes">
     <div class="swiper-wrapper temoignanes-swiper">
 
       <!-- Témoignage 1 -->
@@ -386,6 +410,7 @@
       </defs>
     </svg>
   </section>
+</main>
   <!--FOOTER-->
   <footer>
     <img class="logo-footer" src="sources/medias/images/LOGO.png" />

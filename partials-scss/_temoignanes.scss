@@ -1,6 +1,11 @@
 @use "variables.scss";
 @use "mixins.scss";
 
+.section__temoignanes {
+  margin-top: 10%;
+  position: relative;
+}
+
 .temoignage-content {
   background-color: variables.$bleu;
   text-align: center;
@@ -32,7 +37,6 @@
     font-weight: 400;
     line-height: 16px;
     /* 100% */
-
   }
 
   .temoignage-texte {
