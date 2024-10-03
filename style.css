@@ -254,6 +254,7 @@ a {
   margin: 5%;
   margin-top: 10%;
   color: #fbab1a;
+  border: solid 3px;
 }
 
 .hero__donner:hover {
@@ -337,6 +338,13 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border: solid 3px;
+}
+.propos__donner:hover {
+  background-color: #fbab1a;
+  border-color: white;
+  border: solid 3px;
+  color: white;
 }
 .propos__mission {
   color: white;
