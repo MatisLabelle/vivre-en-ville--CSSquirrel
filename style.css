@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Schibsted Grotesk";
   src: url(../sources/medias/fonts/Schibsted_Grotesk/SchibstedGrotesk-VariableFont_wght.ttf);
@@ -34,6 +35,7 @@ p {
   font-weight: normal;
 }
 
+/****** MARGINS ******/
 /*---------- NAVBAR, BOUNTON DE DON & TOPBAR ----------*/
 a.btn.btn-donner-custom {
   background-color: #fbab1a;
@@ -648,6 +650,104 @@ a {
     display: none;
   }
 }
+input.accordion {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  left: -100%;
+  position: absolute;
+  top: -100%;
+}
+input.accordion + label {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+input.accordion + label span {
+  padding-right: 10px;
+}
+input.accordion + label span::before {
+  color: orange;
+  content: "+";
+}
+input.accordion ~ .services__content {
+  height: 0px;
+  opacity: 0;
+  overflow: hidden;
+  padding: 5px;
+  padding-left: 25px;
+  transition: height 500ms ease, opacity 500ms ease;
+}
+input.accordion:checked + label span::before {
+  content: "×";
+}
+input.accordion:checked ~ article {
+  height: 100%;
+  opacity: 1;
+}
+
+.services section {
+  border-bottom: 1px solid orange;
+  padding-top: 30px;
+  position: relative;
+}
+.services section:first-of-type {
+  padding-top: 0;
+}
+
+.services__container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+.services__accordion {
+  background-color: #fbab1a;
+  padding: 32px;
+  border-radius: 8px;
+}
+.services__input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  left: -100%;
+  position: absolute;
+  top: -100%;
+}
+.services__input + label {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.services__input + label span {
+  padding-right: 10px;
+}
+.services__input + label span::before {
+  color: white;
+  content: "+";
+}
+.services__input ~ .services__content {
+  height: 0px;
+  opacity: 0;
+  overflow: hidden;
+  padding: 5px;
+  padding-left: 25px;
+  transition: height 500ms ease, opacity 500ms ease;
+}
+.services__input:checked + label span::before {
+  content: "×";
+}
+.services__input:checked ~ article {
+  height: 100%;
+  opacity: 1;
+}
+
 html,
 body {
   margin: 0;

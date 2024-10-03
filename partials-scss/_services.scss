@@ -1,0 +1,134 @@
+@use "mixins.scss";
+@use "variables.scss";
+
+$text-padding: 25px;
+
+input.accordion {
+  // Hide checkbox
+  appearance: none;
+  left: -100%;
+  position: absolute;
+  top: -100%;
+
+  // Style the label text
+  & + label {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+
+    // Use flexbox to position the text and span
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    // Adjust the span to appear at the end
+    span {
+      padding-right: 10px;
+    }
+
+    // Add the '+' sign inside the span
+    span::before {
+      color: orange;
+      content: "\002B"; // Plus sign
+    }
+  }
+
+  // Hide the article if the checkbox is unchecked
+  & ~ .services__content {
+    height: 0px;
+    opacity: 0;
+    overflow: hidden;
+    padding: 5px;
+    padding-left: $text-padding;
+    transition: height 500ms ease, opacity 500ms ease;
+  }
+
+  &:checked {
+    // Change '+' to 'x' when expanded
+    & + label span::before {
+      content: "\00D7"; // 'X' sign
+    }
+
+    // Show the article when checked
+    & ~ article {
+      height: 100%;
+      opacity: 1;
+    }
+  }
+}
+
+.services section {
+  border-bottom: 1px solid orange;
+  padding-top: 30px;
+  position: relative;
+
+  &:first-of-type {
+    padding-top: 0;
+  }
+}
+
+//Section Recherche et innovation
+
+.services {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    @include mixins.mx-5rem();
+  }
+  &__accordion {
+    background-color: variables.$orange;
+    padding: 32px;
+    border-radius: 8px;
+  }
+
+  &__input {
+    appearance: none;
+    left: -100%;
+    position: absolute;
+    top: -100%;
+
+    & + label {
+      cursor: pointer;
+      font-size: 20px;
+      font-weight: bold;
+
+      // Use flexbox to position the text and span
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      // Adjust the span to appear at the end
+      span {
+        padding-right: 10px;
+      }
+
+      // Add the '+' sign inside the span
+      span::before {
+        color: white;
+        content: "\002B"; // Plus sign
+      }
+    }
+
+    & ~ .services__content {
+      height: 0px;
+      opacity: 0;
+      overflow: hidden;
+      padding: 5px;
+      padding-left: $text-padding;
+      transition: height 500ms ease, opacity 500ms ease;
+    }
+
+    &:checked {
+      // Change '+' to 'x' when expanded
+      & + label span::before {
+        content: "\00D7"; // 'X' sign
+      }
+
+      // Show the article when checked
+      & ~ article {
+        height: 100%;
+        opacity: 1;
+      }
+    }
+  }
+}
