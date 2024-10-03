@@ -650,64 +650,104 @@ a {
     display: none;
   }
 }
+/*
 input.accordion {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  // Hide checkbox
+  appearance: none;
   left: -100%;
   position: absolute;
   top: -100%;
-}
-input.accordion + label {
-  cursor: pointer;
-  font-size: 20px;
-  font-weight: bold;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-input.accordion + label span {
-  padding-right: 10px;
-}
-input.accordion + label span::before {
-  color: orange;
-  content: "+";
-}
-input.accordion ~ .services__content {
-  height: 0px;
-  opacity: 0;
-  overflow: hidden;
-  padding: 5px;
-  padding-left: 25px;
-  transition: height 500ms ease, opacity 500ms ease;
-}
-input.accordion:checked + label span::before {
-  content: "×";
-}
-input.accordion:checked ~ article {
-  height: 100%;
-  opacity: 1;
-}
 
+  // Style the label text
+  & + label {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+
+    // Use flexbox to position the text and span
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    // Adjust the span to appear at the end
+    span {
+      padding-right: 10px;
+    }
+
+    // Add the '+' sign inside the span
+    span::before {
+      color: white;
+      content: "\002B"; // Plus sign
+    }
+  }
+
+  // Hide the article if the checkbox is unchecked
+  & ~ .services__content {
+    height: 0px;
+    opacity: 0;
+    overflow: hidden;
+    padding: 5px;
+    padding-left: $text-padding;
+    transition: height 500ms ease, opacity 500ms ease;
+  }
+
+  &:checked {
+    // Change '+' to 'x' when expanded
+    & + label span::before {
+      content: "\00D7"; // 'X' sign
+    }
+
+    // Show the article when checked
+    & ~ article {
+      height: 100%;
+      opacity: 1;
+    }
+  }
+} 
+*/
+/*
 .services section {
   border-bottom: 1px solid orange;
   padding-top: 30px;
   position: relative;
-}
-.services section:first-of-type {
-  padding-top: 0;
+
+  &:first-of-type {
+    padding-top: 0;
+  }
+}*/
+.section__services {
+  padding-top: 96px;
 }
 
+.services__titre {
+  font-size: 36px;
+  color: #fbab1a;
+  font-weight: bold;
+}
+.services__sousTitre {
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+}
 .services__container {
   display: flex;
   flex-direction: column;
-  margin-left: 5rem;
-  margin-right: 5rem;
 }
 .services__accordion {
-  background-color: #fbab1a;
+  margin-top: 8px;
   padding: 32px;
-  border-radius: 8px;
+}
+.services__accordion:first-of-type {
+  background-color: #fbab1a;
+}
+.services__accordion:nth-of-type(2) {
+  background-color: #fecf07;
+}
+.services__accordion:nth-of-type(3) {
+  background-color: #aad039;
+}
+.services__accordion:nth-of-type(4) {
+  background-color: #afe0ee;
 }
 .services__input {
   -webkit-appearance: none;
@@ -748,6 +788,79 @@ input.accordion:checked ~ article {
   opacity: 1;
 }
 
+@media screen and (min-width: 768px) {
+  .services__titre {
+    font-size: 60px;
+    color: #fbab1a;
+    font-weight: bold;
+  }
+  .services__sousTitre {
+    color: white;
+    font-weight: bold;
+    font-size: 48px;
+  }
+  .services__container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  .services__accordion {
+    margin-top: 16px;
+    padding: 32px;
+    border-radius: 8px;
+  }
+  .services__accordion:first-of-type {
+    background-color: #fbab1a;
+  }
+  .services__accordion:nth-of-type(2) {
+    background-color: #fecf07;
+  }
+  .services__accordion:nth-of-type(3) {
+    background-color: #aad039;
+  }
+  .services__accordion:nth-of-type(4) {
+    background-color: #afe0ee;
+  }
+  .services__input {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    left: -100%;
+    position: absolute;
+    top: -100%;
+  }
+  .services__input + label {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .services__input + label span {
+    padding-right: 10px;
+  }
+  .services__input + label span::before {
+    color: white;
+    content: "+";
+  }
+  .services__input ~ .services__content {
+    height: 0px;
+    opacity: 0;
+    overflow: hidden;
+    padding: 5px;
+    padding-left: 25px;
+    transition: height 500ms ease, opacity 500ms ease;
+  }
+  .services__input:checked + label span::before {
+    content: "×";
+  }
+  .services__input:checked ~ article {
+    height: 100%;
+    opacity: 1;
+  }
+}
 html,
 body {
   margin: 0;
