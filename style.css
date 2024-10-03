@@ -2,6 +2,10 @@
   font-family: "Schibsted Grotesk";
   src: url(../sources/medias/fonts/Schibsted_Grotesk/SchibstedGrotesk-VariableFont_wght.ttf);
 }
+@font-face {
+  font-family: "Message";
+  src: url(../sources/medias/fonts/messages-font/Messages-gnn5.ttf);
+}
 h1 {
   font-size: 64px;
   font-family: "Schibsted Grotesk";
@@ -423,25 +427,62 @@ a {
     right: 50px;
   }
 }
+.titre-news {
+  display: grid;
+  position: absolute;
+  top: 10px;
+  left: 100px;
+  transform: translate(-5%, -10%);
+  z-index: 1;
+  color: white;
+}
+
+.voir-plus {
+  display: grid;
+  position: absolute;
+  bottom: 10px;
+  right: 100px;
+  font-size: 19px;
+  text-decoration: underline;
+  color: white;
+  font-weight: bold;
+}
+.voir-plus a {
+  color: inherit;
+  transition: color 0.3s ease;
+}
+.voir-plus a:hover {
+  color: #fbab1a;
+}
+
 .news-section {
   display: grid;
   margin: 0 auto;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-columns: repeat(3, 1fr);
   width: 100vw;
-  max-width: 1000px;
-  gap: 20px;
-  padding: 40px;
+  gap: 50px;
+  padding: 80px;
   background-color: #aad039;
+  position: relative;
 }
 
-/* Card container */
 .news-card {
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 20px;
+  width: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   display: flex;
   flex-direction: column;
+}
+.news-card:hover {
+  transition: all 300ms ease-in;
+  transform: scale(1.02);
+  opacity: 1;
+  border-radius: 50px;
+}
+.news-card:hover::after {
+  transition: all 300ms ease-in-out;
 }
 
 .news-image {
@@ -484,16 +525,18 @@ a {
 
 .news-link:hover {
   background-color: #bf7c03;
+  transition: all 300ms ease-in;
+  transform: scale(1.02);
 }
 
 @media (max-width: 1024px) {
   .news-section {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 768px) {
   .news-section {
-    grid-template-columns: 1fr; /* 1 column on small screens */
+    grid-template-columns: 1fr;
   }
 }
 html,
