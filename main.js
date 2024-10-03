@@ -21,3 +21,21 @@ gsap
   .from(".info-lettre__send", { y: "-60vh", x: "-100vw", duration: 2 });
 
 ScrollTrigger.refresh();
+
+
+
+
+// Accordeon
+
+ // Toujours 1 accordeon ouvert
+ const accordionInputs = document.querySelectorAll('.services__input');
+
+ accordionInputs.forEach(input => {
+   input.addEventListener('change', () => {
+     accordionInputs.forEach(i => {
+       if (i !== input) {
+         i.checked = false; 
+       }
+     });
+   });
+ });
