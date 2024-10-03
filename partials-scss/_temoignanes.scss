@@ -1,93 +1,48 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  .container {
-    width: 100%;
-    display: flex;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    background-color: variables.$bleu;
-  }
-  .testimonial {
-    position: relative;
-    max-width: 900px;
-    width: 100%;
-    padding: 50px 0;
-    overflow: hidden;
-  }
-  .testimonial .image {
-    width: 190px;
-    height: 190px;
-    flex-shrink: 0;
+@use "variables.scss";
+@use "mixins.scss";
+
+.temoignage-content {
+  background-color: variables.$bleu;
+  text-align: center;
+  padding: 50px;
+
+  .temoignage-photo {
+    border: 6px solid #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
     object-fit: cover;
-    border-radius: 50%;
+    margin-bottom: 15px;
   }
-  .testimonial .slide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    row-gap: 30px;
-    height: 100%;
-    width: 100%;
+
+  .temoignage-nom {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
   }
-  .slide p {
+
+  .temoignage-profession {
+    color: #000;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: "Schibsted Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    /* 100% */
+
+  }
+
+  .temoignage-texte {
+    margin: 0 auto;
+    color: #000;
+    width: 600px;
     text-align: center;
-    padding: 0 160px;
-    font-size: 14px;
-    font-weight: 400;
-    color: #333;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: "Schibsted Grotesk";
+    font-size: 17px;
+    font-style: italic;
+    line-height: 32px;
+    /* 160% */
   }
-  .slide .quote-icon {
-    font-size: 30px;
-    color: #4070f4;
-  }
-  .slide .details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .details .name {
-    font-size: 14px;
-    font-weight: 600;
-    color: #333;
-  }
-  .details .job {
-    font-size: 12px;
-    font-weight: 400;
-    color: #333;
-  }
-  /* swiper button css */
-  .nav-btn {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    transform: translateY(30px);
-    background-color: rgba(0, 0, 0, 0.1);
-    transition: 0.2s;
-  }
-  .nav-btn:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-  .nav-btn::after,
-  .nav-btn::before {
-    font-size: 20px;
-    color: #fff;
-  }
-  .swiper-pagination-bullet {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  .swiper-pagination-bullet-active {
-    background-color: #4070f4;
-  }
-  @media screen and (max-width: 768px) {
-    .slide p {
-      padding: 0 20px;
-    }
-    .nav-btn {
-      display: none;
-    }
-  }
+}

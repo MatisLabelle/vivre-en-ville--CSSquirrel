@@ -1,27 +1,15 @@
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(TextPlugin);
 
-const swiper = new Swiper(".swiper", {
-  direction: "vertical",
-  loop: true,
+// Initialisation de Swiper après le chargement du DOM
 
-  // If we need pagination
+let swiper = new Swiper(".mySwiper", {
   pagination: {
     el: ".swiper-pagination",
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
+    dynamicBullets: true,
   },
 });
-
+//Infolettre
 gsap
   .timeline({
     scrollTrigger: {
