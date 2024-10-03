@@ -130,14 +130,14 @@ footer {
 
 .partenaire-footer {
   color: white;
-  margin-left: 5%;
+  margin-left: 5rem;
   font-size: 36px;
   margin-top: 40px;
   margin-bottom: 20px;
 }
 
 .email-footer {
-  margin: 5rem;
+  margin-left: 5%;
   margin-bottom: 0;
 }
 
@@ -182,6 +182,13 @@ a {
   top: 0;
   position: absolute;
   font-family: "Schibsted Grotesk";
+}
+
+.footer__donner:hover {
+  background-color: white;
+  border-color: #e09a16;
+  border: solid 3px;
+  color: #e09a16;
 }
 
 .partenaire {
@@ -425,12 +432,7 @@ a {
   bottom: 0;
   left: 0;
   width: 100px;
-}
-.info-lettre__line {
-  position: absolute;
-  right: 0;
-  height: 100%;
-  display: none;
+  margin: 5%;
 }
 .info-lettre__send {
   position: absolute;
@@ -438,17 +440,10 @@ a {
   bottom: 0px;
   right: 0px;
   z-index: 1;
+  margin: 5%;
+  transform: rotate(220deg);
 }
 
-@media screen and (min-width: 768px) {
-  .info-lettre__line {
-    display: block;
-  }
-  .info-lettre__send {
-    bottom: 50px;
-    right: 50px;
-  }
-}
 .titre-news {
   display: grid;
   position: absolute;

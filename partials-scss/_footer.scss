@@ -44,14 +44,14 @@ footer {
 
 .partenaire-footer {
   color: white;
-  margin-left: 5%;
+  margin-left: 5rem;
   font-size: 36px;
   margin-top: 40px;
   margin-bottom: 20px;
 }
 
 .email-footer {
-  margin: 5rem;
+  margin-left: 5%;
   margin-bottom: 0;
 }
 
@@ -99,6 +99,13 @@ a {
   top: 0;
   position: absolute;
   font-family: "Schibsted Grotesk";
+}
+
+.footer__donner:hover {
+  background-color: white;
+  border-color: #e09a16;
+  border: solid 3px;
+  color: #e09a16;
 }
 
 .partenaire {

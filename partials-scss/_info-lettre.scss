@@ -62,12 +62,7 @@
     bottom: 0;
     left: 0;
     width: 100px;
-  }
-  &__line {
-    position: absolute;
-    right: 0;
-    height: 100%;
-    display: none;
+    margin: 5%;
   }
   &__send {
     position: absolute;
@@ -75,17 +70,7 @@
     bottom: 0px;
     right: 0px;
     z-index: 1;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .info-lettre {
-    &__line {
-      display: block;
-    }
-    &__send {
-      bottom: 50px;
-      right: 50px;
-    }
+    margin: 5%;
+    transform: rotate(220deg);
   }
 }
