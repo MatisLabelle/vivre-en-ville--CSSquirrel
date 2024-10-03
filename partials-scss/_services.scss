@@ -3,6 +3,7 @@
 
 $text-padding: 25px;
 
+/*
 input.accordion {
   // Hide checkbox
   appearance: none;
@@ -28,7 +29,7 @@ input.accordion {
 
     // Add the '+' sign inside the span
     span::before {
-      color: orange;
+      color: white;
       content: "\002B"; // Plus sign
     }
   }
@@ -55,8 +56,9 @@ input.accordion {
       opacity: 1;
     }
   }
-}
-
+} 
+*/
+/*
 .services section {
   border-bottom: 1px solid orange;
   padding-top: 30px;
@@ -65,20 +67,48 @@ input.accordion {
   &:first-of-type {
     padding-top: 0;
   }
-}
+}*/
 
 //Section Recherche et innovation
 
+.section__services {
+  padding-top: 96px;
+}
+
 .services {
+
+  &__titre {
+    font-size: 36px;
+    color: variables.$orange;
+    font-weight: bold;
+  }
+
+  &__sousTitre {
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  
   &__container {
     display: flex;
     flex-direction: column;
-    @include mixins.mx-5rem();
   }
   &__accordion {
-    background-color: variables.$orange;
+    margin-top: 8px;
     padding: 32px;
-    border-radius: 8px;
+  }
+  &__accordion:first-of-type {
+    background-color: variables.$orange;
+  }
+  &__accordion:nth-of-type(2) {
+    background-color: variables.$jaune;
+  }
+  &__accordion:nth-of-type(3) {
+    background-color: variables.$vert;
+  }
+  &__accordion:nth-of-type(4) {
+    background-color: variables.$bleu;
   }
 
   &__input {
@@ -130,5 +160,96 @@ input.accordion {
         opacity: 1;
       }
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .services {
+    &__titre {
+      font-size: 60px;
+      color: variables.$orange;
+      font-weight: bold;
+    }
+
+    &__sousTitre {
+      color: white;
+      font-weight: bold;
+      font-size: 48px;
+    }
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      @include mixins.mx-5rem();
+    }
+    &__accordion {
+      margin-top: 16px;
+      padding: 32px;
+      border-radius: 8px;
+    }
+    &__accordion:first-of-type {
+      background-color: variables.$orange;
+    }
+    &__accordion:nth-of-type(2) {
+      background-color: variables.$jaune;
+    }
+    &__accordion:nth-of-type(3) {
+      background-color: variables.$vert;
+    }
+    &__accordion:nth-of-type(4) {
+      background-color: variables.$bleu;
+    }
+  
+    &__input {
+      appearance: none;
+      left: -100%;
+      position: absolute;
+      top: -100%;
+  
+      & + label {
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: bold;
+  
+        // Use flexbox to position the text and span
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+  
+        // Adjust the span to appear at the end
+        span {
+          padding-right: 10px;
+        }
+  
+        // Add the '+' sign inside the span
+        span::before {
+          color: white;
+          content: "\002B"; // Plus sign
+        }
+      }
+  
+      & ~ .services__content {
+        height: 0px;
+        opacity: 0;
+        overflow: hidden;
+        padding: 5px;
+        padding-left: $text-padding;
+        transition: height 500ms ease, opacity 500ms ease;
+      }
+  
+      &:checked {
+        // Change '+' to 'x' when expanded
+        & + label span::before {
+          content: "\00D7"; // 'X' sign
+        }
+  
+        // Show the article when checked
+        & ~ article {
+          height: 100%;
+          opacity: 1;
+        }
+      }
+    }
+  
   }
 }
