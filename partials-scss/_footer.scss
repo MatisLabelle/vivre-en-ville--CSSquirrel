@@ -10,6 +10,7 @@ footer {
 .grid-footer {
   margin: 5%;
   margin-top: 2%;
+  margin-bottom: 2%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   column-gap: 10%;
@@ -38,6 +39,14 @@ footer {
   margin-left: 5%;
   font-size: 36px;
   margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.partenaire-footer {
+  color: white;
+  margin-left: 5%;
+  font-size: 36px;
+  margin-top: 40px;
   margin-bottom: 20px;
 }
 
@@ -90,4 +99,8 @@ a {
   top: 0;
   position: absolute;
   font-family: "Schibsted Grotesk";
+}
+
+.partenaire {
+  margin-bottom: 20px;
 }
