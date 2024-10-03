@@ -5,26 +5,28 @@
   background-color: variables.$bleu;
   text-align: center;
   padding: 50px;
+  height: 70vh;
 
   .temoignage-photo {
     border: 6px solid #fff;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 15px;
   }
 
   .temoignage-nom {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #333;
+    color: #000;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
   }
 
   .temoignage-profession {
     color: #000;
-    font-variant-numeric: lining-nums proportional-nums;
-    font-family: "Schibsted Grotesk";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -35,14 +37,11 @@
 
   .temoignage-texte {
     margin: 0 auto;
-    color: #000;
-    width: 600px;
+    width: 500px;
+    padding: 10px;
     text-align: center;
-    font-variant-numeric: lining-nums proportional-nums;
-    font-family: "Schibsted Grotesk";
     font-size: 17px;
     font-style: italic;
     line-height: 32px;
-    /* 160% */
   }
 }
