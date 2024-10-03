@@ -3,3 +3,80 @@
 
 
 // SECTION NOUVELLES ET TEMOIGNAGES
+ 
+.news-section {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    width: 100vw;
+    max-width: 1000px;
+    gap: 20px; 
+    padding: 40px;
+    background-color: variables.$vert;
+}
+
+/* Card container */
+.news-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+//Image
+.news-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.news-content {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.news-title {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.news-summary {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.news-link {
+    display: inline-block;
+    padding: 10px;
+    background-color: variables.$orange;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.news-link:hover {
+    background-color: variables.$orangefonce;
+}
+
+//Media queries
+@media (max-width: 1024px) {
+    .news-section {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .news-section {
+        grid-template-columns: 1fr; /* 1 column on small screens */
+    }
+}
