@@ -691,18 +691,39 @@ a {
   flex-direction: column;
   justify-content: center;
   display: flex;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+.services__button__button:hover {
+  border: 4px solid white;
+  color: white;
 }
 .services__button.button-1 {
   color: #fbab1a;
 }
+.services__button.button-1:hover {
+  background-color: #fbab1a;
+  color: white;
+}
 .services__button.button-2 {
   color: #fecf07;
+}
+.services__button.button-2:hover {
+  background-color: #fecf07;
+  color: white;
 }
 .services__button.button-3 {
   color: #aad039;
 }
+.services__button.button-3:hover {
+  background-color: #aad039;
+  color: white;
+}
 .services__button.button-4 {
   color: #afe0ee;
+}
+.services__button.button-4:hover {
+  background-color: #afe0ee;
+  color: white;
 }
 .services__titre {
   font-size: 36px;
