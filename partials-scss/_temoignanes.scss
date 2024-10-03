@@ -2,15 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
   }
   .container {
-    height: 100vh;
     width: 100%;
     display: flex;
+    position: absolute;
     align-items: center;
     justify-content: center;
-    background-color: #e3f2fd;
+    background-color: variables.$bleu;
   }
   .testimonial {
     position: relative;
@@ -20,8 +19,9 @@
     overflow: hidden;
   }
   .testimonial .image {
-    height: 170px;
-    width: 170px;
+    width: 190px;
+    height: 190px;
+    flex-shrink: 0;
     object-fit: cover;
     border-radius: 50%;
   }
