@@ -249,6 +249,13 @@ a {
   color: #fbab1a;
 }
 
+.hero__donner:hover {
+  background-color: #fbab1a;
+  border-color: white;
+  border: solid 3px;
+  color: white;
+}
+
 @media screen and (min-width: 768px) {
   .section__hero {
     max-height: 500px;
