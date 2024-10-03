@@ -1,10 +1,13 @@
 @use "partials-scss/mixins";
 @use "partials-scss/variables";
+@use "partials-scss/navbar";
 @use "partials-scss/header";
 @use "partials-scss/footer";
 @use "partials-scss/hero";
 @use "partials-scss/a-propos";
 @use "partials-scss/info-lettre";
+@use "partials-scss/news_temoignanes";
+
 
 html,
 body {
@@ -26,55 +29,4 @@ body {
 .mx-5rem{
   margin-left: 5rem;
   margin-right: 5rem;
-}
-
-/*---------- NAVBAR, BOUNTON DE DON & TOPBAR ----------*/
-
-a.btn.btn-donner-custom {
-  background-color: #fbab1a;
-  color: white;
-  border-color: #fbab1a;
-  border: solid 3px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0;
-  transition: background-color 0.3s ease, color 0.3s ease,
-    border-color 0.3s ease;
-}
-
-a.btn.btn-donner-custom:hover {
-  background-color: white;
-  border-color: #e09a16;
-  border: solid 3px;
-  color: #e09a16;
-}
-
-.topbar {
-  font-size: 12px;
-  color: #636363;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.topbar:hover {
-  color: black;
-}
-
-.topbar > :nth-child(2) {
-  border-left: 1.5px solid #636363;
-  border-right: 1.5px solid #636363;
-  border-top: none;
-  border-bottom: none;
-}
-
-.nav-item.dropdown:hover .dropdown-menu {
-  display: block;
-  border: none;
-  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15);
-  border-radius: 5px;
-  transition: opacity 1 ease-in;
-}
-
-button.navbar-toggler {
-  border: none;
 }

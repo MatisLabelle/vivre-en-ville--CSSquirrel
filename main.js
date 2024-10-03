@@ -1,8 +1,14 @@
-// Importer moment
-import moment from 'moment';
+// Import Swiper and modules
+import Swiper, { Pagination } from 'swiper';
+import './node_modules/swiper'; // Importation des styles
 
-let maDate = new Date();
-let maNouvelleDate = moment(maDate).format("LL");
-
-console.log(maDate);
-console.log(maNouvelleDate);
+// Initialise Swiper
+document.addEventListener('DOMContentLoaded', function() {
+    const swiper = new Swiper('.swiper-container', {
+        loop: true, // Permet de boucler le carrousel
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+});

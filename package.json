@@ -4,7 +4,7 @@
   "description": "Vivre en ville refonte",
   "main": "main.js",
   "scripts": {
-    "dev": "vite",  
+    "dev": "vite",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,7 +18,8 @@
   "license": "ISC",
   "dependencies": {
     "lodash": "^4.17.21",
-    "moment": "^2.30.1"
+    "moment": "^2.30.1",
+    "swiper": "^11.1.14"
   },
   "devDependencies": {
     "vite": "^5.4.8"
