@@ -31,7 +31,7 @@ $text-padding: 25px;
     justify-content: center;
     display: flex;
     transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
-
+    padding: 0 20px;
 
     &__button:hover {
       border: 4px solid white;
@@ -39,39 +39,37 @@ $text-padding: 25px;
     }
 
     &.button-1 {
-      color: variables.$orange; 
+      color: variables.$orange;
     }
     &.button-1:hover {
-      background-color: variables.$orange; 
+      background-color: variables.$orange;
       color: white;
     }
 
     &.button-2 {
-      color: variables.$jaune; 
+      color: variables.$jaune;
     }
     &.button-2:hover {
-      background-color: variables.$jaune; 
+      background-color: variables.$jaune;
       color: white;
     }
 
     &.button-3 {
-      color: variables.$vert; 
+      color: variables.$vert;
     }
     &.button-3:hover {
-      background-color: variables.$vert; 
+      background-color: variables.$vert;
       color: white;
     }
 
     &.button-4 {
-      color: variables.$bleu; 
+      color: variables.$bleu;
     }
     &.button-4:hover {
-      background-color: variables.$bleu; 
+      background-color: variables.$bleu;
       color: white;
     }
-
   }
-
 
   &__titre {
     font-size: 36px;

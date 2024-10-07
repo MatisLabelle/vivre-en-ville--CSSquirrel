@@ -10,7 +10,8 @@
   background-color: variables.$bleu;
   text-align: center;
   padding: 50px;
-  height: 70vh;
+  height: auto;
+  position: relative;
 
   .temoignage-photo {
     border: 6px solid #fff;
@@ -19,6 +20,9 @@
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 15px;
+    position: absolute;
+    top: -75px;
+    transform: translateX(75px);
   }
 
   .temoignage-nom {
@@ -41,11 +45,27 @@
 
   .temoignage-texte {
     margin: 0 auto;
-    width: 500px;
+    width: 70vw;
     padding: 10px;
     text-align: center;
     font-size: 17px;
     font-style: italic;
     line-height: 32px;
   }
+}
+
+.swiper-slide {
+  padding-top: 120px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: variables.$bleu !important;
+  border: 3px solid white;
+  width: 1rem;
+  height: 1rem;
+}
+
+.swiper-pagination-bullet {
+  background-color: #fff;
+  opacity: 100;
 }

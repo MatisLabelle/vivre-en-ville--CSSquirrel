@@ -51,8 +51,9 @@ footer {
 }
 
 .email-footer {
-  margin-left: 5%;
-  margin-bottom: 0;
+  position: relative;
+  right: 0;
+  left: 80%;
 }
 
 @media screen and (min-width: 800px) {
@@ -66,6 +67,10 @@ footer {
 
   .ville-footer {
     font-size: 36px;
+  }
+
+  .footer__donner {
+    top: -50px !important;
   }
 }
 
@@ -95,8 +100,8 @@ a {
   padding-bottom: 10px;
   margin: 5rem;
   margin-top: 10%;
-  right: 5%;
-  top: 0;
+  right: 0;
+  top: -20px;
   position: absolute;
   font-family: "Schibsted Grotesk";
 }
@@ -110,4 +115,5 @@ a {
 
 .partenaire {
   margin-bottom: 20px;
+  left: 0;
 }

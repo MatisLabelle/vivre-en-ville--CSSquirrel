@@ -1,0 +1,24 @@
+@use "variables.scss";
+@use "mixins.scss";
+
+.actu {
+  &__date {
+    margin-left: 5vw;
+    border-left: solid 100px variables.$orange;
+    padding-left: 10px;
+  }
+  &__title {
+    color: variables.$orange;
+    font-size: 24px;
+    margin: 10px 5%;
+  }
+
+  &__img {
+    width: 90vw;
+  }
+
+  &__post {
+    margin: 0 5vw;
+    width: 90vw;
+  }
+}

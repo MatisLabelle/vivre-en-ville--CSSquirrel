@@ -5,13 +5,13 @@
 
 .titre-news {
   position: absolute;
+  left: 10%;
+  top: 40px;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: var(--icon-color, #fff);
   /* Contour blanc */
   color: transparent;
   /* Remplissage transparent */
-  top: 10px;
-  left: 100px;
   transform: translate(-5%, -10%);
   z-index: 1;
   font-size: 64px;
@@ -21,9 +21,10 @@
 .voir-plus {
   display: inline-block;
   position: absolute;
-  top: 30px;
-  right: 100px;
-  font-size: 19px;
+  bottom: 30px;
+  right: 5%;
+  margin: auto;
+  font-size: 20px;
   text-decoration: underline;
   color: white;
   font-weight: bold;
@@ -43,11 +44,11 @@
 .news-section {
   display: grid;
   margin: 0 auto;
-  margin-bottom: 10%;
   grid-template-columns: repeat(3, 1fr);
   width: 100vw;
   gap: 50px;
   padding: 80px;
+  padding-top: 120px;
   background-color: variables.$vert;
   position: relative;
 }

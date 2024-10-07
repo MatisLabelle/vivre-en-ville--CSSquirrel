@@ -9,7 +9,8 @@
 @use "partials-scss/nouvelles";
 @use "partials-scss/temoignanes";
 @use "partials-scss/services";
-
+@use "partials-scss/li-news";
+@use "partials-scss/actu";
 
 html,
 body {
@@ -24,15 +25,15 @@ body {
   margin-left: 5rem;
 }
 
-.mr-5rem{
+.mr-5rem {
   margin-right: 5rem;
 }
 
-.mx-5rem{
+.mx-5rem {
   margin-left: 5rem;
   margin-right: 5rem;
 }
 
 * {
-  font-family: "Schibsted Grotesk";;
+  font-family: "Schibsted Grotesk";
 }

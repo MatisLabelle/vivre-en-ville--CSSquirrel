@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSSquirrel - Vivre en ville</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <!--La NAV BAR-->
+      <!-- Top Bar Section -->
+      <div class="pt-2 mx-3rem">
+        <div
+          class="container-fluid d-flex justify-content-between align-items-center d-none d-md-block flex-row-reverse p-0"
+        >
+          <div class="d-flex flex-row-reverse topbar">
+            <a href="#" class="topbar ps-2">English</a>
+            <a href="#" class="topbar px-2">Recherche</a>
+            <a href="#" class="topbar pe-2">S'abonner</a>
+          </div>
+        </div>
+
+        <!-- Main Navbar -->
+        <nav
+          class="navbar navbar-expand-lg navbar-light navbar-expand-md md-light"
+        >
+          <div class="container-fluid p-0">
+            <a class="navbar-brand" href="#">
+              <img
+                src="/sources/medias/images/LOGO.png"
+                alt="logo navbar"
+                style="height: 50px"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link apropos" href="#">À Propos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link actualites" href="#">Actualités</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link services" href="#">Nos services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link engager" href="#">S’engager</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link ressources" href="#">Ressources</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-lg-none d-md-none" href="#">S'abonner</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-lg-none d-md-none" href="#">Recherche</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-lg-none d-md-none" href="#">English</a>
+                </li>
+                <li class="nav-item">
+                  <!-- Bouton donner -->
+                  <div class="d-flex">
+                    <a href="#" class="btn btn-donner-custom ml-20 rounded-pill"
+                      >Donner</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!--
+             <h1>CSSquirrel</h1>
+        <h2>Vivre en ville</h2>
+        <p>Lien vers le site de vivre en ville: https://vivreenville.org/</p>
+        <p>
+          Lien vers notre github:
+          https://github.com/MatisLabelle/vivre-en-ville--CSSquirrel/new/main
+        </p>
+        -->
+    </header>
+    <main>
+      <div class="chemin">
+        <a href="index.html">Acceuil </a>>
+        <a href="liste-nouvelle.html"> Actualités</a>
+      </div>
+
+      <h1 class="news__title">Actualités</h1>
+      <div class="news__grid">
+        <div class="news__list">
+          <div class="news__card">
+            <div class="card__content">
+              <h3 class="card__title">Stratégie québécoise en habitation</h3>
+              <p class="card__text">
+                Vivre en Ville accueille avec intérêt la Stratégie québécoise en
+                habitation dévoilée cet après-midi par la ministre France-Élaine
+                Duranceau. En déployant une action interministérielle, le
+                gouvernement du Québec reconnaît pour une première fois
+                l’envergure du problème et l’importance de considérer une
+                diversité de facteurs à l’origine de la crise de l’habitation.
+                Cela dit, la cible nationale de mises en chantier et les moyens
+                annoncés témoignent d’une timidité étonnante.
+              </p>
+              <p class="card__info">22 août 2024</p>
+            </div>
+            <img
+              class="card__img"
+              src="sources/medias/images/images-news-1.png"
+              alt=""
+            />
+          </div>
+          <div class="news__card">
+            <div class="card__content">
+              <h3 class="card__title">
+                Événement de la rentrée 2024 à Montréal et à Québec
+              </h3>
+              <p class="card__text">
+                Vivre en Ville vous invite à un 5 à 7 festif pour souligner la
+                rentrée et dévoiler notre programmation annuelle! Que ce soit
+                pour retrouver votre réseau professionnel ou pour rencontrer les
+                membres de notre équipe, rejoignez-nous autour d'un verre et de
+                quelques bouchées. Nous avons hâte de vous (re)voir!
+              </p>
+              <p class="card__info">13 août 2024</p>
+            </div>
+            <img
+              class="card__img"
+              src="sources/medias/images/images-news-1.png"
+              alt=""
+            />
+          </div>
+          <div class="news__card">
+            <div class="card__content">
+              <h3 class="card__title">
+                Étude Léger sur le marché résidentiel locatif
+              </h3>
+              <p class="card__text">
+                Pour une deuxième année consécutive, Vivre en Ville a mandaté
+                Léger afin de conduire une importante étude sur l’état du marché
+                locatif dans l’ensemble du Québec. Il s’agit, avec l’édition de
+                2023, de la plus grande étude de ce genre à être réalisée sur le
+                marché locatif au Québec. Les premiers résultats propres au
+                territoire montréalais sont aujourd’hui rendus publics en
+                partenariat avec la Ville de Montréal et témoignent de la
+                détérioration de la situation en habitation, ainsi que de la
+                pertinence de données précises et annualisées pour suivre
+                l’évolution du marché résidentiel.
+              </p>
+              <p class="card__info">10 juillet 2024</p>
+            </div>
+            <img
+              class="card__img"
+              src="sources/medias/images/images-news-1.png"
+              alt=""
+            />
+          </div>
+          <div class="news__card">
+            <div class="card__content">
+              <h3 class="card__title">
+                Appui fédéral au projet de tramway à Gatineau
+              </h3>
+              <p class="card__text">
+                Environmental Defence, Équiterre, la Fondation David Suzuki,
+                Trajectoire Québec et Vivre en Ville se réjouissent de la
+                décision du gouvernement fédéral d’appuyer le projet de tramway
+                entre l'ouest de Gatineau et le centre-ville d'Ottawa en
+                investissant dans la planification du projet. Alors que le
+                développement des transports collectifs a été ralenti en raison
+                de la pandémie, les organisations appellent maintenant à une
+                réalisation efficace du projet.
+              </p>
+              <p class="card__info">27 juin 2024</p>
+            </div>
+            <img
+              class="card__img"
+              src="sources/medias/images/images-news-1.png"
+              alt=""
+            />
+          </div>
+          <p class="news__pages">
+            <span>Précedent</span> 1 2 3 4 5 <span>Suivant</span>
+          </p>
+        </div>
+        <div class="news__archives">
+          <h2 class="archive__title">Archives</h2>
+          <ul class="archive__year">
+            <li>
+              2024
+              <ul class="archive__month">
+                <li>Septembre</li>
+                <li>Août</li>
+                <li>Juillet</li>
+                <li>Juin</li>
+                <li>May</li>
+                <li>Avril</li>
+                <li>Mars</li>
+                <li>Février</li>
+                <li>Janvier</li>
+              </ul>
+            </li>
+            <li>2023</li>
+            <li>2022</li>
+            <li>2021</li>
+            <li>2020</li>
+            <li>2019</li>
+            <li>2018</li>
+            <li>2017</li>
+            <li>2016</li>
+            <li>2015</li>
+            <li>2014</li>
+            <li>2013</li>
+          </ul>
+          <p class="archive__more">Voir plus</p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <img class="logo-footer" src="sources/medias/images/LOGO.png" />
+      <button class="footer__donner">Donner</button>
+      <h3 class="h3-footer">Nous Joindre</h3>
+      <div class="grid-footer">
+        <div class="mtl">
+          <h3 class="ville-footer">Montréal</h3>
+          <p class="p-footer">Maison du développement durable</p>
+          <a href="https://maps.app.goo.gl/VWFogEsZZv9bmNpG8">
+            <p class="p-footer">
+              50, rue Ste-Catherine Ouest, bur. 480 Montréal (Québec) H2X 3V4
+            </p>
+          </a>
+          <p class="p-footer">T. (514) 394-1125</p>
+        </div>
+        <div class="quebec">
+          <h3 class="ville-footer">Québec</h3>
+          <p class="p-footer">Centre culture et environnement Frédéric Back</p>
+          <a href="https://maps.app.goo.gl/3ccr8rJZNoKu5q2o7">
+            <p class="p-footer">
+              870, avenue De Salaberry, bureau 311 Québec (Québec) G1R 2T9
+            </p>
+          </a>
+          <p class="p-footer">T. (418) 522-0011</p>
+        </div>
+        <div class="gatineau">
+          <h3 class="ville-footer">Gatineau</h3>
+          <a href="https://maps.app.goo.gl/dPfhjC2F64kHWYtJ9">
+            <p class="p-footer">
+              200-A, boulevard Saint-Joseph Gatineau (Québec) J8Y 3W9
+            </p>
+          </a>
+          <p class="p-footer">T. (819) 205-2053</p>
+        </div>
+      </div>
+      <div class="partenaire">
+        <h3 class="partenaire-footer">Nos partenaire</h3>
+        <div class="grid-footer__partenaire">
+          <a href="https://carrefour.vivreenville.org/">
+            <img
+              class="logo-footer"
+              src="sources/medias/images/carrefour.png"
+              alt="carrefour de vivre en ville"
+            />
+          </a>
+
+          <a href="https://montreal.ca/en/">
+            <img
+              class="logo-footer"
+              src="sources/medias/images/Logo_Montréal.svg.png"
+              alt="Ville de Montréal"
+            />
+          </a>
+          <a href="https://www.ville.quebec.qc.ca/">
+            <img
+              class="logo-footer"
+              src="sources/medias/images/Quebec_City.svg.png"
+              alt="Ville de Québec"
+            />
+          </a>
+          <a
+            href="https://www.gatineau.ca/portail/default.aspx?c=en-CA&p=guichet_municipal"
+          >
+            <img
+              class="logo-footer"
+              src="sources/medias/images/800px-Logo_Gatineau.svg.webp"
+              alt="Ville de Gatineau"
+            />
+          </a>
+        </div>
+      </div>
+      <img class="email-footer" src="sources/medias/images/Mail.png" />
+      <p id="copyright-footer" class="p-footer">
+        @2024 Vivre en ville, CSSquirrel
+      </p>
+    </footer>
+  </body>
+</html>

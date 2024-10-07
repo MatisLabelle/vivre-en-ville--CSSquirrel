@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSSquirrel - Vivre en ville</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <!--La NAV BAR-->
+      <!-- Top Bar Section -->
+      <div class="pt-2 mx-3rem">
+        <div
+          class="container-fluid d-flex justify-content-between align-items-center d-none d-md-block flex-row-reverse p-0"
+        >
+          <div class="d-flex flex-row-reverse topbar">
+            <a href="#" class="topbar ps-2">English</a>
+            <a href="#" class="topbar px-2">Recherche</a>
+            <a href="#" class="topbar pe-2">S'abonner</a>
+          </div>
+        </div>
+
+        <!-- Main Navbar -->
+        <nav
+          class="navbar navbar-expand-lg navbar-light navbar-expand-md md-light"
+        >
+          <div class="container-fluid p-0">
+            <a class="navbar-brand" href="#">
+              <img
+                src="/sources/medias/images/LOGO.png"
+                alt="logo navbar"
+                style="height: 50px"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link apropos" href="#">À Propos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link actualites" href="#">Actualités</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link services" href="#">Nos services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link engager" href="#">S’engager</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link ressources" href="#">Ressources</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-lg-none d-md-none" href="#">S'abonner</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-lg-none d-md-none" href="#">Recherche</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-lg-none d-md-none" href="#">English</a>
+                </li>
+                <li class="nav-item">
+                  <!-- Bouton donner -->
+                  <div class="d-flex">
+                    <a href="#" class="btn btn-donner-custom ml-20 rounded-pill"
+                      >Donner</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!--
+             <h1>CSSquirrel</h1>
+        <h2>Vivre en ville</h2>
+        <p>Lien vers le site de vivre en ville: https://vivreenville.org/</p>
+        <p>
+          Lien vers notre github:
+          https://github.com/MatisLabelle/vivre-en-ville--CSSquirrel/new/main
+        </p>
+        -->
+    </header>
+    <main>
+      <div class="chemin">
+        <a href="index.html">Acceuil </a>>
+        <a href="liste-nouvelle.html"> Actualités </a>>
+        <a href="nouvelle.html"> Communiqué</a>
+      </div>
+      <div class="actu__date">22 août 2024</div>
+      <h1 class="actu__title">
+        Stratégie québécoise en habitation: Québec reconnaît la crise, mais
+        sous-utilise les outils à sa disposition
+      </h1>
+      <div class="actu__grid">
+        <div class="actu__post">
+          <img
+            class="actu__img"
+            src="sources/medias/images/images-news-1.png"
+          />
+          <p class="actu__credit">PHOTO PEXEL</p>
+          <h2 class="actu__info"></h2>
+          <div class="actu__more">Québec, le 22 août 2024</div>
+          <p class="actu__text">
+            Vivre en Ville accueille avec intérêt la Stratégie québécoise en
+            habitation dévoilée cet après-midi par la ministre France-Élaine
+            Duranceau. En déployant une action interministérielle, le
+            gouvernement du Québec reconnaît pour une première fois l’envergure
+            du problème et l’importance de considérer une diversité de facteurs
+            à l’origine de la crise de l’habitation. Cela dit, la cible
+            nationale de mises en chantier et les moyens annoncés témoignent
+            d’une timidité étonnante.
+          </p>
+          <h3 class="actu__sous-titre">
+            Une cible, mais beaucoup de questions en suspens
+          </h3>
+          <p class="actu__text">
+            Vivre en Ville salue l’adoption d’une cible nationale de
+            construction d’unités d’habitation, mais comme plusieurs acteurs du
+            milieu de l’habitation, considère que le nombre de 560 000 d’ici
+            2034 est tout à fait insuffisant. Il s’agit de moins de la moitié de
+            la recommandation du groupe de travail pour l’Habitation et le
+            Climat, avec un échéancier plus long. La cible de logements à but
+            non lucratif apparaît quant à elle en dessous de ce qui serait
+            requis pour rééquilibrer les forces du marché.
+            <br />
+            De plus, bien que Vivre en Ville apprécie que le gouvernement
+            reconnaisse l’importance de mobiliser les outils d’urbanisme pour
+            faire face à la crise de l’habitation, l’organisation note que la
+            conformité de la planification régionale avec l’objectif national de
+            mise en chantier n’est pas exigée. <br />
+            Le gouvernement devra certes accompagner les MRC dans l’évaluation
+            des besoins, mais aussi exiger que la planification territoriale
+            s’inscrive en cohérence avec ceux-ci (et avec la cible nationale),
+            sans quoi il demeurera possible de planifier une sous-production de
+            logements. Il faudra reconnaître, le plus rapidement possible, que
+            le gouvernement national a une responsabilité de leadership en
+            habitation qu’il ne peut pas déléguer. Tout le monde qui habite au
+            Québec habite au Québec, et c’est donc l’échelle conséquente pour
+            uniformiser et dynamiser le contexte dans lequel la construction
+            résidentielle a lieu. <br />
+            « Nous avons enfin une cible de mise en chantier, voilà un pas
+            important qui deviendra assurément un précédent. Bravo! Reste que
+            beaucoup de questions demeurent en suspens. La cible est
+            insuffisante et les moyens pour l'atteindre ne semblent pas être au
+            rendez-vous. On s’en remet beaucoup aux municipalités, qui ont
+            certainement un rôle à jouer, mais des moyens fiscaux et financiers
+            très limités et d’importants défis, en matière d’infrastructures
+            notamment. Les efforts risquent d’être lacunaires et disparates
+            d’une région à l’autre » déclare Christian Savard, directeur général
+            de Vivre en Ville.
+          </p>
+          <h3 class="actu__sous-titre">Une stratégie multisectorielle</h3>
+          <p class="actu__text">
+            Vivre en Ville tient néanmoins à souligner qu’un des mérites de la
+            Stratégie est qu’il s’agit d’un véritable plan d’action
+            interministériel, qui dépasse nettement le domaine d’intervention de
+            la Société d’Habitation du Québec (SHQ).
+            <br />
+            Cette reconnaissance nouvelle de la part du gouvernement est
+            prometteuse et correspond à une des principales prémisses de «
+            Portes ouvertes: vers une sortie de crise en habitation ». Vivre en
+            Ville constate certaines actions liées à chacun des quatre grands
+            chantiers à mener simultanément en habitation:
+          </p>
+          <ul>
+            <li>
+              Construire plus que la demande, près des emplois, des transports
+              et des services
+            </li>
+            <li>Protéger la population des excès du marché immobilier</li>
+            <li>Construire une abondance de logements à but non lucratif</li>
+            <li>Réapprendre à construire efficacement et durablement</li>
+            <p class="actu__text">
+              À titre d'exemple, l’intention de miser sur la modélisation
+              numérique pour accroître la productivité est une mesure porteuse
+              dont le potentiel gagnera à être déployé au cours des prochaines
+              années.
+              <br />
+              Néanmoins, Vivre en Ville considère que trop peu est fait pour
+              s’attaquer au problème de la spéculation. En effet, les mesures de
+              préservation du parc existant seront insuffisantes sans un
+              registre des loyers et d’autres mesures pour faire appliquer les
+              lois exceptionnelles que nous avons déjà au Québec - celles qui
+              ont historiquement protégé le Québec des crises dévastatrices qui
+              font des ravages dans le Canada anglais, et qui doivent servir de
+              fer de lance pour la préservation du parc existant.
+            </p>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <img class="logo-footer" src="sources/medias/images/LOGO.png" />
+      <button class="footer__donner">Donner</button>
+      <h3 class="h3-footer">Nous Joindre</h3>
+      <div class="grid-footer">
+        <div class="mtl">
+          <h3 class="ville-footer">Montréal</h3>
+          <p class="p-footer">Maison du développement durable</p>
+          <a href="https://maps.app.goo.gl/VWFogEsZZv9bmNpG8">
+            <p class="p-footer">
+              50, rue Ste-Catherine Ouest, bur. 480 Montréal (Québec) H2X 3V4
+            </p>
+          </a>
+          <p class="p-footer">T. (514) 394-1125</p>
+        </div>
+        <div class="quebec">
+          <h3 class="ville-footer">Québec</h3>
+          <p class="p-footer">Centre culture et environnement Frédéric Back</p>
+          <a href="https://maps.app.goo.gl/3ccr8rJZNoKu5q2o7">
+            <p class="p-footer">
+              870, avenue De Salaberry, bureau 311 Québec (Québec) G1R 2T9
+            </p>
+          </a>
+          <p class="p-footer">T. (418) 522-0011</p>
+        </div>
+        <div class="gatineau">
+          <h3 class="ville-footer">Gatineau</h3>
+          <a href="https://maps.app.goo.gl/dPfhjC2F64kHWYtJ9">
+            <p class="p-footer">
+              200-A, boulevard Saint-Joseph Gatineau (Québec) J8Y 3W9
+            </p>
+          </a>
+          <p class="p-footer">T. (819) 205-2053</p>
+        </div>
+      </div>
+      <div class="partenaire">
+        <h3 class="partenaire-footer">Nos partenaire</h3>
+        <div class="grid-footer__partenaire">
+          <a href="https://carrefour.vivreenville.org/">
+            <img
+              class="logo-footer"
+              src="sources/medias/images/carrefour.png"
+              alt="carrefour de vivre en ville"
+            />
+          </a>
+
+          <a href="https://montreal.ca/en/">
+            <img
+              class="logo-footer"
+              src="sources/medias/images/Logo_Montréal.svg.png"
+              alt="Ville de Montréal"
+            />
+          </a>
+          <a href="https://www.ville.quebec.qc.ca/">
+            <img
+              class="logo-footer"
+              src="sources/medias/images/Quebec_City.svg.png"
+              alt="Ville de Québec"
+            />
+          </a>
+          <a
+            href="https://www.gatineau.ca/portail/default.aspx?c=en-CA&p=guichet_municipal"
+          >
+            <img
+              class="logo-footer"
+              src="sources/medias/images/800px-Logo_Gatineau.svg.webp"
+              alt="Ville de Gatineau"
+            />
+          </a>
+        </div>
+      </div>
+      <img class="email-footer" src="sources/medias/images/Mail.png" />
+      <p id="copyright-footer" class="p-footer">
+        @2024 Vivre en ville, CSSquirrel
+      </p>
+    </footer>
+  </body>
+</html>
