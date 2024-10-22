@@ -895,6 +895,7 @@ a {
   right: 0;
   margin: 5vw;
   padding-left: 10px;
+  padding-bottom: 0;
   border-left: #fbab1a 5px solid;
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -923,8 +924,9 @@ a {
 .archive__more {
   color: white;
   position: absolute;
-  bottom: 0px;
+  bottom: 5px;
   right: 20px;
+  margin: 0;
 }
 
 .card__img {
@@ -938,21 +940,24 @@ a {
   margin: 0 auto;
 }
 .card__title {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
   margin-top: 5px;
 }
 .card__text {
   font-size: 12px;
-  height: 25%;
+  height: 10vh;
   overflow: hidden;
+  padding-right: 5px;
 }
 .card__info {
+  font-size: 14px;
   bottom: 0;
   position: absolute;
+  margin: 0;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
   .chemin {
     margin: 20px;
     margin-left: 10vw;
@@ -984,6 +989,13 @@ a {
   .archive__month {
     display: block;
   }
+  .card__title {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .card__info {
+    font-size: 18px;
+  }
 }
 .actu__date {
   margin-left: 5vw;
@@ -998,11 +1010,215 @@ a {
 .actu__img {
   width: 90vw;
 }
+.actu__credit {
+  font-size: 12px;
+}
+.actu__info {
+  font-size: 24px;
+}
 .actu__post {
   margin: 0 5vw;
   width: 90vw;
 }
+.actu__sous-titre {
+  font-weight: 600;
+  font-size: 18px;
+}
+.actu__text {
+  font-size: 20px;
+}
+.actu__auteur {
+  margin: 5px;
+  padding: 5px;
+  border-left: solid 5px #fbab1a;
+  font-size: 10px;
+}
+.actu__auteur-info {
+  font-size: 12px;
+  margin: 0;
+}
+.actu__auteur-name {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fbab1a;
+  margin: 0;
+}
+.actu__nav {
+  margin: 5%;
+  width: 90vw;
+  padding-bottom: 10px;
+  position: relative;
+  z-index: 5;
+}
+.actu__last {
+  position: absolute;
+  left: 0;
+}
+.actu__next {
+  position: absolute;
+  right: 0;
+}
+.actu__more {
+  background-color: #fbab1a;
+  position: relative;
+  padding: 5%;
+}
+.actu__alike {
+  color: white;
+  font-size: 24px;
+}
+.actu__plus {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.actu__plus--1 {
+  width: 28vw;
+  height: 30vw;
+  background-image: url(../photos/images-news-2.png);
+  background-size: cover;
+}
+.actu__plus--1::before {
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  content: "Projet de loi 61 créant mobilité infra Québec";
+  position: absolute;
+  width: 28vw;
+  height: 30vw;
+  background-color: rgba(251, 171, 26, 0.5);
+  padding: 5px;
+}
+.actu__plus--2 {
+  width: 28vw;
+  height: 30vw;
+  background-image: url(../photos/images-news-3.png);
+  background-size: cover;
+}
+.actu__plus--2::before {
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  content: "Évènement de la rentrée";
+  position: absolute;
+  width: 28vw;
+  height: 30vw;
+  background-color: rgba(251, 171, 26, 0.5);
+  padding: 5px;
+}
+.actu__plus--3 {
+  width: 28vw;
+  height: 30vw;
+  background-image: url(../photos/images-news-4.png);
+  background-size: cover;
+}
+.actu__plus--3::before {
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  content: "Futur hôpital de l’Outaouais";
+  position: absolute;
+  width: 28vw;
+  height: 30vw;
+  background-color: rgba(251, 171, 26, 0.5);
+  padding: 5px;
+}
+.actu__donner {
+  display: none;
+}
+.actu__help {
+  display: none;
+}
 
+@media screen and (min-width: 768px) {
+  .actu__grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 0px;
+    width: 100%;
+  }
+  .actu__post {
+    width: 90%;
+    margin-right: 0;
+  }
+  .actu__img {
+    width: 100%;
+  }
+  .actu__more {
+    width: 90%;
+    background-color: white;
+  }
+  .actu__alike {
+    background-color: #fbab1a;
+    padding: 5%;
+    width: 101%;
+    font-size: 36px;
+    font-weight: 700;
+  }
+  .actu__plus {
+    flex-direction: column;
+    padding: 0;
+    justify-content: space-between;
+  }
+  .actu__plus--1 {
+    width: 100%;
+    height: 15vw;
+    margin-bottom: 5px;
+  }
+  .actu__plus--1::before {
+    width: 90%;
+    height: 15vw;
+    font-size: 24px;
+  }
+  .actu__plus--2 {
+    width: 100%;
+    height: 10vw;
+    margin-bottom: 5px;
+  }
+  .actu__plus--2::before {
+    width: 90%;
+    height: 10vw;
+    font-size: 24px;
+  }
+  .actu__plus--3 {
+    width: 100%;
+    height: 10vw;
+    margin-bottom: 5px;
+  }
+  .actu__plus--3::before {
+    width: 90%;
+    height: 10vw;
+    font-size: 24px;
+  }
+  .actu__cta {
+    background-color: #fbab1a;
+    text-align: center;
+    padding: 5%;
+  }
+  .actu__donner {
+    display: block;
+    background-color: white;
+    border: 3px white solid;
+    border-radius: 50px;
+    padding: 5% 10%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: #fbab1a;
+    border: solid 3px;
+  }
+  .actu__donner:hover {
+    background-color: #fbab1a;
+    border-color: white;
+    border: solid 3px;
+    color: white;
+  }
+  .actu__help {
+    display: block;
+    color: white;
+    font-size: 36px;
+  }
+}
 html,
 body {
   margin: 0;
