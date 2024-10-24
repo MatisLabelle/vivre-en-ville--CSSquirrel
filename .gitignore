@@ -1,6 +1,7 @@
 wp-admin/
 wp-includes
-index.php
+/index.php
+/**index.php
 license.txt
 wp-activate.php
 wp-blog-header.php
