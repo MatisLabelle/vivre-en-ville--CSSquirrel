@@ -1,42 +1,77 @@
 @use "variables.scss";
 @use "mixins.scss";
 
-$text-color: $vert;
-
-body {
-  background-color: $orange;
-}
-
 .mainbox {
   margin: auto;
   height: 600px;
   width: 600px;
   position: relative;
+
+  @include respond-to('md') {
+    width: 100%;
+    height: 400px;
+  }
 }
 
 .err,
 .err2,
 .far {
-  color: $text-color;
+  color: $vert;
   position: absolute;
 }
 
 .err {
   font-size: 11rem;
   left: 20%;
-  top: 8%;
+  top: 5%;
+
+  @include respond-to('md') {
+    font-size: 8rem;
+    left: 10%;
+    top: 10%;
+  }
+
+  @include respond-to('sm') {
+    font-size: 6rem;
+    left: 5%;
+    top: 15%;
+  }
 }
 
 .far {
   font-size: 8.5rem;
   left: 42%;
   top: 15%;
+
+  @include respond-to('md') {
+    font-size: 6rem;
+    left: 35%;
+    top: 20%;
+  }
+
+  @include respond-to('sm') {
+    font-size: 4rem;
+    left: 30%;
+    top: 25%;
+  }
 }
 
 .err2 {
   font-size: 11rem;
   left: 68%;
-  top: 8%;
+  top: 5%;
+
+  @include respond-to('md') {
+    font-size: 8rem;
+    left: 55%;
+    top: 10%;
+  }
+
+  @include respond-to('sm') {
+    font-size: 6rem;
+    left: 45%;
+    top: 15%;
+  }
 }
 
 .msg {
@@ -46,11 +81,25 @@ body {
   left: 16%;
   top: 45%;
   width: 75%;
+
+  @include respond-to('md') {
+    font-size: 1.4rem;
+    top: 55%;
+    left: 10%;
+    width: 80%;
+  }
+
+  @include respond-to('sm') {
+    font-size: 1.2rem;
+    top: 60%;
+    left: 5%;
+    width: 90%;
+  }
 }
 
 a {
   text-decoration: none;
-  color: $vert;
+  color: $jaune;
 
   &:hover {
     text-decoration: underline;
