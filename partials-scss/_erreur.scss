@@ -1,13 +1,13 @@
-$background-color: #95c2de;
-$text-color: #ffffff;
-$font-family: 'Nunito Sans', sans-serif;
+@use "variables.scss";
+@use "mixins.scss";
+
+$text-color: $vert;
 
 body {
-  background-color: $background-color;
+  background-color: $orange;
 }
 
 .mainbox {
-  background-color: $background-color;
   margin: auto;
   height: 600px;
   width: 600px;
@@ -18,7 +18,6 @@ body {
 .err2,
 .far {
   color: $text-color;
-  font-family: $font-family;
   position: absolute;
 }
 
@@ -42,7 +41,6 @@ body {
 
 .msg {
   text-align: center;
-  font-family: $font-family;
   font-size: 1.6rem;
   position: absolute;
   left: 16%;
@@ -52,7 +50,7 @@ body {
 
 a {
   text-decoration: none;
-  color: $text-color;
+  color: $vert;
 
   &:hover {
     text-decoration: underline;
