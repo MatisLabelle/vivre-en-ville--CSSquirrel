@@ -24,15 +24,21 @@ ScrollTrigger.refresh();
 
 // Accordeon
 
-// Toujours 1 accordeon ouvert
-const accordionInputs = document.querySelectorAll(".services__input");
+var acc = document.getElementsByClassName("accordion__button");
+var i;
 
-accordionInputs.forEach((input) => {
-  input.addEventListener("change", () => {
-    accordionInputs.forEach((i) => {
-      if (i !== input) {
-        i.checked = false;
-      }
-    });
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
   });
-});
+} 

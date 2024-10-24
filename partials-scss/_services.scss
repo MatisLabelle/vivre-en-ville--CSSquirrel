@@ -1,8 +1,93 @@
 @use "mixins.scss";
 @use "variables.scss";
 
-$text-padding: 25px;
 
+
+.section__services {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  padding: 0 10%;
+  padding-top: 96px;
+  padding-bottom: 96px;
+
+
+  h2 {
+    color: variables.$orange;
+    font-size: 96px;
+    font-weight: bold;
+  }
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 16px;
+
+  &__button {
+    display: flexbox;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+    border: none;
+    outline: none;
+    //transition: 0.4s;
+    color: white;
+    background-color: variables.$orange;
+    font-size: 48px;
+    border-radius: 8px;
+    padding: 24px;
+    font-weight: bold;
+  }
+
+  &__button.active {
+    border-bottom-left-radius: 0px; /* Adjust as needed */
+    border-bottom-right-radius: 0px; /* Adjust as needed */
+  }
+
+  &__panel {
+    background-color: variables.$orange;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 24px;
+    overflow: hidden;
+    display: none;
+
+  }
+
+  &__text {
+    color: white;
+    font-size: 32px;
+  }
+
+  &__bouton {
+    border-radius: 40px;
+    padding: 12px 24px;
+    color: variables.$orange;
+    background-color: white;
+    border: solid white 4px;
+    font-size: 32px;
+    margin-top: 48px;
+  }
+
+  span:after {
+    content: '\02795';
+  }
+
+  span:after.active {
+    content: '\2796';
+  }
+
+
+}
+
+
+
+
+
+
+
+/*
 .section__services {
   padding-top: 96px;
   padding-bottom: 96px;
@@ -262,3 +347,4 @@ $text-padding: 25px;
     }
   }
 }
+*/
