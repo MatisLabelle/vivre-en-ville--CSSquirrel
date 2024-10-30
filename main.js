@@ -22,19 +22,22 @@ gsap
 
 ScrollTrigger.refresh();
 
-// Accordeon
+// Accordion
 
-// Toujours 1 accordeon ouvert
-const accordionInputs = document.querySelectorAll(".services__input");
+var acc = document.getElementsByClassName("accordion__button");
 
-accordionInputs.forEach((input) => {
-  input.addEventListener("change", () => {
-    accordionInputs.forEach((i) => {
-      if (i !== input) {
-        i.checked = false;
-      }
-    });
+for (let i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+
+    // Toggle between hiding and showing the active panel
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+      this.querySelector(".accordion__icon").textContent = "+"; // Change to plus when closed
+    } else {
+      panel.style.display = "block";
+      this.querySelector(".accordion__icon").textContent = "−"; // Change to minus when open
+    }
   });
-});
-
-
+}
