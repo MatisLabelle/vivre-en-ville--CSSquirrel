@@ -22,23 +22,22 @@ gsap
 
 ScrollTrigger.refresh();
 
-// Accordeon
+// Accordion
 
 var acc = document.getElementsByClassName("accordion__button");
-var i;
 
-for (i = 0; i < acc.length; i++) {
+for (let i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
     this.classList.toggle("active");
 
-    /* Toggle between hiding and showing the active panel */
+    // Toggle between hiding and showing the active panel
     var panel = this.nextElementSibling;
     if (panel.style.display === "block") {
       panel.style.display = "none";
+      this.querySelector(".accordion__icon").textContent = "+"; // Change to plus when closed
     } else {
       panel.style.display = "block";
+      this.querySelector(".accordion__icon").textContent = "−"; // Change to minus when open
     }
   });
-} 
+}
