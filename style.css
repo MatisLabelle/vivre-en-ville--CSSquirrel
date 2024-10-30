@@ -649,22 +649,20 @@ a {
 }
 
 .section__services {
-  padding-top: 96px;
-  padding-bottom: 96px;
-  padding: 0 10%;
-  padding-top: 96px;
-  padding-bottom: 96px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 .section__services h2 {
   color: #fbab1a;
-  font-size: 96px;
+  font-size: 40px;
   font-weight: bold;
+  padding: 0 5%;
 }
 
 .accordion {
   display: flex;
   flex-direction: column;
-  padding-bottom: 16px;
+  padding-bottom: 8px;
   transition: scale 0.3s ease;
 }
 .accordion__button {
@@ -677,38 +675,36 @@ a {
   outline: none;
   color: white;
   background-color: #fbab1a;
-  font-size: 48px;
-  border-radius: 8px;
+  font-size: 24px;
   padding: 24px;
   font-weight: bold;
 }
-.accordion__button.active {
-  border-bottom-left-radius: 0px; /* Adjust as needed */
-  border-bottom-right-radius: 0px; /* Adjust as needed */
-}
 .accordion__panel {
   background-color: #fbab1a;
-  border-bottom-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  padding: 24px;
+  padding: 0 24px;
   overflow: hidden;
   display: none;
+  padding-bottom: 24px;
 }
 .accordion__text {
   color: white;
-  font-size: 32px;
+  font-size: 16px;
+  margin: 0;
 }
 .accordion__bouton {
   border-radius: 40px;
-  padding: 12px 24px;
   color: #fbab1a;
   background-color: white;
   border: solid white 4px;
-  font-size: 32px;
-  margin-top: 48px;
+  font-size: 20px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  padding: 0px 12px;
 }
 
-.accordion:nth-of-type(1) .accordion__button, .accordion:nth-of-type(1) .accordion__panel {
+.accordion:nth-of-type(1) .accordion__button,
+.accordion:nth-of-type(1) .accordion__panel {
   background-color: #fbab1a;
 }
 .accordion:nth-of-type(1) .accordion__bouton {
@@ -720,7 +716,8 @@ a {
   background-color: #fbab1a;
 }
 
-.accordion:nth-of-type(2) .accordion__button, .accordion:nth-of-type(2) .accordion__panel {
+.accordion:nth-of-type(2) .accordion__button,
+.accordion:nth-of-type(2) .accordion__panel {
   background-color: #fecf07;
 }
 .accordion:nth-of-type(2) .accordion__bouton {
@@ -732,7 +729,8 @@ a {
   background-color: #fecf07;
 }
 
-.accordion:nth-of-type(3) .accordion__button, .accordion:nth-of-type(3) .accordion__panel {
+.accordion:nth-of-type(3) .accordion__button,
+.accordion:nth-of-type(3) .accordion__panel {
   background-color: #aad039;
 }
 .accordion:nth-of-type(3) .accordion__bouton {
@@ -744,7 +742,8 @@ a {
   background-color: #aad039;
 }
 
-.accordion:nth-of-type(4) .accordion__button, .accordion:nth-of-type(4) .accordion__panel {
+.accordion:nth-of-type(4) .accordion__button,
+.accordion:nth-of-type(4) .accordion__panel {
   background-color: #afe0ee;
 }
 .accordion:nth-of-type(4) .accordion__bouton {
@@ -756,10 +755,68 @@ a {
   background-color: #afe0ee;
 }
 
-.accordion:hover {
-  scale: 1.01;
+@media screen and (min-width: 768px) {
+  .section__services {
+    padding: 0 10%;
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .section__services h2 {
+    color: #fbab1a;
+    font-size: 96px;
+    font-weight: bold;
+    padding: 0;
+  }
+  .accordion {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 16px;
+    transition: scale 0.3s ease;
+  }
+  .accordion__button {
+    display: flexbox;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #fbab1a;
+    font-size: 48px;
+    border-radius: 8px;
+    padding: 24px;
+    font-weight: bold;
+  }
+  .accordion__button.active {
+    border-bottom-left-radius: 0px; /* Adjust as needed */
+    border-bottom-right-radius: 0px; /* Adjust as needed */
+  }
+  .accordion__panel {
+    background-color: #fbab1a;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 24px;
+    overflow: hidden;
+    display: none;
+  }
+  .accordion__text {
+    color: white;
+    font-size: 32px;
+  }
+  .accordion__bouton {
+    border-radius: 40px;
+    padding: 12px 24px;
+    color: #fbab1a;
+    background-color: white;
+    border: solid white 4px;
+    font-size: 32px;
+    margin-top: 48px;
+  }
+  .accordion:hover {
+    scale: 1.01;
+  }
 }
-
 .chemin {
   margin: 5%;
 }

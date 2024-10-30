@@ -1,27 +1,22 @@
 @use "mixins.scss";
 @use "variables.scss";
 
-
-
 .section__services {
-  padding-top: 96px;
-  padding-bottom: 96px;
-  padding: 0 10%;
-  padding-top: 96px;
-  padding-bottom: 96px;
-
+  padding-top: 48px;
+  padding-bottom: 48px;
 
   h2 {
     color: variables.$orange;
-    font-size: 96px;
+    font-size: 40px;
     font-weight: bold;
+    padding: 0 5%;
   }
 }
 
 .accordion {
   display: flex;
   flex-direction: column;
-  padding-bottom: 16px;
+  padding-bottom: 8px;
   transition: scale 0.3s ease;
 
   &__button {
@@ -32,70 +27,63 @@
     justify-content: space-between;
     border: none;
     outline: none;
-    //transition: 0.4s;
     color: white;
     background-color: variables.$orange;
-    font-size: 48px;
-    border-radius: 8px;
+    font-size: 24px;
     padding: 24px;
     font-weight: bold;
   }
 
-  &__button.active {
-    border-bottom-left-radius: 0px; /* Adjust as needed */
-    border-bottom-right-radius: 0px; /* Adjust as needed */
-  }
-
   &__panel {
     background-color: variables.$orange;
-    border-bottom-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    padding: 24px;
+    padding: 0 24px;
     overflow: hidden;
     display: none;
-
+    padding-bottom: 24px;
   }
 
   &__text {
     color: white;
-    font-size: 32px;
+    font-size: 16px;
+    margin: 0;
   }
 
   &__bouton {
     border-radius: 40px;
-    padding: 12px 24px;
     color: variables.$orange;
     background-color: white;
     border: solid white 4px;
-    font-size: 32px;
-    margin-top: 48px;
+    font-size: 20px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0px 12px;
   }
 }
 
-
-
 .accordion:nth-of-type(1) {
-  .accordion__button, .accordion__panel {
+  .accordion__button,
+  .accordion__panel {
     background-color: variables.$orange;
   }
   .accordion__bouton {
     color: variables.$orange;
-    transition: background-color, 0.2s ease,;
+    transition: background-color, 0.2s ease;
   }
   .accordion__bouton:hover {
     color: white;
     background-color: variables.$orange;
   }
-
 }
 
 .accordion:nth-of-type(2) {
-  .accordion__button, .accordion__panel {
+  .accordion__button,
+  .accordion__panel {
     background-color: variables.$jaune;
   }
   .accordion__bouton {
     color: variables.$jaune;
-    transition: background-color, 0.2s ease,;
+    transition: background-color, 0.2s ease;
   }
   .accordion__bouton:hover {
     color: white;
@@ -104,38 +92,103 @@
 }
 
 .accordion:nth-of-type(3) {
-  .accordion__button, .accordion__panel {
+  .accordion__button,
+  .accordion__panel {
     background-color: variables.$vert;
   }
   .accordion__bouton {
     color: variables.$vert;
-    transition: background-color, 0.2s ease,;
+    transition: background-color, 0.2s ease;
   }
   .accordion__bouton:hover {
     color: white;
     background-color: variables.$vert;
   }
-
 }
 
 .accordion:nth-of-type(4) {
-  .accordion__button, .accordion__panel {
+  .accordion__button,
+  .accordion__panel {
     background-color: variables.$bleu;
   }
   .accordion__bouton {
     color: variables.$bleu;
-    transition: background-color, 0.2s ease,;
+    transition: background-color, 0.2s ease;
   }
   .accordion__bouton:hover {
     color: white;
     background-color: variables.$bleu;
   }
-
 }
 
-.accordion:hover {
-  scale: 1.01;
+@media screen and (min-width: 768px) {
+  .section__services {
+    padding: 0 10%;
+    padding-top: 96px;
+    padding-bottom: 96px;
+
+    h2 {
+      color: variables.$orange;
+      font-size: 96px;
+      font-weight: bold;
+      padding: 0;
+    }
+  }
+
+  .accordion {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 16px;
+    transition: scale 0.3s ease;
+
+    &__button {
+      display: flexbox;
+      display: flex;
+      flex-direction: row;
+      text-align: left;
+      justify-content: space-between;
+      border: none;
+      outline: none;
+      //transition: 0.4s;
+      color: white;
+      background-color: variables.$orange;
+      font-size: 48px;
+      border-radius: 8px;
+      padding: 24px;
+      font-weight: bold;
+    }
+
+    &__button.active {
+      border-bottom-left-radius: 0px; /* Adjust as needed */
+      border-bottom-right-radius: 0px; /* Adjust as needed */
+    }
+
+    &__panel {
+      background-color: variables.$orange;
+      border-bottom-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+      padding: 24px;
+      overflow: hidden;
+      display: none;
+    }
+
+    &__text {
+      color: white;
+      font-size: 32px;
+    }
+
+    &__bouton {
+      border-radius: 40px;
+      padding: 12px 24px;
+      color: variables.$orange;
+      background-color: white;
+      border: solid white 4px;
+      font-size: 32px;
+      margin-top: 48px;
+    }
+  }
+
+  .accordion:hover {
+    scale: 1.01;
+  }
 }
-
-
-
