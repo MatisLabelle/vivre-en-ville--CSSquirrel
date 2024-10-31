@@ -1,0 +1,124 @@
+@use "mixins.scss";
+@use "variables.scss";
+
+section.services_hub {
+  padding: 5% 10%;
+  padding-top: 2%;
+
+  h1 {
+    color: variables.$orange;
+    font-size: 96px;
+  }
+
+  .breadcrumb {
+    margin: 0;
+    height: auto;
+
+    a {
+      color: black;
+      text-decoration: none;
+      margin: 0;
+      align-items: center;
+      display: flex;
+    }
+    p {
+      margin: 0;
+      align-items: center;
+      display: flex;
+    }
+  }
+
+  .presentation p {
+    font-size: 28px;
+    margin-bottom: 32px;
+
+    #recherches {
+      color: variables.$orange;
+      font-weight: bold;
+    }
+    #formation {
+      color: variables.$jaune;
+      font-weight: bold;
+    }
+    #sensibilisation {
+      color: variables.$bleu;
+      font-weight: bold;
+    }
+    #conseil {
+      color: variables.$vert;
+      font-weight: bold;
+    }
+  }
+}
+
+.service {
+  background-color: variables.$orange;
+  padding: 24px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+
+  &__title {
+    font-size: 36px;
+    color: white;
+    font-weight: bold;
+  }
+
+  &__text {
+    color: white;
+    font-size: 20px;
+  }
+
+  &__button {
+    margin-top: 20px;
+    padding: 8px 20px;
+    border: solid white;
+    border-radius: 40px;
+    background-color: white;
+    font-size: 24px;
+  }
+}
+
+.service.recherche {
+  background-color: variables.$orange;
+  button {
+    color: variables.$orange;
+    transition: background-color, color 0.3s ease;
+  }
+  button:hover {
+    background-color: variables.$orange;
+    color: white;
+  }
+}
+.service.formation {
+  background-color: variables.$jaune;
+  button {
+    color: variables.$jaune;
+    transition: background-color, color 0.3s ease;
+  }
+  button:hover {
+    background-color: variables.$jaune;
+    color: white;
+  }
+}
+.service.conseil {
+  background-color: variables.$vert;
+  button {
+    color: variables.$vert;
+    transition: background-color, color 0.3s ease;
+  }
+  button:hover {
+    background-color: variables.$vert;
+    color: white;
+  }
+}
+.service.sensibilisation {
+  background-color: variables.$bleu;
+  button {
+    color: variables.$bleu;
+    transition: background-color, color 0.3s ease;
+  }
+  button:hover {
+    background-color: variables.$bleu;
+    color: white;
+  }
+}
