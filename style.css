@@ -659,6 +659,10 @@ a {
   padding: 0 5%;
 }
 
+.services__titre a {
+  color: #fbab1a;
+}
+
 .accordion {
   display: flex;
   flex-direction: column;
