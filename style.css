@@ -1231,6 +1231,114 @@ a:hover {
   border-radius: 50%;
 }
 
+section.services_hub {
+  padding: 5% 10%;
+}
+section.services_hub h1 {
+  color: #fbab1a;
+  font-size: 96px;
+}
+section.services_hub .breadcrumb {
+  margin: 0;
+  height: auto;
+}
+section.services_hub .breadcrumb a {
+  color: black;
+  text-decoration: none;
+}
+section.services_hub .presentation p {
+  font-size: 28px;
+  margin-bottom: 32px;
+}
+section.services_hub .presentation p #recherches {
+  color: #fbab1a;
+  font-weight: bold;
+}
+section.services_hub .presentation p #formation {
+  color: #fecf07;
+  font-weight: bold;
+}
+section.services_hub .presentation p #sensibilisation {
+  color: #afe0ee;
+  font-weight: bold;
+}
+section.services_hub .presentation p #conseil {
+  color: #aad039;
+  font-weight: bold;
+}
+
+.service {
+  background-color: #fbab1a;
+  padding: 24px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+.service__title {
+  font-size: 36px;
+  color: white;
+  font-weight: bold;
+}
+.service__text {
+  color: white;
+  font-size: 20px;
+}
+.service__button {
+  margin-top: 20px;
+  padding: 8px 20px;
+  border: solid white;
+  border-radius: 40px;
+  background-color: white;
+  font-size: 24px;
+}
+
+.service.recherche {
+  background-color: #fbab1a;
+}
+.service.recherche button {
+  color: #fbab1a;
+  transition: background-color, color 0.3s ease;
+}
+.service.recherche button:hover {
+  background-color: #fbab1a;
+  color: white;
+}
+
+.service.formation {
+  background-color: #fecf07;
+}
+.service.formation button {
+  color: #fecf07;
+  transition: background-color, color 0.3s ease;
+}
+.service.formation button:hover {
+  background-color: #fecf07;
+  color: white;
+}
+
+.service.conseil {
+  background-color: #aad039;
+}
+.service.conseil button {
+  color: #aad039;
+  transition: background-color, color 0.3s ease;
+}
+.service.conseil button:hover {
+  background-color: #aad039;
+  color: white;
+}
+
+.service.sensibilisation {
+  background-color: #afe0ee;
+}
+.service.sensibilisation button {
+  color: #afe0ee;
+  transition: background-color, color 0.3s ease;
+}
+.service.sensibilisation button:hover {
+  background-color: #afe0ee;
+  color: white;
+}
+
 html,
 body {
   margin: 0;
