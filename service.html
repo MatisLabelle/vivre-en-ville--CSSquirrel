@@ -1,186 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSSquirrel - Vivre en ville</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <!--La NAV BAR-->
-      <!-- Top Bar Section -->
-      <div class="pt-2 mx-3rem">
-        <div
-          class="container-fluid d-flex justify-content-between align-items-center d-none d-md-block flex-row-reverse p-0"
-        >
-          <div class="d-flex flex-row-reverse topbar">
-            <a href="#" class="topbar ps-2">English</a>
-            <a href="#" class="topbar px-2">Recherche</a>
-            <a href="#" class="topbar pe-2">S'abonner</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSSquirrel - Vivre en ville</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <!--La NAV BAR-->
+    <!-- Top Bar Section -->
+    <div class="pt-2 mx-3rem">
+      <div
+        class="container-fluid d-flex justify-content-between align-items-center d-none d-md-block flex-row-reverse p-0">
+        <div class="d-flex flex-row-reverse topbar">
+          <a href="#" class="topbar ps-2">English</a>
+          <a href="#" class="topbar px-2">Recherche</a>
+          <a href="#" class="topbar pe-2">S'abonner</a>
+        </div>
+      </div>
+
+      <!------- NAVBAR ------->
+      <nav class="navbar navbar-expand-lg navbar-light navbar-expand-md md-light">
+        <div class="container-fluid p-0">
+          <a class="navbar-brand" href="#">
+            <img src="/photos/LOGO.png" alt="logo navbar" style="height: 50px" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link apropos" href="#">À Propos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link actualites" href="#">Actualités</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link services" href="#">Nos services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link engager" href="#">S’engager</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link ressources" href="#">Ressources</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-lg-none d-md-none" href="#">S'abonner</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-lg-none d-md-none" href="#">Recherche</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-lg-none d-md-none" href="#">English</a>
+              </li>
+              <li class="nav-item">
+                <!-- Bouton donner -->
+                <div class="d-flex">
+                  <a href="#" class="btn btn-donner-custom ml-20 rounded-pill">Donner</a>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
+      </nav>
+    </div>
+  </header>
 
-        <!-- Main Navbar -->
-        <nav
-          class="navbar navbar-expand-lg navbar-light navbar-expand-md md-light"
-        >
-          <div class="container-fluid p-0">
-            <a class="navbar-brand" href="#">
-              <img
-                src="/photos/LOGO.png"
-                alt="logo navbar"
-                style="height: 50px"
-              />
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                  <a class="nav-link apropos" href="#">À Propos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link actualites" href="#">Actualités</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link services" href="#">Nos services</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link engager" href="#">S’engager</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link ressources" href="#">Ressources</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link d-lg-none d-md-none" href="#">S'abonner</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link d-lg-none d-md-none" href="#">Recherche</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link d-lg-none d-md-none" href="#">English</a>
-                </li>
-                <li class="nav-item">
-                  <!-- Bouton donner -->
-                  <div class="d-flex">
-                    <a href="#" class="btn btn-donner-custom ml-20 rounded-pill"
-                      >Donner</a
-                    >
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
-
-      <!--
-             <h1>CSSquirrel</h1>
-        <h2>Vivre en ville</h2>
-        <p>Lien vers le site de vivre en ville: https://vivreenville.org/</p>
-        <p>
-          Lien vers notre github:
-          https://github.com/MatisLabelle/vivre-en-ville--CSSquirrel/new/main
-        </p>
-        -->
-    </header>
-    <main></main>
-    <footer>
-      <img class="logo-footer" src="photos/LOGO.png" />
-      <button class="footer__donner">Donner</button>
-      <h3 class="h3-footer">Nous Joindre</h3>
-      <div class="grid-footer">
-        <div class="mtl">
-          <h3 class="ville-footer">Montréal</h3>
-          <p class="p-footer">Maison du développement durable</p>
-          <a href="https://maps.app.goo.gl/VWFogEsZZv9bmNpG8">
-            <p class="p-footer">
-              50, rue Ste-Catherine Ouest, bur. 480 Montréal (Québec) H2X 3V4
-            </p>
-          </a>
-          <p class="p-footer">T. (514) 394-1125</p>
+  <main>
+    <section class="recherche">
+      <div class="breadcrumb"><a href="index.html">Accueil&nbsp;</a><p>>&nbsp;</p><a href="services-hub.html">Nos services&nbsp;</a><p>>&nbsp;</p><a href="service.html">Recherche et innovation</a></div>
+      <h1 class="recherche__title">Recherche et innovation</h1>
+      <h2 class="recherche__subTitle">Développer les connaissances</h2>
+      <p class="recherche__text">Pour diffuser auprès des intervenants québécois les meilleurs exemples de développement
+        de collectivités viables, Vivre en Ville mène depuis 20 ans des recherches approfondies dans ce domaine. Une
+        veille scientifique permanente, des missions de recherche au Québec et à l’international, la rencontre d’experts
+        de domaines variés, la participation à de nombreux colloques et conférences ont permis à son équipe de
+        développer une vision intégrée et des connaissances pointues sur les différents aspects du développement viable
+        des collectivités.</p>
+      <div class="recherche__section">
+        <div class="bloc-1">
+          <h3 class="recherche__miniTitle">Recherches en cours</h3>
+          <p class="recherche__text">De nombreux thèmes sont abordés dans le cadre de notre travail en raison de leur
+            pertinence et de leur actualité dans le contexte québécois. Voici quelques-uns des domaines de recherche qui
+            occupent l'équipe en ce moment :</p>
+          <ul class="recherche__list">
+            <li>le contrôle de l’étalement urbain,</li>
+            <li>l’aménagement de milieux de vie de qualité,</li>
+            <li>le déploiement d’une offre de mobilité durable,</li>
+            <li>le climat et le mode de développement urbain,</li>
+            <li>le lien entre environnement bâti et santé,</li>
+            <li>les petites et moyennes collectivités,</li>
+            <li>la localisation des activités,</li>
+            <li>les questions sociales et la participation citoyenne, etc.</li>
+          </ul>
         </div>
-        <div class="quebec">
-          <h3 class="ville-footer">Québec</h3>
-          <p class="p-footer">Centre culture et environnement Frédéric Back</p>
-          <a href="https://maps.app.goo.gl/3ccr8rJZNoKu5q2o7">
-            <p class="p-footer">
-              870, avenue De Salaberry, bureau 311 Québec (Québec) G1R 2T9
-            </p>
-          </a>
-          <p class="p-footer">T. (418) 522-0011</p>
+        <div class="bloc-2">
+          <h3 class="recherche__miniTitle">Missions de recherche</h3>
+          <p class="recherche__text">L'équipe de Vivre en Ville effectue fréquemment des missions de recherche. Ces dernières sont destinées à étudier des exemples et pratiques ailleurs dans le monde afin d'alimenter la réflexion et de pouvoir transmettre ces connaissances aux acteurs québécois.</p>
         </div>
-        <div class="gatineau">
-          <h3 class="ville-footer">Gatineau</h3>
-          <a href="https://maps.app.goo.gl/dPfhjC2F64kHWYtJ9">
-            <p class="p-footer">
-              200-A, boulevard Saint-Joseph Gatineau (Québec) J8Y 3W9
-            </p>
-          </a>
-          <p class="p-footer">T. (819) 205-2053</p>
+        <div class="bloc-3">
+          <img src="photos/image_service.jpg" alt="image_service">
         </div>
       </div>
-      <div class="partenaire">
-        <h3 class="partenaire-footer">Nos partenaire</h3>
-        <div class="grid-footer__partenaire">
-          <a href="https://carrefour.vivreenville.org/">
-            <img
-              class="logo-footer"
-              src="photos/carrefour.png"
-              alt="carrefour de vivre en ville"
-            />
-          </a>
+      <p class="recherche__text">Consultez les <a href="#" class="textLink">réalisations</a> de Vivre en Ville ou les <a href="#" class="textLink">interventions par thématiques</a>.</p>
+      <h2 class="recherche__subTitle">Innover sur le terrain</h2>
+      <p class="recherche__text">À la fine pointe de la connaissance, Vivre en Ville met ses recherches à profit dans le cadre de projets pilotes afin de stimuler l’émergence de nombreux projets innovants. Inspirées des meilleures pratiques, nos idées prennent vie en partenariat avec des acteurs motivés.</p>
+      <h3 class="recherche__miniTitle">Nos projets pilotes</h3>
+      <ul>
+        <li>Végétalisation du <a href="#" class="textLink">Centre culture et environnement Frédéric Back &#8599;</a></li>
+        <li><a href="#" class="textLink">Verdir un milieu de vie</a> : Cœur vaillant</li>
+        <li>Mise en place des centres de gestion des déplacements de la Capitale Nationale et de l’Outaouais (<a href="#" class="textLink">Mobili-T &#8599;</a> et <a href="#" class="textLink">MOBI-O &#8599;</a>)</li>
+        <li><a href="#" class="textLink">Aménager des milieux de vie favorables à un vieillissement en santé</a></li>
+      </ul>
+    </section>
+  </main>
 
-          <a href="https://montreal.ca/en/">
-            <img
-              class="logo-footer"
-              src="photos/Logo_Montréal.svg.png"
-              alt="Ville de Montréal"
-            />
-          </a>
-          <a href="https://www.ville.quebec.qc.ca/">
-            <img
-              class="logo-footer"
-              src="photos/Quebec_City.svg.png"
-              alt="Ville de Québec"
-            />
-          </a>
-          <a
-            href="https://www.gatineau.ca/portail/default.aspx?c=en-CA&p=guichet_municipal"
-          >
-            <img
-              class="logo-footer"
-              src="photos/800px-Logo_Gatineau.svg.webp"
-              alt="Ville de Gatineau"
-            />
-          </a>
-        </div>
+  <!------- FOOTER ------->
+  <footer>
+    <img class="logo-footer" src="photos/LOGO.png" />
+    <button class="footer__donner">Donner</button>
+    <h3 class="h3-footer">Nous Joindre</h3>
+    <div class="grid-footer">
+      <div class="mtl">
+        <h3 class="ville-footer">Montréal</h3>
+        <p class="p-footer">Maison du développement durable</p>
+        <a href="https://maps.app.goo.gl/VWFogEsZZv9bmNpG8">
+          <p class="p-footer">
+            50, rue Ste-Catherine Ouest, bur. 480 Montréal (Québec) H2X 3V4
+          </p>
+        </a>
+        <p class="p-footer">T. (514) 394-1125</p>
       </div>
-      <img class="email-footer" src="photos/Mail.png" />
-      <p id="copyright-footer" class="p-footer">
-        @2024 Vivre en ville, CSSquirrel
-      </p>
-    </footer>
-  </body>
+      <div class="quebec">
+        <h3 class="ville-footer">Québec</h3>
+        <p class="p-footer">Centre culture et environnement Frédéric Back</p>
+        <a href="https://maps.app.goo.gl/3ccr8rJZNoKu5q2o7">
+          <p class="p-footer">
+            870, avenue De Salaberry, bureau 311 Québec (Québec) G1R 2T9
+          </p>
+        </a>
+        <p class="p-footer">T. (418) 522-0011</p>
+      </div>
+      <div class="gatineau">
+        <h3 class="ville-footer">Gatineau</h3>
+        <a href="https://maps.app.goo.gl/dPfhjC2F64kHWYtJ9">
+          <p class="p-footer">
+            200-A, boulevard Saint-Joseph Gatineau (Québec) J8Y 3W9
+          </p>
+        </a>
+        <p class="p-footer">T. (819) 205-2053</p>
+      </div>
+    </div>
+    <div class="partenaire">
+      <h3 class="partenaire-footer">Nos partenaire</h3>
+      <div class="grid-footer__partenaire">
+        <a href="https://carrefour.vivreenville.org/">
+          <img class="logo-footer" src="photos/carrefour.png" alt="carrefour de vivre en ville" />
+        </a>
+
+        <a href="https://montreal.ca/en/">
+          <img class="logo-footer" src="photos/Logo_Montréal.svg.png" alt="Ville de Montréal" />
+        </a>
+        <a href="https://www.ville.quebec.qc.ca/">
+          <img class="logo-footer" src="photos/Quebec_City.svg.png" alt="Ville de Québec" />
+        </a>
+        <a href="https://www.gatineau.ca/portail/default.aspx?c=en-CA&p=guichet_municipal">
+          <img class="logo-footer" src="photos/800px-Logo_Gatineau.svg.webp" alt="Ville de Gatineau" />
+        </a>
+      </div>
+    </div>
+    <img class="email-footer" src="photos/Mail.png" />
+    <p id="copyright-footer" class="p-footer">
+      @2024 Vivre en ville, CSSquirrel
+    </p>
+  </footer>
+</body>
+
 </html>
