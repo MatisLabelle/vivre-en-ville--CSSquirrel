@@ -1,8 +1,38 @@
 @use "variables.scss";
 @use "mixins.scss";
 
-.about__title {
-  margin: 5px;
-  padding: 5px;
-  border-left: solid 5px variables.$orange;
+.about {
+  &__title {
+    margin: 0 5vw;
+    padding: 5px;
+    color: variables.$orange;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 5vw;
+    row-gap: 5vw;
+    column-gap: 5%;
+  }
+}
+
+.mission {
+  background-color: variables.$bleu;
+  padding: 5%;
+  height: fit-content;
+  border-radius: 20px;
+}
+
+.approche {
+  background-color: variables.$jaune;
+  padding: 5%;
+  height: fit-content;
+  border-radius: 20px;
+}
+
+.histoire {
+  background-color: variables.$vert;
+  padding: 5%;
+  height: fit-content;
+  border-radius: 20px;
 }

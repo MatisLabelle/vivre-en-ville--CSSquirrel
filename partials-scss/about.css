@@ -36,7 +36,39 @@ p {
 
 /****** MARGINS ******/
 .about__title {
-  margin: 5px;
+  margin: 0 5vw;
   padding: 5px;
-  border-left: solid 5px #fbab1a;
+  color: #fbab1a;
+}
+.about__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 5vw;
+  row-gap: 5vw;
+  -moz-column-gap: 5%;
+       column-gap: 5%;
+}
+
+.mission {
+  background-color: #afe0ee;
+  padding: 5%;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 20px;
+}
+
+.approche {
+  background-color: #fecf07;
+  padding: 5%;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 20px;
+}
+
+.histoire {
+  background-color: #aad039;
+  padding: 5%;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 20px;
 }/*# sourceMappingURL=about.css.map */
