@@ -11,19 +11,22 @@
 
 
 .mainbox {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   padding: auto;
   margin: auto;
   height: 50vh;
   width: 100%;
   max-width: 600px;
   position: relative;
-  border: 2px solid red;
 }
 
 .err,
 .err2,
 .far {
   color: variables.$vert;
+
   font-size: 10vmin;
 }
 
@@ -44,15 +47,11 @@
   text-align: center;
 }
 
-
 .msg {
-  text-align: center;
-  font-size: 1.2rem;
-  width: 80%;
+  margin-top: 5vh;
 }
 
 a {
-  font-size: 5vmin;
   text-decoration: none;
   color: variables.$jaune;
 
