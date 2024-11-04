@@ -43,6 +43,21 @@
     grid-template-columns: 3fr 1fr;
     height: 20vh;
     position: relative;
+
+    &--1 {
+      height: 30vh;
+
+      & img {
+        max-height: 30vh;
+      }
+      & h3 {
+        font-size: 30px;
+      }
+      & .card__text {
+        font-size: 16px;
+        height: 20vh;
+      }
+    }
   }
   &__pages {
     text-align: center;

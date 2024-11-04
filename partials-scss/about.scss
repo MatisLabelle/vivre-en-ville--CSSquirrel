@@ -1,0 +1,8 @@
+@use "variables.scss";
+@use "mixins.scss";
+
+.about__title {
+  margin: 5px;
+  padding: 5px;
+  border-left: solid 5px variables.$orange;
+}
