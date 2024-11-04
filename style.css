@@ -1499,6 +1499,12 @@ section.recherche .breadcrumb p {
   color: #fbab1a;
 }
 
+.about__title {
+  margin: 5px;
+  padding: 5px;
+  border-left: solid 5px #fbab1a;
+}
+
 html,
 body {
   margin: 0;
