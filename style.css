@@ -45,7 +45,8 @@ a.btn.btn-donner-custom {
   padding-left: 20px;
   padding-right: 20px;
   margin: 0;
-  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
 }
 
 a.btn.btn-donner-custom:hover {
@@ -98,7 +99,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   -moz-column-gap: 10%;
-       column-gap: 10%;
+  column-gap: 10%;
   row-gap: 5%;
 }
 
@@ -528,7 +529,7 @@ a {
   width: 100%;
   height: 200px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .news-content {
@@ -601,7 +602,7 @@ a {
   height: 150px;
   border-radius: 50%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin-bottom: 15px;
   position: absolute;
   top: -75px;
@@ -905,7 +906,7 @@ a {
   height: 100%;
   max-height: 20vh;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -1488,7 +1489,7 @@ section.recherche .breadcrumb p {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -1510,7 +1511,7 @@ section.recherche .breadcrumb p {
   padding: 5vw;
   row-gap: 5vw;
   -moz-column-gap: 5%;
-       column-gap: 5%;
+  column-gap: 5%;
 }
 
 .mission {
@@ -1560,4 +1561,4 @@ body {
 
 * {
   font-family: "Schibsted Grotesk";
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
