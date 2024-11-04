@@ -42,11 +42,17 @@ p {
 }
 .about__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 90vw));
   padding: 5vw;
   row-gap: 5vw;
   -moz-column-gap: 5%;
        column-gap: 5%;
+}
+.about__chemin {
+  margin: 0 5vw;
+}
+.about__chemin > a {
+  color: black;
 }
 
 .mission {
@@ -55,6 +61,10 @@ p {
   height: -moz-fit-content;
   height: fit-content;
   border-radius: 20px;
+}
+.mission__alt {
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .approche {
@@ -71,4 +81,13 @@ p {
   height: -moz-fit-content;
   height: fit-content;
   border-radius: 20px;
+}
+.histoire__question {
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .mission__text {
+    font-size: 24px;
+  }
 }/*# sourceMappingURL=about.css.map */
