@@ -45,8 +45,7 @@ a.btn.btn-donner-custom {
   padding-left: 20px;
   padding-right: 20px;
   margin: 0;
-  transition: background-color 0.3s ease, color 0.3s ease,
-    border-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 a.btn.btn-donner-custom:hover {
@@ -99,7 +98,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   -moz-column-gap: 10%;
-  column-gap: 10%;
+       column-gap: 10%;
   row-gap: 5%;
 }
 
@@ -529,7 +528,7 @@ a {
   width: 100%;
   height: 200px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .news-content {
@@ -602,7 +601,7 @@ a {
   height: 150px;
   border-radius: 50%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   margin-bottom: 15px;
   position: absolute;
   top: -75px;
@@ -868,11 +867,10 @@ a {
   max-height: 30vh;
 }
 .news__card--1 h3 {
-  font-size: 30px;
+  font-size: 20px;
 }
 .news__card--1 .card__text {
-  font-size: 16px;
-  height: 20vh;
+  height: 18vh;
 }
 .news__pages {
   text-align: center;
@@ -906,7 +904,7 @@ a {
   height: 100%;
   max-height: 20vh;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -967,6 +965,9 @@ a {
   }
   .card__info {
     font-size: 18px;
+  }
+  .card__text {
+    font-size: 16px;
   }
 }
 .actu__date {
@@ -1489,7 +1490,7 @@ section.recherche .breadcrumb p {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -1507,11 +1508,17 @@ section.recherche .breadcrumb p {
 }
 .about__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 90vw));
   padding: 5vw;
   row-gap: 5vw;
   -moz-column-gap: 5%;
-  column-gap: 5%;
+       column-gap: 5%;
+}
+.about__chemin {
+  margin: 0 5vw;
+}
+.about__chemin > a {
+  color: black;
 }
 
 .mission {
@@ -1520,6 +1527,10 @@ section.recherche .breadcrumb p {
   height: -moz-fit-content;
   height: fit-content;
   border-radius: 20px;
+}
+.mission__alt {
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .approche {
@@ -1537,7 +1548,15 @@ section.recherche .breadcrumb p {
   height: fit-content;
   border-radius: 20px;
 }
+.histoire__question {
+  font-size: 18px;
+}
 
+@media (max-width: 768px) {
+  .mission__text {
+    font-size: 24px;
+  }
+}
 html,
 body {
   margin: 0;
@@ -1561,4 +1580,4 @@ body {
 
 * {
   font-family: "Schibsted Grotesk";
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
