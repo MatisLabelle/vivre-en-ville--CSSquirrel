@@ -1,12 +1,13 @@
 @use "variables.scss";
 @use "mixins.scss";
 
+/* Mise en page de base */
 .mainbox {
   margin: auto;
-  height: 600px;
-  width: 600px;
+  height: 50vh;
+  width: 80vw;
+  max-width: 600px;
   position: relative;
-
 }
 
 .err,
@@ -16,32 +17,38 @@
   position: absolute;
 }
 
-.err {
-  font-size: 11rem;
-  left: 20%;
-  top: 5%;
+.err,
+.err2 {
+  color: variables.$orange;
+  position: absolute;
+}
 
+.err {
+  font-size: 10vw;
+  left: 19%;
+  top: 3%;
 }
 
 .far {
-  font-size: 8.5rem;
-  left: 42%;
+  font-size: 8vw;
+  left: 39%;
   top: 15%;
 }
 
 .err2 {
-  font-size: 11rem;
-  left: 68%;
-  top: 5%;
+  font-size: 10vw;
+  left: 63%;
+  top: 3%;
 }
 
 .msg {
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
+  /* Réduction de la taille pour mobiles */
   position: absolute;
-  left: 16%;
-  top: 45%;
-  width: 75%;
+  left: 10%;
+  top: 50%;
+  width: 80%;
 }
 
 a {
@@ -53,12 +60,50 @@ a {
   }
 }
 
-#null-object,
-#p0-null-object,
-#p1-null-object {
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  background-color: rgba(136, 14, 79, 0);
-  border-radius: 50%;
+
+/* Responsive design avec mixin respond-to */
+@include mixins.respond-to('md') {
+  .mainbox {
+    width: 90vw;
+    height: 50vh;
+  }
+
+  .err,
+  .err2 {
+    font-size: 6rem;
+  }
+
+  .far {
+    font-size: 5rem;
+    left: 35%;
+    top: 10%;
+  }
+
+  .msg {
+    font-size: 1rem;
+    top: 55%;
+    width: 85%;
+    left: 7%;
+  }
+}
+
+@include mixins.respond-to('sm') {
+
+  .err,
+  .err2 {
+    font-size: 4rem;
+    top: 10%;
+  }
+
+  .far {
+    font-size: 3rem;
+    left: 38%;
+    top: 15%;
+  }
+
+  .msg {
+    font-size: 0.9rem;
+    width: 90%;
+    left: 5%;
+  }
 }
