@@ -1,7 +1,8 @@
 @use "variables.scss";
 @use "mixins.scss";
 
-.container {
+.boxcontact {
+    background-color: red($color: #000000);
     max-width: 800px; // Largeur maximum du conteneur
     margin: 0 auto; // Centre le conteneur
     padding: 20px;
