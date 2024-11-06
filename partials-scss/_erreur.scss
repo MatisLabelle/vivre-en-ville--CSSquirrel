@@ -3,9 +3,8 @@
 
 /* Mise en page de base */
 .erreur {
-  //padding: 10vh;
   display: flex;
-  height: 100%;
+  height: 80vh;
   width: 100vw;
 }
 
@@ -27,13 +26,13 @@
 .far {
   color: variables.$vert;
 
-  font-size: 10vmin;
+  font-size: 15vmin;
 }
 
 .err,
 .err2 {
   color: variables.$orange;
-  font-size: 10vw;
+  font-size: 15vw;
 
 }
 
