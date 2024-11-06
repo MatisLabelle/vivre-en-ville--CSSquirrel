@@ -1195,7 +1195,7 @@ a {
 /* Mise en page de base */
 .erreur {
   display: flex;
-  height: 100vh;
+  height: 80vh;
   width: 100vw;
 }
 
@@ -1215,7 +1215,6 @@ a {
 .err2,
 .far {
   color: #aad039;
-  font-size: 15vmin;
 }
 
 .err,
@@ -1225,7 +1224,7 @@ a {
 }
 
 .far {
-  font-size: 8vw;
+  font-size: 12vw;
 }
 
 .titre404 {
@@ -1241,6 +1240,7 @@ a {
   color: #fecf07;
 }
 a:hover {
+  color: #aad039;
   text-decoration: underline;
 }
 
