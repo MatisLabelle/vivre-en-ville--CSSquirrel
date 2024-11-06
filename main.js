@@ -27,7 +27,7 @@ ScrollTrigger.refresh();
 var acc = document.getElementsByClassName("accordion__button");
 
 for (let i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
+  acc[i].addEventListener("click", function () {
     this.classList.toggle("active");
 
     // Toggle between hiding and showing the active panel
@@ -41,3 +41,13 @@ for (let i = 0; i < acc.length; i++) {
     }
   });
 }
+
+// NAVBAR
+
+const burgerMenu = document.querySelector(".burger-menu");
+const navbarNav = document.querySelector(".navbar-nav");
+
+burgerMenu.addEventListener("click", () => {
+  navbarNav.classList.toggle("open"); // Toggle visibility of the nav links
+  burgerMenu.classList.toggle("active"); // Optional: add a class for styling active state
+});

@@ -20,6 +20,21 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  overflow-x: hidden;
+}
+
+header {
+  padding: 0 10%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+main {
+  margin-top: 10%;
 }
 
 /*---------- STYLES GENERAUX ----------*/
