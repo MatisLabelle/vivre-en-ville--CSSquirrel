@@ -824,6 +824,7 @@ a {
 }
 .chemin {
   margin: 5%;
+  font-size: 16px;
 }
 .chemin > a {
   color: black;
