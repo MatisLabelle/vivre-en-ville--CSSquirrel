@@ -1232,18 +1232,39 @@ a {
 }
 
 .msg {
-  margin-top: 5vh;
+  margin: 0 auto;
+  font-size: 25px;
+  font-weight: 600;
+  transition: transform 0.3s ease-in-out;
+  display: inline-block;
 }
-
-a {
+.msg:hover {
+  animation: bounce 0.5s ease-in-out forwards;
+}
+.msg a {
   text-decoration: none;
   color: #fecf07;
+  transition: color 0.3s ease;
 }
-a:hover {
+.msg a:hover {
   color: #aad039;
   text-decoration: underline;
 }
 
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  70% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
 @media (max-width: 768px) {
   .mainbox {
     height: 50vh;
@@ -1550,13 +1571,82 @@ section.recherche .breadcrumb p {
   }
 }
 .boxcontact {
-  background-color: 0;
-  max-width: 800px;
+  padding: 100px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/photos/building.jpg");
+  z-index: 999;
+  width: 100%;
+}
+.boxcontact .contact-form {
   margin: 0 auto;
+  max-width: 400px;
   padding: 20px;
-  border: 1px solid red;
+  background-color: #fefefe;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.boxcontact .contact-form h2 {
+  padding: 5% 0;
+  color: #fbab1a;
+  font-size: 35px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
+.boxcontact .contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+.boxcontact .contact-form label {
+  margin-bottom: 8px;
+}
+.boxcontact .contact-form input,
+.boxcontact .contact-form textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+.boxcontact .contact-form button {
+  margin: 0 auto;
+  padding: 10px 30px;
+  margin-top: 10px;
+  background-color: #fbab1a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.boxcontact .contact-form button:hover {
+  background-color: #aad039;
+}
+@media (max-width: 576px) {
+  .boxcontact .contact-form .contact-form {
+    width: 80%;
+    padding: 15px;
+  }
+  .boxcontact .contact-form input,
+  .boxcontact .contact-form textarea {
+    font-size: 14px;
+    padding: 8px;
+  }
+  .boxcontact .contact-form button {
+    padding: 8px 15px;
+  }
+}
+@media (max-width: 576px) and (max-width: 768px) {
+  .boxcontact .contact-form .contact-form {
+    width: 80%;
+    padding: 20px;
+  }
+  .boxcontact .contact-form input,
+  .boxcontact .contact-form textarea {
+    font-size: 16px;
+  }
+  .boxcontact .contact-form button {
+    padding: 10px 20px;
+  }
 }
 
 html,
@@ -1581,5 +1671,5 @@ body {
 }
 
 * {
-  font-family: "Schibsted Grotesk";
+  font-family: "Geist";
 }/*# sourceMappingURL=style.css.map */

@@ -45,16 +45,44 @@
 }
 
 .msg {
-  margin-top: 5vh;
-}
-
-a {
-  text-decoration: none;
-  color: variables.$jaune;
+  margin: 0 auto;
+  font-size: 25px;
+  font-weight: 600;
+  transition: transform 0.3s ease-in-out;
+  display: inline-block;
 
   &:hover {
-    color: variables.$vert;
-    text-decoration: underline;
+    animation: bounce 0.5s ease-in-out forwards;
+  }
+
+  a {
+    text-decoration: none;
+    color: variables.$jaune;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: variables.$vert;
+      text-decoration: underline;
+    }
+  }
+}
+
+// Animation de rebond
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2); // Taille augmentée à 1.2
+  }
+
+  70% {
+    transform: scale(1.15); // Léger retour
+  }
+
+  100% {
+    transform: scale(1.2); // Position finale
   }
 }
 

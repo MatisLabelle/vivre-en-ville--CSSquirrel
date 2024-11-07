@@ -77,21 +77,23 @@
         <!--formulaire nous contacter-->
         <div class="boxcontact">
             <div class="contact-form">
-                <h2>Contact Us</h2>
+                <h2>Contactez-nous</h2>
                 <form action="/submit_form" method="POST">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+                    <label for="name">Nom & Prénom:</label>
+                    <input type="text" id="name" name="name" placeholder="Entrez votre nom et prénom" required>
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="email">Adresse courriel:</label>
+                    <input type="email" id="email" name="email" placeholder="Entrez votre adresse courriel" required>
 
                     <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <textarea id="message" name="message" rows="4" placeholder="Écrivez votre message ici"
+                        required></textarea>
 
-                    <button type="submit">Submit</button>
+                    <button type="submit">Envoyer</button>
                 </form>
             </div>
         </div>
+
 
         <footer>
             <img class="logo-footer" src="photos/LOGO.png" />
