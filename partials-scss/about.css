@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Schibsted Grotesk";
+  font-family: "Geist";
   src: url(../sources/medias/fonts/Geist/Geist[wght].ttf);
 }
 @font-face {
@@ -8,28 +8,28 @@
 }
 h1 {
   font-size: 64px;
-  font-family: "Schibsted Grotesk";
+  font-family: "Geist";
   color: black;
   font-weight: bold;
 }
 
 h2 {
   font-size: 48px;
-  font-family: "Schibsted Grotesk";
+  font-family: "Geist";
   color: black;
   font-weight: medium;
 }
 
 h3 {
   font-size: 24px;
-  font-family: "Schibsted Grotesk";
+  font-family: "Geist";
   color: black;
   font-weight: normal;
 }
 
 p {
   font-size: 16px;
-  font-family: "Schibsted Grotesk";
+  font-family: "Geist";
   color: black;
   font-weight: normal;
 }
