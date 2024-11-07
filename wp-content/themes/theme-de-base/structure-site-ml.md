@@ -1,0 +1,125 @@
+# Home
+
+## MODÈLE: home.php
+
+## Témoignages
+
+### temoignage.php
+
+### name
+
+### quote
+
+### img
+
+# News-hub
+
+## MODÈLE: news-hub.php
+
+## Carte de nouvelle
+
+### card-news.php
+
+### title
+
+### description
+
+### info
+
+### img
+
+# News-article
+
+## TYPE DE CONTENU (POST TYPE): nouvelle
+
+## MODÈLE: news-article.php
+
+## Auteur
+
+### news-author.php
+
+### name
+
+### info
+
+### contact
+
+## title
+
+## img
+
+## info
+
+# Services-hub
+
+## MODÈLE: services-hub.php
+
+# Service
+
+## TYPE DE CONTENU (POST TYPE): service
+
+## MODÈLE: service.php
+
+## service en cours
+
+### current.php
+
+### Service en cours...
+
+## projet
+
+# Team
+
+## TYPE DE CONTENU (POST TYPE)
+
+## MODÈLE (TEMPLATE)
+
+## COMPOSANTE DE LA PAGES
+
+### NOM DU PARTIAL DU THÈME WP POUR CETTE COMPOSTANTE
+
+### CHAMPS PERSONNALISÉS (CUSTOM FIELDS) DE CETTE COMPOSANTE
+
+## AUTRES CHAMPS PERSONNALISÉS (CUSTOM FIELDS) SANS LIEN AVEC UNE COMPOSANTE
+
+# About
+
+## TYPE DE CONTENU (POST TYPE)
+
+## MODÈLE (TEMPLATE)
+
+## COMPOSANTE DE LA PAGES
+
+### NOM DU PARTIAL DU THÈME WP POUR CETTE COMPOSTANTE
+
+### CHAMPS PERSONNALISÉS (CUSTOM FIELDS) DE CETTE COMPOSANTE
+
+## AUTRES CHAMPS PERSONNALISÉS (CUSTOM FIELDS) SANS LIEN AVEC UNE COMPOSANTE
+
+# Contact-us
+
+## TYPE DE CONTENU (POST TYPE)
+
+## MODÈLE (TEMPLATE)
+
+## COMPOSANTE DE LA PAGES
+
+### NOM DU PARTIAL DU THÈME WP POUR CETTE COMPOSTANTE
+
+### CHAMPS PERSONNALISÉS (CUSTOM FIELDS) DE CETTE COMPOSANTE
+
+## AUTRES CHAMPS PERSONNALISÉS (CUSTOM FIELDS) SANS LIEN AVEC UNE COMPOSANTE
+
+# 404
+
+## TYPE DE CONTENU (POST TYPE)
+
+## MODÈLE (TEMPLATE)
+
+## COMPOSANTE DE LA PAGES
+
+### NOM DU PARTIAL DU THÈME WP POUR CETTE COMPOSTANTE
+
+### CHAMPS PERSONNALISÉS (CUSTOM FIELDS) DE CETTE COMPOSANTE
+
+## AUTRES CHAMPS PERSONNALISÉS (CUSTOM FIELDS) SANS LIEN AVEC UNE COMPOSANTE
