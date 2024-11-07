@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Geist";
+  font-family: "Schibsted Grotesk";
   src: url(../sources/medias/fonts/Geist/Geist[wght].ttf);
 }
 @font-face {
@@ -9,28 +9,28 @@
 }
 h1 {
   font-size: 64px;
-  font-family: "Geist";
+  font-family: "Schibsted Grotesk";
   color: black;
   font-weight: bold;
 }
 
 h2 {
   font-size: 48px;
-  font-family: "Geist";
+  font-family: "Schibsted Grotesk";
   color: black;
   font-weight: medium;
 }
 
 h3 {
   font-size: 24px;
-  font-family: "Geist";
+  font-family: "Schibsted Grotesk";
   color: black;
   font-weight: normal;
 }
 
 p {
   font-size: 16px;
-  font-family: "Geist";
+  font-family: "Schibsted Grotesk";
   color: black;
   font-weight: normal;
 }
@@ -185,7 +185,7 @@ a {
   right: 0;
   top: -20px;
   position: absolute;
-  font-family: "Geist";
+  font-family: "Schibsted Grotesk";
 }
 
 .footer__donner:hover {
@@ -227,7 +227,7 @@ a {
   bottom: 0;
   color: white;
   font-style: italic;
-  font-family: "Geist";
+  font-family: "Schibsted Grotesk";
   padding: 10%;
   padding-bottom: 0;
   padding-top: 0;
@@ -339,7 +339,7 @@ a {
   font-size: 24px;
   font-weight: bold;
   color: #fbab1a;
-  font-family: "Geist";
+  font-family: "Schibsted Grotesk";
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -469,7 +469,7 @@ a {
   transform: translate(-5%, -10%);
   z-index: 1;
   font-size: 64px;
-  font-family: "Geist";
+  font-family: "Schibsted Grotesk";
 }
 
 .voir-plus {
@@ -1799,6 +1799,63 @@ section.recherche ul {
   }
 }
 
+section.equipe .breadcrumb {
+  padding: 0;
+}
+
+section.equipe {
+  padding: 0 5%;
+  padding-bottom: 5%;
+}
+
+.equipe__title {
+  font-size: 48px;
+  color: #afe0ee;
+  font-weight: bold;
+}
+.equipe__card {
+  background-color: #afe0ee;
+  padding: 16px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+}
+.equipe__position {
+  margin: 0;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+}
+.equipe__name {
+  font-weight: bold;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .equipe__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+  }
+  .equipe__title {
+    font-size: 64px;
+  }
+  .equipe__card {
+    margin: 0;
+    transition: scale 0.3;
+  }
+  .equipe__card:hover {
+    scale: 1.02;
+  }
+  .equipe__name {
+    font-size: 32px;
+  }
+  .equipe__position {
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+  }
+}
 html,
 body {
   margin: 0;
@@ -1818,4 +1875,8 @@ body {
 .mx-5rem {
   margin-left: 5rem;
   margin-right: 5rem;
+}
+
+* {
+  font-family: "Roboto";
 }/*# sourceMappingURL=style.css.map */

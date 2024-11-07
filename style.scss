@@ -16,6 +16,7 @@
 @use "partials-scss/service-page";
 @use "partials-scss/about";
 @use "partials-scss/contact";
+@use "partials-scss/equipe";
 
 
 html,
@@ -38,4 +39,8 @@ body {
 .mx-5rem {
   margin-left: 5rem;
   margin-right: 5rem;
+}
+
+* {
+  font-family: "Roboto";
 }
