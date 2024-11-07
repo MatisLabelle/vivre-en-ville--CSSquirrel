@@ -5,94 +5,191 @@ section.recherche {
   padding: 5% 10%;
   padding-top: 2%;
 
+  body {
+    overflow-x: hidden;
+  }
   h1 {
     color: variables.$orange;
     font-weight: bold;
-    font-size: 96px;
+    font-size: 36px;
   }
   h2 {
     color: variables.$orange;
     font-weight: bold;
+    font-size: 24px;
   }
   p {
-    font-size: 20px;
+    font-size: 14px;
+    text-align: justify;
   }
   ul {
-    font-size: 20px;
+    font-size: 14px;
     line-height: 2.5em;
   }
-
-  .breadcrumb {
-    margin: 0;
-    height: auto;
-
-    a {
-      color: black;
-      text-decoration: none;
-      margin: 0;
-      align-items: center;
-      display: flex;
-    }
-    p {
-      margin: 0;
-      align-items: center;
-      display: flex;
-    }
-  }
-}
-
-.recherche__section {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto 1fr 1fr; // Specify height for the first row, others will adjust automatically
-  grid-column-gap: 24px;
-  grid-row-gap: 24px; // This will apply only between the first and second rows
-  margin-bottom: 16px;
-
-  div {
-    background-color: variables.$orange;
-    color: white;
-    border-radius: 8px;
-    padding: 24px;
-  }
-  p {
-    color: white;
-  }
-}
-
-.recherche__miniTitle {
-  color: variables.$orange;
-  font-size: 32px;
-  font-weight: bold;
 }
 
 .recherche__section h3 {
   color: white;
-  font-size: 32px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.breadcrumb p {
+  margin: 0;
+}
+
+.breadcrumb a {
+  color: black;
+  text-decoration: none;
+  margin: 0;
+  align-items: center;
+  display: flex;
+}
+
+.recherche__miniTitle {
+  font-size: 20px;
+  color: variables.$orange;
   font-weight: bold;
 }
 
 .bloc-1 {
-  grid-area: 1 / 1 / 6 / 2;
+  background-color: variables.$orange;
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+  margin-bottom: 16px;
+
+  ul {
+    padding-left: 12px;
+  }
+
+  p {
+    color: white;
+  }
 }
+
 .bloc-2 {
-  grid-area: 1 / 2 / 3 / 3;
-}
-.bloc-3 {
-  grid-area: 3 / 2 / 5 / 3; 
-  position: relative; 
+  background-color: variables.$orange;
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+  margin-bottom: 16px;
+
+  p {
+    color: white;
+  }
 }
 
 .bloc-3 img {
-  width: 100%; // Make the image take the full width
-  height: 100%; // Make the image take the full height
-  object-fit: cover; // This ensures the image covers the area without distorting
-  position: absolute; // Position it absolutely to fill the parent div
-  top: 0; // Align to the top
-  left: 0; // Align to the left
+  width: 100%;
   border-radius: 8px;
 }
 
+.bloc-3 {
+  margin-bottom: 16px;
+}
+
 .textLink {
+  color: variables.$orange;
+}
+
+@media screen and (min-width: 768px) {
+  section.recherche {
+    padding: 5% 10%;
+    padding-top: 2%;
+
+    h1 {
+      color: variables.$orange;
+      font-weight: bold;
+      font-size: 96px;
+    }
+    h2 {
+      color: variables.$orange;
+      font-weight: bold;
+      font-size: 48px;
+    }
+    p {
+      font-size: 20px;
+    }
+    ul {
+      font-size: 20px;
+      line-height: 2.5em;
+    }
+
+    .breadcrumb {
+      margin: 0;
+      height: auto;
+
+      p {
+        margin: 0;
+        align-items: center;
+        display: flex;
+      }
+
+      a {
+        color: black;
+        text-decoration: none;
+        margin: 0;
+        align-items: center;
+        display: flex;
+      }
+    }
+  }
+
+  .recherche__section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 1fr 1fr; // Specify height for the first row, others will adjust automatically
+    grid-column-gap: 24px;
+    grid-row-gap: 24px; // This will apply only between the first and second rows
+    margin-bottom: 16px;
+
+    div {
+      background-color: variables.$orange;
+      color: white;
+      border-radius: 8px;
+      padding: 24px;
+    }
+    p {
+      color: white;
+    }
+  }
+
+  .recherche__miniTitle {
     color: variables.$orange;
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .recherche__section h3 {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .bloc-1 {
+    grid-area: 1 / 1 / 6 / 2;
+  }
+  .bloc-2 {
+    grid-area: 1 / 2 / 3 / 3;
+  }
+  .bloc-3 {
+    grid-area: 3 / 2 / 5 / 3;
+    position: relative;
+    margin-bottom: 0;
+  }
+
+  .bloc-3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+  }
+
+  .textLink {
+    color: variables.$orange;
+  }
 }

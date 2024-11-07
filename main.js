@@ -27,7 +27,7 @@ ScrollTrigger.refresh();
 var acc = document.getElementsByClassName("accordion__button");
 
 for (let i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
+  acc[i].addEventListener("click", function () {
     this.classList.toggle("active");
 
     // Toggle between hiding and showing the active panel

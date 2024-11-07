@@ -2,79 +2,135 @@
 @use "variables.scss";
 
 section.services_hub {
-  padding: 5% 10%;
-  padding-top: 2%;
-
   h1 {
     color: variables.$orange;
-    font-size: 96px;
+    font-size: 48px;
+    padding: 0 5%;
   }
 
-  .breadcrumb {
-    margin: 0;
-    height: auto;
-
-    a {
-      color: black;
-      text-decoration: none;
-      margin: 0;
-      align-items: center;
-      display: flex;
-    }
-    p {
-      margin: 0;
-      align-items: center;
-      display: flex;
-    }
-  }
-
-  .presentation p {
-    font-size: 28px;
-    margin-bottom: 32px;
-
-    #recherches {
-      color: variables.$orange;
-      font-weight: bold;
-    }
-    #formation {
-      color: variables.$jaune;
-      font-weight: bold;
-    }
-    #sensibilisation {
-      color: variables.$bleu;
-      font-weight: bold;
-    }
-    #conseil {
-      color: variables.$vert;
-      font-weight: bold;
-    }
+  .text {
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.3;
   }
 }
 
+.presentation {
+  padding: 0 5%;
+}
+
+.breadcrumb {
+  padding: 0 5%;
+}
+
 .service {
-  background-color: variables.$orange;
-  padding: 24px;
   margin-bottom: 16px;
-  border-radius: 8px;
-
-  &__title {
-    font-size: 36px;
-    color: white;
-    font-weight: bold;
-  }
-
-  &__text {
-    color: white;
-    font-size: 20px;
-  }
+  padding: 5%;
+  line-height: 1.2;
+  font-size: 16px;
+  color: white;
 
   &__button {
-    margin-top: 20px;
+    margin-top: 12px;
     padding: 8px 20px;
     border: solid white;
     border-radius: 40px;
     background-color: white;
+    font-size: 16px;
+  }
+
+  &__title {
     font-size: 24px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  section.services_hub {
+    padding: 5% 10%;
+    padding-top: 2%;
+
+    h1 {
+      color: variables.$orange;
+      font-size: 96px;
+      padding: 0;
+    }
+
+    .breadcrumb {
+      margin: 0;
+      height: auto;
+      padding: 0;
+
+      a {
+        color: black;
+        text-decoration: none;
+        margin: 0;
+        align-items: center;
+        display: flex;
+      }
+      p {
+        margin: 0;
+        align-items: center;
+        display: flex;
+      }
+    }
+
+    .presentation p {
+      font-size: 28px;
+      margin-bottom: 32px;
+
+      #recherches {
+        color: variables.$orange;
+        font-weight: bold;
+      }
+      #formation {
+        color: variables.$jaune;
+        font-weight: bold;
+      }
+      #sensibilisation {
+        color: variables.$bleu;
+        font-weight: bold;
+      }
+      #conseil {
+        color: variables.$vert;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .service {
+    background-color: variables.$orange;
+    padding: 24px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+
+    &__title {
+      font-size: 36px;
+      color: white;
+      font-weight: bold;
+    }
+
+    &__text {
+      color: white;
+      font-size: 20px;
+      text-align: left;
+    }
+
+    &__button {
+      margin-top: 20px;
+      padding: 8px 20px;
+      border: solid white;
+      border-radius: 40px;
+      background-color: white;
+      font-size: 24px;
+    }
+  }
+
+  .presentation {
+    padding: 0;
   }
 }
 
@@ -120,5 +176,25 @@ section.services_hub {
   button:hover {
     background-color: variables.$bleu;
     color: white;
+  }
+}
+
+.presentation p {
+
+  #recherches {
+    color: variables.$orange;
+    font-weight: bold;
+  }
+  #formation {
+    color: variables.$jaune;
+    font-weight: bold;
+  }
+  #sensibilisation {
+    color: variables.$bleu;
+    font-weight: bold;
+  }
+  #conseil {
+    color: variables.$vert;
+    font-weight: bold;
   }
 }
