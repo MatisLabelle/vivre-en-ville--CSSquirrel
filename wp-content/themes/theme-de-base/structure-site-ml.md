@@ -6,27 +6,23 @@
 
 ### temoignage.php
 
-### name
+### name:group
 
-### quote
+### quote:group
 
-### img
+### img:group
 
 # News-hub
 
 ## MODÈLE: news-hub.php
 
+## Hero
+
+### h1 titre
+
 ## Carte de nouvelle
 
 ### card-news.php
-
-### title
-
-### description
-
-### info
-
-### img
 
 # News-article
 
@@ -54,11 +50,19 @@
 
 ## MODÈLE: services-hub.php
 
+## Hero
+
+### h1 titre
+
 # Service
 
 ## TYPE DE CONTENU (POST TYPE): service
 
 ## MODÈLE: service.php
+
+## Hero
+
+### h1 titre
 
 ## service en cours
 
@@ -70,9 +74,11 @@
 
 # Team
 
-## Équipe
-
 ## MODÈLE: team.php
+
+## Hero
+
+### h1 titre
 
 ## person
 
@@ -83,6 +89,10 @@
 ### Rôle
 
 # About
+
+## Hero
+
+### h1 titre
 
 # Contact-us
 
