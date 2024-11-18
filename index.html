@@ -5,8 +5,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CSSquirrel - Vivre en ville</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -15,75 +13,82 @@
   <header>
     <!--La NAV BAR-->
     <!-- Top Bar Section -->
-    <div class="pt-2 mx-3rem">
-      <div
-        class="container-fluid d-flex justify-content-between align-items-center d-none d-md-block flex-row-reverse p-0">
-        <div class="d-flex flex-row-reverse topbar">
-          <a href="#" class="topbar ps-2">English</a>
-          <a href="#" class="topbar px-2">Recherche</a>
-          <a href="#" class="topbar pe-2">S'abonner</a>
+    <div class="">
+      <div class="topbar">
+        <div class="topbar-items">
+          <a href="#" class="topbar-link">English</a>
+          <a href="#" class="topbar-link">Recherche</a>
+          <a href="#" class="topbar-link">S'abonner</a>
         </div>
       </div>
-
-      <!-- Main Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light navbar-expand-md md-light">
-        <div class="container-fluid p-0">
-          <a class="navbar-brand" href="#">
-            <img src="/photos/LOGO.png" alt="logo navbar" style="height: 50px" />
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link apropos" href="about.html">À Propos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link actualites" href="news-hub.html">Actualités</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link services" href="services-hub.html">Nos services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link engager" href="membre.html">S’engager</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link ressources" href="#">Ressources</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link d-lg-none d-md-none" href="#">S'abonner</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link d-lg-none d-md-none" href="#">Recherche</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link d-lg-none d-md-none" href="#">English</a>
-              </li>
-              <li class="nav-item">
-                <!-- Bouton donner -->
-                <div class="d-flex">
-                  <a href="https://vivreenville.org/" class="btn btn-donner-custom ml-20 rounded-pill">Donner</a>
-                </div>
-              </li>
-            </ul>
-          </div>
+    </div>
+    <nav>
+      <a class="logo" href="/index.html">
+        <img src="/photos/LOGO.png" alt="logo" />
+      </a>
+      <ul>
+        <li>
+          <a href="/about.html">À propos</a>
+        </li>
+        <li>
+          <a href="/news-hub.html">Actualités</a>
+        </li>
+        <li>
+          <a href="/services-hub.html">Nos services</a>
+        </li>
+        <li>
+          <a href="/equipe.html">Équipe</a>
+        </li>
+        <li>
+          <a href="/contact.html">Contactez-nous</a>
+        </li>
+        <li>
+          <button class="btn-donner">Donner</button>
+        </li>
+      </ul>
+      <div class="nav-end">
+        <button class="btn-donner-2">Donner</button>
+        <div class="hamburger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
         </div>
-      </nav>
+      </div>
+    </nav>
+    <div class="menubar">
+      <ul>
+        <li>
+          <a href="/index.html">Accueil</a>
+        </li>
+        <li>
+          <a href="/about.html">À propos</a>
+        </li>
+        <li>
+          <a href="/news-hub.html">Actualités</a>
+        </li>
+        <li>
+          <a href="/services-hub.html">Nos services</a>
+        </li>
+        <li>
+          <a href="/equipe.html">Équipe</a>
+        </li>
+        <li>
+          <a href="/contact.html">Contactez-nous</a>
+        </li>
+        <li>
+          <a href="#">S'abonner</a>
+        </li>
+        <li>
+          <a href="#">Rechercher</a>
+        </li>
+        <li>
+          <a href="#">English</a>
+        </li>
+      </ul>
     </div>
 
-    <!--
-         <h1>CSSquirrel</h1>
-    <h2>Vivre en ville</h2>
-    <p>Lien vers le site de vivre en ville: https://vivreenville.org/</p>
-    <p>
-      Lien vers notre github:
-      https://github.com/MatisLabelle/vivre-en-ville--CSSquirrel/new/main
-    </p>
-    -->
   </header>
+
   <!--SECTION HERO-->
   <main>
     <section class="section__hero">
@@ -280,7 +285,7 @@
             Vivre en Ville appelle à adopter une approche cohérente et
             ambitieuse 19 septembre 2024.
           </p>
-          <a href="news-article.html" class="news-link">Lire plus</a>
+          <a href="#" class="news-link">Lire plus</a>
         </div>
       </div>
 
@@ -295,7 +300,7 @@
             De bonnes intentions dans un projet de loi imprécis qui suscite de
             nombreuses questions.
           </p>
-          <a href="news-article.html" class="news-link">Lire plus</a>
+          <a href="#" class="news-link">Lire plus</a>
         </div>
       </div>
 
@@ -307,12 +312,12 @@
           <p class="news-summary">
             Pour une gouvernance favorisant le transport collectif.
           </p>
-          <a href="news-article.html" class="news-link">Lire plus</a>
+          <a href="#" class="news-link">Lire plus</a>
         </div>
       </div>
 
       <h3 class="titre voir-plus">
-        <a href="news-hub.html"> Voir toutes les publications > </a>
+        <a href="liste-nouvelle.html"> Voir toutes les publications > </a>
       </h3>
     </section>
 
@@ -376,8 +381,7 @@
         </div>
         <div class="swiper-pagination"></div>
       </div>
-    </section>
-    
+
       <!--SECTION INFOLETTRE-->
       <section class="section info-lettre">
         <div class="info-lettre__form">
@@ -488,7 +492,7 @@
       </div>
     </div>
     <div class="partenaire">
-      <h3 class="partenaire-footer">Nos partenaires</h3>
+      <h3 class="partenaire-footer">Nos partenaire</h3>
       <div class="grid-footer__partenaire">
         <a href="https://carrefour.vivreenville.org/">
           <img class="logo-footer" src="photos/carrefour.png" alt="carrefour de vivre en ville" />

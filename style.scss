@@ -26,6 +26,16 @@ body {
   height: 100%;
 }
 
+header {
+  padding: 0 10%;
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    padding: 0 5%;
+  }
+}
+
 /*---------- STYLES GENERAUX ----------*/
 
 .ml-5rem {
