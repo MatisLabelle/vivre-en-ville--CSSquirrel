@@ -44,10 +44,12 @@ for (let i = 0; i < acc.length; i++) {
 
 // NAVBAR
 
-const burgerMenu = document.querySelector(".burger-menu");
-const navbarNav = document.querySelector(".navbar-nav");
+const mobileNav = document.querySelector(".hamburger");
+const navbar = document.querySelector(".menubar");
 
-burgerMenu.addEventListener("click", () => {
-  navbarNav.classList.toggle("open"); // Toggle visibility of the nav links
-  burgerMenu.classList.toggle("active"); // Optional: add a class for styling active state
-});
+const toggleNav = () => {
+  navbar.classList.toggle("active");
+  mobileNav.classList.toggle("hamburger-active");
+};
+mobileNav.addEventListener("click", () => toggleNav());
+
