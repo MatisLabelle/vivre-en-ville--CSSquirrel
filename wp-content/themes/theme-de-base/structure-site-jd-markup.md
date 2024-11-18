@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.2/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/index.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"","children":[{"content":"Home","children":[{"content":"home","children":[],"payload":{"lines":"2,3"}},{"content":"modèle: home.php","children":[],"payload":{"lines":"4,5"}},{"content":"COMPOSANTES","children":[{"content":"partials php:","children":[{"content":"footer.php","children":[],"payload":{"lines":"8,9"}},{"content":"navbar.php","children":[],"payload":{"lines":"9,11"}}],"payload":{"lines":"7,8"}}],"payload":{"lines":"6,7"}}],"payload":{"lines":"0,1"}},{"content":"About","children":[{"content":"about","children":[],"payload":{"lines":"15,16"}},{"content":"modèle: about.php","children":[],"payload":{"lines":"17,18"}},{"content":"COMPOSANTES","children":[{"content":"partials php:","children":[{"content":"footer.php","children":[],"payload":{"lines":"21,22"}},{"content":"navbar.php","children":[],"payload":{"lines":"22,23"}},{"content":"breadcrumb.php","children":[],"payload":{"lines":"23,25"}}],"payload":{"lines":"20,21"}},{"content":"CHAMPS PERSONNALISÉS","children":[],"payload":{"lines":"25,26"}}],"payload":{"lines":"19,20"}},{"content":"AUTRES CHAMPS PERSONNALISÉS","children":[],"payload":{"lines":"27,28"}}],"payload":{"lines":"13,14"}},{"content":"Services","children":[{"content":"services-hub","children":[],"payload":{"lines":"33,34"}},{"content":"modèle: services-hub.php","children":[],"payload":{"lines":"35,36"}},{"content":"COMPOSANTES","children":[{"content":"partials php:","children":[{"content":"footer.php","children":[],"payload":{"lines":"39,40"}},{"content":"navbar.php","children":[],"payload":{"lines":"40,41"}},{"content":"breadcrumb.php","children":[],"payload":{"lines":"41,43"}}],"payload":{"lines":"38,39"}},{"content":"CHAMPS PERSONNALISÉS","children":[{"content":"service : Titre","children":[],"payload":{"lines":"44,45"}},{"content":"service-description : Description","children":[],"payload":{"lines":"45,46"}}],"payload":{"lines":"43,44"}}],"payload":{"lines":"37,38"}},{"content":"AUTRES CHAMPS PERSONNALISÉS","children":[],"payload":{"lines":"47,48"}}],"payload":{"lines":"31,32"}},{"content":"Service Page","children":[{"content":"service-page","children":[],"payload":{"lines":"53,54"}},{"content":"modèle: servivce-page.php","children":[],"payload":{"lines":"55,56"}},{"content":"COMPOSANTES","children":[{"content":"partials php:","children":[{"content":"footer.php","children":[],"payload":{"lines":"59,60"}},{"content":"navbar.php","children":[],"payload":{"lines":"60,61"}},{"content":"breadcrumb.php","children":[],"payload":{"lines":"61,63"}}],"payload":{"lines":"58,59"}},{"content":"CHAMPS PERSONNALISÉS","children":[],"payload":{"lines":"63,64"}}],"payload":{"lines":"57,58"}},{"content":"AUTRES CHAMPS PERSONNALISÉS","children":[],"payload":{"lines":"65,66"}}],"payload":{"lines":"51,52"}},{"content":"News hub","children":[{"content":"news-hub","children":[],"payload":{"lines":"71,72"}},{"content":"modèle: news-hub.php","children":[],"payload":{"lines":"73,74"}},{"content":"COMPOSANTES","children":[{"content":"partials php:","children":[{"content":"footer.php","children":[],"payload":{"lines":"77,78"}},{"content":"navbar.php","children":[],"payload":{"lines":"78,79"}},{"content":"sidebar-archive.php","children":[],"payload":{"lines":"79,80"}},{"content":"breadcrumb.php","children":[],"payload":{"lines":"80,82"}}],"payload":{"lines":"76,77"}},{"content":"CHAMPS PERSONNALISÉS","children":[{"content":"article-title : Titre","children":[],"payload":{"lines":"83,84"}},{"content":"article-description : Description","children":[],"payload":{"lines":"84,85"}},{"content":"article-date : Date","children":[],"payload":{"lines":"85,86"}}],"payload":{"lines":"82,83"}}],"payload":{"lines":"75,76"}},{"content":"AUTRES CHAMPS PERSONNALISÉS","children":[],"payload":{"lines":"87,88"}}],"payload":{"lines":"69,70"}},{"content":"News article","children":[{"content":"news-article","children":[],"payload":{"lines":"94,95"}},{"content":"modèle: news-article.php","children":[],"payload":{"lines":"96,97"}},{"content":"COMPOSANTES","children":[{"content":"partials php:","children":[{"content":"footer.php","children":[],"payload":{"lines":"100,101"}},{"content":"navbar.php","children":[],"payload":{"lines":"101,102"}},{"content":"sidebar-news.php","children":[],"payload":{"lines":"102,103"}},{"content":"breadcrumb.php","children":[],"payload":{"lines":"103,104"}},{"content":"article-nav.php","children":[],"payload":{"lines":"104,106"}}],"payload":{"lines":"99,100"}},{"content":"CHAMPS PERSONNALISÉS","children":[{"content":"article-title : Titre","children":[],"payload":{"lines":"107,108"}},{"content":"article-date : Date","children":[],"payload":{"lines":"108,109"}},{"content":"article-content : Contenu texte","children":[],"payload":{"lines":"109,110"}},{"content":"article-author : Group","children":[{"content":"Name","children":[],"payload":{"lines":"111,112"}},{"content":"Role","children":[],"payload":{"lines":"112,113"}},{"content":"Email","children":[],"payload":{"lines":"113,114"}},{"content":"Phone number","children":[],"payload":{"lines":"114,116"}}],"payload":{"lines":"110,111"}}],"payload":{"lines":"106,107"}}],"payload":{"lines":"98,99"}},{"content":"AUTRES CHAMPS PERSONNALISÉS","children":[],"payload":{"lines":"116,117"}}],"payload":{"lines":"92,93"}},{"content":"Contact","children":[{"content":"contact","children":[],"payload":{"lines":"122,123"}},{"content":"modèle: contact.php","children":[],"payload":{"lines":"124,125"}},{"content":"COMPOSANTES","children":[{"content":"partials php:","children":[{"content":"footer.php","children":[],"payload":{"lines":"128,129"}},{"content":"navbar.php","children":[],"payload":{"lines":"129,130"}},{"content":"breadcrumb.php","children":[],"payload":{"lines":"130,132"}}],"payload":{"lines":"127,128"}},{"content":"CHAMPS PERSONNALISÉS","children":[],"payload":{"lines":"132,133"}}],"payload":{"lines":"126,127"}},{"content":"AUTRES CHAMPS PERSONNALISÉS","children":[],"payload":{"lines":"134,135"}}],"payload":{"lines":"120,121"}},{"content":"Team","children":[{"content":"team","children":[],"payload":{"lines":"140,141"}},{"content":"modèle: team.php","children":[],"payload":{"lines":"142,143"}},{"content":"COMPOSANTES","children":[{"content":"partials php:","children":[{"content":"footer.php","children":[],"payload":{"lines":"146,147"}},{"content":"navbar.php","children":[],"payload":{"lines":"147,148"}},{"content":"breadcrumb.php","children":[],"payload":{"lines":"148,150"}}],"payload":{"lines":"145,146"}},{"content":"CHAMPS PERSONNALISÉS","children":[{"content":"member-name : text/title (name)","children":[],"payload":{"lines":"151,152"}},{"content":"member-role : text (role)","children":[],"payload":{"lines":"152,153"}}],"payload":{"lines":"150,151"}}],"payload":{"lines":"144,145"}},{"content":"AUTRES CHAMPS PERSONNALISÉS","children":[],"payload":{"lines":"154,155"}}],"payload":{"lines":"138,139"}},{"content":"404 Error","children":[{"content":"error","children":[],"payload":{"lines":"160,161"}},{"content":"modèle: error.php","children":[],"payload":{"lines":"162,163"}},{"content":"COMPOSANTES","children":[{"content":"partials php:","children":[{"content":"footer.php","children":[],"payload":{"lines":"166,167"}},{"content":"navbar.php","children":[],"payload":{"lines":"167,169"}}],"payload":{"lines":"165,166"}},{"content":"CHAMPS PERSONNALISÉS","children":[],"payload":{"lines":"169,170"}}],"payload":{"lines":"164,165"}},{"content":"AUTRES CHAMPS PERSONNALISÉS","children":[],"payload":{"lines":"171,172"}}],"payload":{"lines":"158,159"}}]},{})</script>
+</body>
+</html>
