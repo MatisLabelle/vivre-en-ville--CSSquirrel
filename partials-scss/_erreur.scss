@@ -87,29 +87,6 @@
 }
 
 
-@include mixins.respond-to('md') {
-  .mainbox {
-    height: 50vh;
-  }
-
-  .err,
-  .err2 {
-    font-size: 6rem;
-  }
-
-  .far {
-    font-size: 5rem;
-    left: 35%;
-    top: 10%;
-  }
-
-  .msg {
-    font-size: 1rem;
-    top: 55%;
-    width: 85%;
-    left: 7%;
-  }
-}
 
 @include mixins.respond-to('md') {
   .mainbox {
@@ -118,20 +95,20 @@
 
   .err,
   .err2 {
-    font-size: 7rem; 
-    top: 12%; 
+    font-size: 7rem;
+    top: 12%;
   }
 
   .far {
     font-size: 6rem;
-    left: 40%; 
-    top: 18%; 
+    left: 40%;
+    top: 18%;
   }
 
   .msg {
-    font-size: 1.5rem; 
-    width: 85%; 
-    left: 7%; 
+    font-size: 1.5rem;
+    width: 85%;
+    left: 7%;
   }
 }
 

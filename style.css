@@ -1473,26 +1473,6 @@ a {
 }
 @media (max-width: 768px) {
   .mainbox {
-    height: 50vh;
-  }
-  .err,
-  .err2 {
-    font-size: 6rem;
-  }
-  .far {
-    font-size: 5rem;
-    left: 35%;
-    top: 10%;
-  }
-  .msg {
-    font-size: 1rem;
-    top: 55%;
-    width: 85%;
-    left: 7%;
-  }
-}
-@media (max-width: 768px) {
-  .mainbox {
     flex-direction: column;
   }
   .err,
@@ -1946,42 +1926,58 @@ section.recherche ul {
     font-size: 24px;
   }
 }
-.boxcontact {
+.boxcontact-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   padding: 100px;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/photos/building.jpg");
   z-index: 999;
   width: 100%;
+  gap: 20px;
+  flex-wrap: wrap;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/photos/building.jpg");
+  /* Responsive Design */
 }
-.boxcontact .contact-form {
-  margin: 0 auto;
-  max-width: 400px;
+.boxcontact-container .boxcontact {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
   padding: 20px;
-  background-color: #fefefe;
+  background-color: rgba(254, 254, 254, 0.7450980392);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  /* Formulaire */
+  /* Coordonnées */
 }
-.boxcontact .contact-form h2 {
+.boxcontact-container .boxcontact h2 {
+  color: white;
   padding: 5% 0;
-  color: #fbab1a;
   font-size: 35px;
   font-weight: 600;
   display: flex;
   justify-content: center;
 }
-.boxcontact .contact-form form {
+.boxcontact-container .boxcontact .contact-form {
+  margin: 0 auto;
+  max-width: 400px;
+}
+.boxcontact-container .boxcontact .contact-form form {
   display: flex;
   flex-direction: column;
 }
-.boxcontact .contact-form label {
+.boxcontact-container .boxcontact .contact-form label {
   margin-bottom: 8px;
 }
-.boxcontact .contact-form input,
-.boxcontact .contact-form textarea {
+.boxcontact-container .boxcontact .contact-form input,
+.boxcontact-container .boxcontact .contact-form textarea {
   padding: 10px;
   margin-bottom: 20px;
   border-radius: 4px;
+  width: 100%;
 }
-.boxcontact .contact-form button {
+.boxcontact-container .boxcontact .contact-form button {
   margin: 0 auto;
   padding: 10px 30px;
   margin-top: 10px;
@@ -1994,34 +1990,26 @@ section.recherche ul {
   overflow: hidden;
   transition: all 0.3s ease-in-out;
 }
-.boxcontact .contact-form button:hover {
+.boxcontact-container .boxcontact .contact-form button:hover {
   background-color: #aad039;
 }
-@media (max-width: 576px) {
-  .boxcontact .contact-form .contact-form {
-    width: 80%;
-    padding: 15px;
-  }
-  .boxcontact .contact-form input,
-  .boxcontact .contact-form textarea {
-    font-size: 14px;
-    padding: 8px;
-  }
-  .boxcontact .contact-form button {
-    padding: 8px 15px;
-  }
+.boxcontact-container .boxcontact .contact-info h3 {
+  margin-bottom: 10px;
+  color: black;
+  font-weight: 500;
 }
-@media (max-width: 576px) and (max-width: 768px) {
-  .boxcontact .contact-form .contact-form {
-    width: 80%;
-    padding: 20px;
+.boxcontact-container .boxcontact .contact-info p {
+  margin-bottom: 8px;
+}
+@media (max-width: 576px) {
+  .boxcontact-container {
+    flex-direction: column;
+    /* Passer à l'empilement vertical sur petits écrans */
   }
-  .boxcontact .contact-form input,
-  .boxcontact .contact-form textarea {
-    font-size: 16px;
-  }
-  .boxcontact .contact-form button {
-    padding: 10px 20px;
+  .boxcontact-container .boxcontact {
+    max-width: 100%;
+    /* Prendre toute la largeur */
+    margin-bottom: 20px;
   }
 }
 

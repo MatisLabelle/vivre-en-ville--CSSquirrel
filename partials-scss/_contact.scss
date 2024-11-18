@@ -1,97 +1,102 @@
 @use "variables.scss";
 @use "mixins.scss";
 
-
-.boxcontact {
+.boxcontact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 100px;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/photos/building.jpg");
     z-index: 999;
     width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/photos/building.jpg");
 
-    .contact-form {
-        margin: 0 auto;
-        max-width: 400px;
+
+    .boxcontact {
+        flex: 1;
+        min-width: 300px;
+        max-width: 600px;
         padding: 20px;
-        background-color: #fefefe;
+        background-color: #fefefebe;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
         border-radius: 8px;
         box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
         h2 {
+            color: white;
             padding: 5% 0;
-            color: variables.$orange;
             font-size: 35px;
             font-weight: 600;
             display: flex;
             justify-content: center;
         }
 
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-
-        label {
-            margin-bottom: 8px;
-        }
-
-        input,
-        textarea {
-            padding: 10px;
-            margin-bottom: 20px;
-            border-radius: 4px;
-        }
-
-        button {
+        /* Formulaire */
+        .contact-form {
             margin: 0 auto;
-            padding: 10px 30px;
-            margin-top: 10px;
-            background-color: variables.$orange;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            position: relative;
-            overflow: hidden;
-            transition: all 0.3s ease-in-out;
+            max-width: 400px;
 
-            &:hover {
-                background-color: variables.$vert;
-
+            form {
+                display: flex;
+                flex-direction: column;
             }
-        }
 
-        // Responsive Design avec Mixins
-        @include mixins.respond-to('sm') {
-            .contact-form {
-                width: 80%;
-                padding: 15px;
+            label {
+                margin-bottom: 8px;
             }
 
             input,
             textarea {
-                font-size: 14px;
-                padding: 8px;
+                padding: 10px;
+                margin-bottom: 20px;
+                border-radius: 4px;
+                width: 100%;
             }
 
             button {
-                padding: 8px 15px;
-            }
+                margin: 0 auto;
+                padding: 10px 30px;
+                margin-top: 10px;
+                background-color: variables.$orange;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                position: relative;
+                overflow: hidden;
+                transition: all 0.3s ease-in-out;
 
-            @include mixins.respond-to('md') {
-                .contact-form {
-                    width: 80%;
-                    padding: 20px;
-                }
-
-                input,
-                textarea {
-                    font-size: 16px;
-                }
-
-                button {
-                    padding: 10px 20px;
+                &:hover {
+                    background-color: variables.$vert;
                 }
             }
         }
+
+        /* Coordonnées */
+        .contact-info {
+            h3 {
+                margin-bottom: 10px;
+                color: black;
+                font-weight: 500;
+            }
+
+            p {
+                margin-bottom: 8px;
+            }
+        }
+    }
+}
+
+/* Responsive Design */
+@include mixins.respond-to('sm') {
+    flex-direction: column;
+    /* Passer à l'empilement vertical sur petits écrans */
+
+    .boxcontact {
+        max-width: 100%;
+        /* Prendre toute la largeur */
+        margin-bottom: 20px;
     }
 }
