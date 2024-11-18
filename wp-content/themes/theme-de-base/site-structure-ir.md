@@ -1,376 +1,206 @@
-# Structure du site - IR
+# Accueil
 
-## 404
+## home
 
-### TYPE DE CONTENU (POST TYPE)
+### Modèle
 
-- page
-
-### MODÈLE (TEMPLATE)
-
-- 404.php
+- template: accueil.php
 
 ### COMPOSANTES
 
-#### NOM DU PARTIAL
+#### Partials PHP:
 
-- erreur-404.php
-
-#### CHAMPS PERSONNALISÉS
-
-- Aucun (utilisation du contenu statique par défaut).
-
-### AUTRES CHAMPS PERSONNALISÉS
-
-- Aucun.
+- pied-de-page.php
+- menu-principal.php
 
 ---
 
-## Comments
+# À propos
 
-### TYPE DE CONTENU (POST TYPE)
+## about
 
-- Aucun spécifique (lié aux articles).
+### Modèle
 
-### MODÈLE (TEMPLATE)
-
-- comments.php
+- template: a-propos.php
 
 ### COMPOSANTES
 
-#### NOM DU PARTIAL
+#### Partials PHP:
 
-- section-commentaires.php
+- pied-de-page.php
+- menu-principal.php
+- breadcrumbs.php
 
 #### CHAMPS PERSONNALISÉS
 
-- Aucun (utilisation des champs par défaut de WordPress).
-
-### AUTRES CHAMPS PERSONNALISÉS
-
-- Aucun.
+- intro-title : Titre principal
+- intro-content : Texte descriptif
 
 ---
 
-## Metas
+# Hub des Services
 
-### TYPE DE CONTENU (POST TYPE)
+## services-hub
 
-- Aucun spécifique (intégré aux pages).
+### Modèle
 
-### MODÈLE (TEMPLATE)
-
-- metas.php
+- template: services-hub.php
 
 ### COMPOSANTES
 
-#### NOM DU PARTIAL
+#### Partials PHP:
 
-- meta-informations.php
+- pied-de-page.php
+- menu-principal.php
+- breadcrumbs.php
 
 #### CHAMPS PERSONNALISÉS
 
-- meta-title: texte.
-- meta-description: texte long.
-
-### AUTRES CHAMPS PERSONNALISÉS
-
-- Aucun.
+- service-title : Nom du service
+- service-description : Brève description
 
 ---
 
-## About
+# Page de Service
 
-### TYPE DE CONTENU (POST TYPE)
+## service-page
 
-- page
+### Modèle
 
-### MODÈLE (TEMPLATE)
-
-- about.php
+- template: service-page.php
 
 ### COMPOSANTES
 
-#### NOM DU PARTIAL
+#### Partials PHP:
 
-- section-introduction.php
-- section-historique.php
+- pied-de-page.php
+- menu-principal.php
+- breadcrumbs.php
 
 #### CHAMPS PERSONNALISÉS
 
-- intro-texte: texte long.
-- historique-image: image.
-
-### AUTRES CHAMPS PERSONNALISÉS
-
-- Aucun.
+- service-details : Détails du service
 
 ---
 
-## Contact Us
+# Actualités
 
-### TYPE DE CONTENU (POST TYPE)
+## news-hub
 
-- page
+### Modèle
 
-### MODÈLE (TEMPLATE)
-
-- contact-us.php
+- template: hub-actualites.php
 
 ### COMPOSANTES
 
-#### NOM DU PARTIAL
+#### Partials PHP:
 
-- formulaire-contact.php
+- pied-de-page.php
+- menu-principal.php
+- archive-sidebar.php
+- breadcrumbs.php
 
 #### CHAMPS PERSONNALISÉS
 
-- email: email.
-- message: texte long.
-
-### AUTRES CHAMPS PERSONNALISÉS
-
-- Adresse-physique: texte.
+- news-title : Titre de l'article
+- news-summary : Résumé
+- news-date : Date de publication
 
 ---
 
-## FAQ
+# Article d'Actualité
 
-### TYPE DE CONTENU (POST TYPE)
+## news-article
 
-- faq
+### Modèle
 
-### MODÈLE (TEMPLATE)
-
-- faq.php
+- template: article-actualite.php
 
 ### COMPOSANTES
 
-#### NOM DU PARTIAL
+#### Partials PHP:
 
-- liste-questions.php
+- pied-de-page.php
+- menu-principal.php
+- article-sidebar.php
+- breadcrumbs.php
+- navigation-article.php
 
 #### CHAMPS PERSONNALISÉS
 
-- question: texte.
-- reponse: texte long.
-
-### AUTRES CHAMPS PERSONNALISÉS
-
-- Aucun.
+- article-title : Titre
+- article-date : Date
+- article-content : Contenu
+- author-info : Groupe
+  - nom
+  - fonction
+  - contact-email
+  - contact-telephone
 
 ---
 
-## Footer
+# Contact
 
-### TYPE DE CONTENU (POST TYPE)
+## contact
 
-- Aucun spécifique.
+### Modèle
 
-### MODÈLE (TEMPLATE)
-
-- footer.php
+- template: page-contact.php
 
 ### COMPOSANTES
 
-#### NOM DU PARTIAL
+#### Partials PHP:
 
-- navigation-footer.php
-- section-credits.php
+- pied-de-page.php
+- menu-principal.php
+- breadcrumbs.php
 
 #### CHAMPS PERSONNALISÉS
 
-- Aucun.
-
-### AUTRES CHAMPS PERSONNALISÉS
-
-- Aucun.
+- contact-email : Adresse e-mail
+- contact-message : Zone de texte
 
 ---
 
-## Header
+# Équipe
 
-### TYPE DE CONTENU (POST TYPE)
+## team
 
-- Aucun spécifique.
+### Modèle
 
-### MODÈLE (TEMPLATE)
-
-- header.php
+- template: equipe.php
 
 ### COMPOSANTES
 
-#### NOM DU PARTIAL
+#### Partials PHP:
 
-- navigation-principale.php
-- logo-site.php
+- pied-de-page.php
+- menu-principal.php
+- breadcrumbs.php
 
 #### CHAMPS PERSONNALISÉS
 
-- Aucun.
-
-### AUTRES CHAMPS PERSONNALISÉS
-
-- Aucun.
+- member-name : Nom du membre
+- member-role : Poste
 
 ---
 
-## Home
+# Erreur 404
 
-### TYPE DE CONTENU (POST TYPE)
+## error
 
-- page
+### Modèle
 
-### MODÈLE (TEMPLATE)
-
-- home.php
+- template: erreur.php
 
 ### COMPOSANTES
 
-#### NOM DU PARTIAL
+#### Partials PHP:
 
-- section-heros.php
-- section-services.php
-- section-actualites.php
-
-#### CHAMPS PERSONNALISÉS
-
-- titre-hero: texte.
-- image-hero: image.
-
-### AUTRES CHAMPS PERSONNALISÉS
-
-- Aucun.
-
----
-
-## News Hub
-
-### TYPE DE CONTENU (POST TYPE)
-
-- article
-
-### MODÈLE (TEMPLATE)
-
-- news-hub.php
-
-### COMPOSANTES
-
-#### NOM DU PARTIAL
-
-- liste-articles.php
-- pagination.php
+- pied-de-page.php
+- menu-principal.php
+- message-erreur.php
 
 #### CHAMPS PERSONNALISÉS
 
-- Aucun.
-
-### AUTRES CHAMPS PERSONNALISÉS
-
-- Aucun.
-
----
-
-## Services Hub
-
-### TYPE DE CONTENU (POST TYPE)
-
-- service
-
-### MODÈLE (TEMPLATE)
-
-- services-hub.php
-
-### COMPOSANTES
-
-#### NOM DU PARTIAL
-
-- liste-services.php
-
-#### CHAMPS PERSONNALISÉS
-
-- Aucun.
-
-### AUTRES CHAMPS PERSONNALISÉS
-
-- Aucun.
-
----
-
-## Service
-
-### TYPE DE CONTENU (POST TYPE)
-
-- service
-
-### MODÈLE (TEMPLATE)
-
-- service.php
-
-### COMPOSANTES
-
-#### NOM DU PARTIAL
-
-- description-service.php
-
-#### CHAMPS PERSONNALISÉS
-
-- nom-service: texte.
-- description-service: texte long.
-- image-service: image.
-
-### AUTRES CHAMPS PERSONNALISÉS
-
-- Aucun.
-
----
-
-## Sidebar
-
-### TYPE DE CONTENU (POST TYPE)
-
-- Aucun spécifique.
-
-### MODÈLE (TEMPLATE)
-
-- sidebar.php
-
-### COMPOSANTES
-
-#### NOM DU PARTIAL
-
-- navigation-secondaire.php
-
-#### CHAMPS PERSONNALISÉS
-
-- Aucun.
-
-### AUTRES CHAMPS PERSONNALISÉS
-
-- Aucun.
-
----
-
-## Single
-
-### TYPE DE CONTENU (POST TYPE)
-
-- article
-
-### MODÈLE (TEMPLATE)
-
-- single.php
-
-### COMPOSANTES
-
-#### NOM DU PARTIAL
-
-- contenu-article.php
-
-#### CHAMPS PERSONNALISÉS
-
-- Aucun.
-
-### AUTRES CHAMPS PERSONNALISÉS
-
-- Aucun.
+- error-message : Texte d'erreur
