@@ -1491,19 +1491,42 @@ a {
     left: 7%;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
+  .mainbox {
+    flex-direction: column;
+  }
   .err,
   .err2 {
-    font-size: 4rem;
+    font-size: 7rem;
+    top: 12%;
+  }
+  .far {
+    font-size: 6rem;
+    left: 40%;
+    top: 18%;
+  }
+  .msg {
+    font-size: 1.5rem;
+    width: 85%;
+    left: 7%;
+  }
+}
+@media (max-width: 576px) {
+  .mainbox {
+    flex-direction: column;
+  }
+  .err,
+  .err2 {
+    font-size: 6rem;
     top: 10%;
   }
   .far {
-    font-size: 3rem;
+    font-size: 5rem;
     left: 38%;
     top: 15%;
   }
   .msg {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     width: 90%;
     left: 5%;
   }
