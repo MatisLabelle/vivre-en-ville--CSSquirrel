@@ -20,7 +20,9 @@
             <p class="p-footer">Maison du développement durable</p>
             <a href="https://maps.app.goo.gl/VWFogEsZZv9bmNpG8">
                 <p class="p-footer">
-                    50, rue Ste-Catherine Ouest, bur. 480 Montréal (Québec) H2X 3V4
+                    <i class="fa fa-map-marker"></i>
+                    50, rue Ste-Catherine Ouest, bureau 480<br>
+                    Montréal (Québec) H2X 3V4, Canada<br>
                 </p>
             </a>
             <p class="p-footer"><i class="fa fa-phone"></i> (514) 394-1125</p>
@@ -30,7 +32,10 @@
             <p class="p-footer">Centre culture et environnement Frédéric Back</p>
             <a href="https://maps.app.goo.gl/3ccr8rJZNoKu5q2o7">
                 <p class="p-footer">
-                    870, avenue De Salaberry, bureau 311 Québec (Québec) G1R 2T9
+                    <i class="fa fa-map-marker"></i>
+                    870, avenue De Salaberry, bureau 311<br>
+                    Québec (Québec)<br>
+                    G1R 2T9
                 </p>
             </a>
             <p class="p-footer"><i class="fa fa-phone"></i> (418) 522-0011</p>
@@ -39,7 +44,10 @@
             <h3 class="ville-footer">Gatineau</h3>
             <a href="https://maps.app.goo.gl/dPfhjC2F64kHWYtJ9">
                 <p class="p-footer">
-                    200-A, boulevard Saint-Joseph Gatineau (Québec) J8Y 3W9
+                    <i class="fa fa-map-marker"></i>
+                    200-A, boulevard Saint-Joseph<br>
+                    Gatineau (Québec)<br>
+                    J8Y 3W9
                 </p>
             </a>
             <p class="p-footer"><i class="fa fa-phone"></i> (819) 205-2053</p>
@@ -54,7 +62,7 @@
             </a>
 
             <a href="https://montreal.ca/en/">
-                <img class="logo-footer" src="<?php echo get_template_directory_uri(); ?>/photos/Logo_Montréal.svg.png"
+                <img class="logo-footer" src="<?php echo get_template_directory_uri(); ?>/photos/mtl.png"
                     alt="Ville de Montréal" />
             </a>
             <a href="https://www.ville.quebec.qc.ca/">
