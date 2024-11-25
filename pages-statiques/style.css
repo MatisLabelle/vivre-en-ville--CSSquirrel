@@ -308,10 +308,15 @@ footer {
 }
 
 .logo-footer {
-  width: 80px;
-  position: relative;
-  margin-top: 2%;
-  margin-left: 5rem;
+  width: 100px;
+  /* Uniforme pour tous les logos */
+  height: auto;
+  /* Maintient les proportions de l'image */
+  -o-object-fit: contain;
+     object-fit: contain;
+  /* Assure que l'image est contenue sans déformation */
+  margin: 0 auto;
+  /* Centrer les logos */
 }
 
 .p-footer {
@@ -659,12 +664,9 @@ a {
 .titre-news {
   position: absolute;
   left: 10%;
-  top: 40px;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: var(--icon-color, #fff);
-  /* Contour blanc */
   color: transparent;
-  /* Remplissage transparent */
   transform: translate(-5%, -10%);
   z-index: 1;
   font-size: 64px;
@@ -733,8 +735,8 @@ a {
   padding: 20px;
   flex-grow: 1;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  flex-direction: column;
 }
 
 .news-title {
@@ -1936,7 +1938,6 @@ section.recherche ul {
   gap: 20px;
   flex-wrap: wrap;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/photos/building.jpg");
-  /* Responsive Design */
 }
 .boxcontact-container .boxcontact {
   flex: 1;
@@ -2001,18 +2002,15 @@ section.recherche ul {
 .boxcontact-container .boxcontact .contact-info p {
   margin-bottom: 8px;
 }
+
+/* Responsive Design */
 @media (max-width: 576px) {
-  .boxcontact-container {
-    flex-direction: column;
-    /* Passer à l'empilement vertical sur petits écrans */
-  }
-  .boxcontact-container .boxcontact {
+  .boxcontact {
     max-width: 100%;
-    /* Prendre toute la largeur */
+    flex-direction: column;
     margin-bottom: 20px;
   }
 }
-
 section.equipe .breadcrumb {
   padding: 0;
 }
