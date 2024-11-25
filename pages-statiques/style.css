@@ -311,12 +311,9 @@ footer {
   width: 100px;
   /* Uniforme pour tous les logos */
   height: auto;
-  /* Maintient les proportions de l'image */
   -o-object-fit: contain;
      object-fit: contain;
-  /* Assure que l'image est contenue sans déformation */
   margin: 0 auto;
-  /* Centrer les logos */
 }
 
 .p-footer {
