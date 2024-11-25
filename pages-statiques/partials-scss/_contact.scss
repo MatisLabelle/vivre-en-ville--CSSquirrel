@@ -91,12 +91,10 @@
 
 /* Responsive Design */
 @include mixins.respond-to('sm') {
-    flex-direction: column;
-    /* Passer à l'empilement vertical sur petits écrans */
 
     .boxcontact {
         max-width: 100%;
-        /* Prendre toute la largeur */
+        flex-direction: column;
         margin-bottom: 20px;
     }
 }
