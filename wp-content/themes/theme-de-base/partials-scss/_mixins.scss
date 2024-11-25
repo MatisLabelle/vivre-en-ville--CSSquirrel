@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "Schibsted Grotesk";
+  src: url(../sources/medias/fonts/Geist/Geist[wght].ttf);
+}
+
+@font-face {
+  font-family: "Message";
+  src: url(../sources/medias/fonts/messages-font/Messages-gnn5.ttf);
+}
+
+@mixin titre-1 {
+  font-size: 64px;
+  font-family: "Schibsted Grotesk";
+  color: black;
+  font-weight: bold;
+}
+
+h1 {
+  @include titre-1();
+}
+
+@mixin titre-2 {
+  font-size: 48px;
+  font-family: "Schibsted Grotesk";
+  color: black;
+  font-weight: medium;
+}
+
+h2 {
+  @include titre-2();
+}
+
+@mixin titre-3 {
+  font-size: 24px;
+  font-family: "Schibsted Grotesk";
+  color: black;
+  font-weight: normal;
+}
+
+h3 {
+  @include titre-3();
+}
+
+@mixin paragraphe {
+  font-size: 16px;
+  font-family: "Schibsted Grotesk";
+  color: black;
+  font-weight: normal;
+}
+
+p {
+  @include paragraphe();
+}
+
+/****** MARGINS ******/
+
+@mixin mx-5rem {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+// MEDIA QUERIES
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == "sm" {
+    @media (max-width: 576px) {
+      @content;
+    }
+  } @else if $breakpoint == "md" {
+    @media (max-width: 768px) {
+      @content;
+    }
+  } @else if $breakpoint == "lg" {
+    @media (max-width: 992px) {
+      @content;
+    }
+  } @else if $breakpoint == "xl" {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  }
+}

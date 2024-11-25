@@ -1,0 +1,239 @@
+@use "variables.scss";
+@use "mixins.scss";
+
+.actu {
+  &__date {
+    margin-left: 5vw;
+    border-left: solid 100px variables.$orange;
+    padding-left: 10px;
+  }
+  &__title {
+    color: variables.$orange;
+    font-size: 24px;
+    margin: 10px 5%;
+  }
+
+  &__img {
+    width: 90vw;
+  }
+
+  &__credit {
+    font-size: 12px;
+  }
+
+  &__info {
+    font-size: 24px;
+  }
+
+  &__post {
+    margin: 0 5vw;
+    width: 90vw;
+  }
+  &__sous-titre {
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  &__text {
+    font-size: 20px;
+  }
+
+  &__auteur {
+    margin: 5px;
+    padding: 5px;
+    border-left: solid 5px variables.$orange;
+    font-size: 10px;
+  }
+  &__auteur-info {
+    font-size: 12px;
+    margin: 0;
+  }
+  &__auteur-name {
+    font-size: 22px;
+    font-weight: 600;
+    color: variables.$orange;
+    margin: 0;
+  }
+
+  &__nav {
+    margin: 5%;
+    width: 90vw;
+    padding-bottom: 10px;
+    position: relative;
+    z-index: 5;
+  }
+  &__last {
+    position: absolute;
+    left: 0;
+  }
+  &__next {
+    position: absolute;
+    right: 0;
+  }
+
+  &__more {
+    background-color: variables.$orange;
+    position: relative;
+    padding: 5%;
+  }
+  &__alike {
+    color: white;
+    font-size: 24px;
+  }
+  &__plus {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    &--1 {
+      width: 28vw;
+      height: 30vw;
+      background-image: url(../photos/images-news-2.png);
+      background-size: cover;
+      &::before {
+        color: white;
+        font-size: 12px;
+        font-weight: 500;
+        content: "Projet de loi 61 créant mobilité infra Québec";
+        position: absolute;
+        width: 28vw;
+        height: 30vw;
+        background-color: rgba(251, 171, 26, 0.5);
+        padding: 5px;
+      }
+    }
+    &--2 {
+      width: 28vw;
+      height: 30vw;
+      background-image: url(../photos/images-news-3.png);
+      background-size: cover;
+      &::before {
+        color: white;
+        font-size: 12px;
+        font-weight: 500;
+        content: "Évènement de la rentrée";
+        position: absolute;
+        width: 28vw;
+        height: 30vw;
+        background-color: rgba(251, 171, 26, 0.5);
+        padding: 5px;
+      }
+    }
+    &--3 {
+      width: 28vw;
+      height: 30vw;
+      background-image: url(../photos/images-news-4.png);
+      background-size: cover;
+      &::before {
+        color: white;
+        font-size: 12px;
+        font-weight: 500;
+        content: "Futur hôpital de l’Outaouais";
+        position: absolute;
+        width: 28vw;
+        height: 30vw;
+        background-color: rgba(251, 171, 26, 0.5);
+        padding: 5px;
+      }
+    }
+  }
+  &__donner {
+    display: none;
+  }
+  &__help {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .actu {
+    &__grid {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 0px;
+      width: 100%;
+    }
+    &__post {
+      width: 90%;
+      margin-right: 0;
+    }
+    &__img {
+      width: 100%;
+    }
+
+    &__more {
+      width: 90%;
+      background-color: white;
+    }
+    &__alike {
+      background-color: variables.$orange;
+      padding: 5%;
+      width: 101%;
+      font-size: 36px;
+      font-weight: 700;
+    }
+    &__plus {
+      flex-direction: column;
+      padding: 0;
+      justify-content: space-between;
+      &--1 {
+        width: 100%;
+        height: 15vw;
+        margin-bottom: 5px;
+        &::before {
+          width: 90%;
+          height: 15vw;
+          font-size: 24px;
+        }
+      }
+      &--2 {
+        width: 100%;
+        height: 10vw;
+        margin-bottom: 5px;
+        &::before {
+          width: 90%;
+          height: 10vw;
+          font-size: 24px;
+        }
+      }
+      &--3 {
+        width: 100%;
+        height: 10vw;
+        margin-bottom: 5px;
+        &::before {
+          width: 90%;
+          height: 10vw;
+          font-size: 24px;
+        }
+      }
+    }
+
+    &__cta {
+      background-color: variables.$orange;
+      text-align: center;
+      padding: 5%;
+    }
+    &__donner {
+      display: block;
+      background-color: white;
+      border: 3px white solid;
+      border-radius: 50px;
+      padding: 5% 10%;
+      left: 0;
+      right: 0;
+      margin: auto;
+      color: variables.$orange;
+      border: solid 3px;
+      &:hover {
+        background-color: variables.$orange;
+        border-color: white;
+        border: solid 3px;
+        color: white;
+      }
+    }
+    &__help {
+      display: block;
+      color: white;
+      font-size: 36px;
+    }
+  }
+}

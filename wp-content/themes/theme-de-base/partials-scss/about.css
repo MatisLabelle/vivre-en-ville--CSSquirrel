@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "Schibsted Grotesk";
+  src: url(../sources/medias/fonts/Geist/Geist[wght].ttf);
+}
+@font-face {
+  font-family: "Message";
+  src: url(../sources/medias/fonts/messages-font/Messages-gnn5.ttf);
+}
+h1 {
+  font-size: 64px;
+  font-family: "Schibsted Grotesk";
+  color: black;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 48px;
+  font-family: "Schibsted Grotesk";
+  color: black;
+  font-weight: medium;
+}
+
+h3 {
+  font-size: 24px;
+  font-family: "Schibsted Grotesk";
+  color: black;
+  font-weight: normal;
+}
+
+p {
+  font-size: 16px;
+  font-family: "Schibsted Grotesk";
+  color: black;
+  font-weight: normal;
+}
+
+/****** MARGINS ******/
+.about__title {
+  margin: 0 5vw;
+  padding: 5px;
+  color: #fbab1a;
+}
+.about__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 90vw));
+  padding: 5vw;
+  row-gap: 5vw;
+  -moz-column-gap: 5%;
+       column-gap: 5%;
+}
+.about__chemin {
+  margin: 0 5vw;
+}
+.about__chemin > a {
+  color: black;
+}
+
+.mission {
+  background-color: #afe0ee;
+  padding: 5%;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 20px;
+}
+.mission__alt {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.approche {
+  background-color: #fecf07;
+  padding: 5%;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 20px;
+}
+
+.histoire {
+  background-color: #aad039;
+  padding: 5%;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 20px;
+}
+.histoire__question {
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .mission__text {
+    font-size: 24px;
+  }
+}/*# sourceMappingURL=about.css.map */

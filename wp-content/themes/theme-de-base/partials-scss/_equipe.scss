@@ -1,0 +1,68 @@
+@use "mixins.scss";
+@use "variables.scss";
+
+section.equipe .breadcrumb {
+  padding: 0;
+}
+
+section.equipe {
+  padding: 0 5%;
+  padding-bottom: 5%;
+}
+
+.equipe {
+  &__title {
+    font-size: 48px;
+    color: variables.$bleu;
+    font-weight: bold;
+  }
+
+  &__card {
+    background-color: variables.$bleu;
+    padding: 16px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+  }
+
+  &__position {
+    margin: 0;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+  }
+
+  &__name {
+    font-weight: bold;
+    color: white;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .equipe__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+  }
+
+  .equipe {
+    &__title {
+        font-size: 64px;
+    }
+    &__card {
+        margin: 0;
+        transition: scale 0.3;
+    }
+    &__card:hover {
+        scale: 1.02;
+    }
+    &__name {
+        font-size: 32px;
+    }
+    &__position {
+        font-size: 24px;
+        padding: 0;
+        margin: 0;
+    }
+  }
+}

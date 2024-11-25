@@ -1,0 +1,139 @@
+@use "variables.scss";
+@use "mixins.scss";
+
+/* Mise en page de base */
+.erreur {
+  display: flex;
+  height: 80vh;
+  width: 100vw;
+}
+
+
+.mainbox {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: auto;
+  margin: auto;
+  height: 50vh;
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+}
+
+.err,
+.err2,
+.far {
+  color: variables.$vert;
+}
+
+.err,
+.err2 {
+  color: variables.$orange;
+  font-size: 15vw;
+
+}
+
+
+.far {
+  font-size: 12vw;
+}
+
+
+.titre404 {
+  text-align: center;
+}
+
+.msg {
+  margin: 0 auto;
+  font-size: 25px;
+  font-weight: 600;
+  transition: transform 0.3s ease-in-out;
+  display: inline-block;
+
+  &:hover {
+    animation: bounce 0.5s ease-in-out forwards;
+  }
+
+  a {
+    text-decoration: none;
+    color: variables.$jaune;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: variables.$vert;
+      text-decoration: underline;
+    }
+  }
+}
+
+// Animation de rebond
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2); // Taille augmentée à 1.2
+  }
+
+  70% {
+    transform: scale(1.15); // Léger retour
+  }
+
+  100% {
+    transform: scale(1.2); // Position finale
+  }
+}
+
+
+
+@include mixins.respond-to('md') {
+  .mainbox {
+    flex-direction: column;
+  }
+
+  .err,
+  .err2 {
+    font-size: 7rem;
+    top: 12%;
+  }
+
+  .far {
+    font-size: 6rem;
+    left: 40%;
+    top: 18%;
+  }
+
+  .msg {
+    font-size: 1.5rem;
+    width: 85%;
+    left: 7%;
+  }
+}
+
+
+@include mixins.respond-to('sm') {
+
+  .mainbox {
+    flex-direction: column;
+  }
+
+  .err,
+  .err2 {
+    font-size: 6rem;
+    top: 10%;
+  }
+
+  .far {
+    font-size: 5rem;
+    left: 38%;
+    top: 15%;
+  }
+
+  .msg {
+    font-size: 1.2rem;
+    width: 90%;
+    left: 5%;
+  }
+}

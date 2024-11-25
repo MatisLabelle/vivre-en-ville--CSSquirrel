@@ -1,0 +1,72 @@
+@use "variables.scss";
+@use "mixins.scss";
+
+.section__temoignanes {
+  margin-top: 10%;
+  position: relative;
+}
+
+.temoignage-content {
+  background-color: variables.$bleu;
+  text-align: center;
+  padding: 50px;
+  height: auto;
+  min-height: 300px;
+  position: relative;
+
+  .temoignage-photo {
+    border: 6px solid #fff;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    position: absolute;
+    top: -75px;
+    transform: translateX(75px);
+  }
+
+  .temoignage-nom {
+    color: #000;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+  }
+
+  .temoignage-profession {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    /* 100% */
+  }
+
+  .temoignage-texte {
+    margin: 0 auto;
+    width: 70vw;
+    padding: 10px;
+    text-align: center;
+    font-size: 17px;
+    font-style: italic;
+    line-height: 32px;
+  }
+}
+
+.swiper-slide {
+  padding-top: 120px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: variables.$bleu !important;
+  border: 3px solid white;
+  width: 1rem;
+  height: 1rem;
+}
+
+.swiper-pagination-bullet {
+  background-color: #fff;
+  opacity: 100;
+}

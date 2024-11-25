@@ -1,0 +1,78 @@
+@use "variables.scss";
+@use "mixins.scss";
+
+.info-lettre {
+  height: 70vh;
+  max-height: 600px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: variables.$orange;
+  margin-top: 10%;
+  position: relative;
+
+  &__titre {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    background-color: variables.$orange;
+    z-index: 2;
+    width: 100%;
+  }
+
+  &__email {
+    color: white;
+    border: 2px solid white;
+    background-color: variables.$orange;
+    width: 60vw;
+    max-width: 600px;
+    border-radius: 50px;
+    padding: 20px;
+  }
+
+  &__email::placeholder {
+    color: white;
+    /* Change this to any color you want */
+    opacity: 1;
+    /* Ensure the color is not faded */
+  }
+
+  &__input-group {
+    position: relative;
+    display: inline-block;
+  }
+
+  &__submit {
+    position: absolute;
+    top: 50%;
+    right: 5px; // Adjust the button position inside the input
+    transform: translateY(-50%);
+    background-color: white;
+    border: none;
+    color: variables.$orange;
+    border-radius: 50px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bolder;
+  }
+
+  &__newsletter {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    margin: 5%;
+  }
+
+  &__send {
+    position: absolute;
+    height: 100px;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1;
+    margin: 5%;
+    transform: rotate(220deg);
+  }
+}

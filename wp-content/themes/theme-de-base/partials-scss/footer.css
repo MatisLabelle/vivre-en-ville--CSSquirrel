@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "Schibsted Grotesk";
+  src: url(../sources/medias/fonts/Schibsted_Grotesk/SchibstedGrotesk-VariableFont_wght.ttf);
+}
+h1 {
+  font-size: 64px;
+  font-family: "Schibsted Grotesk";
+  color: black;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 64px;
+  font-family: "Schibsted Grotesk";
+  color: black;
+  font-weight: medium;
+}
+
+h3 {
+  font-size: 64px;
+  font-family: "Schibsted Grotesk";
+  color: black;
+  font-weight: normal;
+}
+
+p {
+  font-size: 24px;
+  font-family: "Schibsted Grotesk";
+  color: black;
+  font-weight: normal;
+}
+
+footer {
+  background-color: #7b7263;
+}
+
+.grid-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}/*# sourceMappingURL=footer.css.map */

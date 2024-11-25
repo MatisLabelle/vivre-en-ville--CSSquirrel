@@ -1,0 +1,181 @@
+@use "variables.scss";
+@use "mixins.scss";
+@use "sass:color";
+
+.chemin {
+  margin: 5%;
+  font-size: 16px;
+  > a {
+    color: black;
+  }
+}
+
+.news {
+  &__title {
+    color: variables.$orange;
+    font-size: 36px;
+    margin-left: 5%;
+  }
+
+  &__archives {
+    background-color: variables.$orange;
+    padding: 10px;
+    width: 90vw;
+    color: white;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-bottom: 5vw;
+    margin-top: 5vw;
+    position: relative;
+  }
+
+  &__card {
+    width: 90vw;
+    background-color: color.adjust(variables.$orange, $alpha: -0.75);
+    left: 0;
+    right: 0;
+    margin: 5vw;
+    padding-left: 10px;
+    padding-bottom: 0;
+    border-left: variables.$orange 5px solid;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    height: 20vh;
+    position: relative;
+    transition: transform 1s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+    &--1 {
+      height: 30vh;
+
+      & img {
+        max-height: 30vh;
+      }
+      & h3 {
+        font-size: 20px;
+      }
+      & .card__text {
+        height: 18vh;
+      }
+    }
+  }
+  &__pages {
+    text-align: center;
+    > span {
+      margin: 20px;
+    }
+  }
+}
+
+.archive {
+  &__title {
+    color: white;
+    font-size: 24px;
+  }
+
+  &__month {
+    display: none;
+  }
+
+  &__year {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    position: relative;
+  }
+
+  &__more {
+    color: white;
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+    margin: 0;
+  }
+}
+
+.card {
+  &__img {
+    width: 100%;
+    height: 100%;
+    max-height: 20vh;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  &__title {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 5px;
+  }
+  &__text {
+    font-size: 12px;
+    height: 10vh;
+    overflow: hidden;
+    padding-right: 5px;
+  }
+  &__info {
+    font-size: 14px;
+    bottom: 0;
+    position: absolute;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .chemin {
+    margin: 20px;
+    margin-left: 10vw;
+  }
+
+  .news {
+    &__grid {
+      display: grid;
+      grid-template-columns: 4fr 1fr;
+      gap: 0px;
+      width: 100%;
+      padding: 0 10vw;
+    }
+
+    &__card {
+      margin-left: 0vw;
+      width: auto;
+    }
+
+    &__archives {
+      width: 80%;
+      height: auto;
+      max-height: 600px;
+    }
+
+    &__title {
+      font-size: 64px;
+      margin: 20px;
+      margin-left: 10vw;
+    }
+  }
+
+  .archive {
+    &__year {
+      display: block;
+    }
+    &__month {
+      display: block;
+    }
+  }
+
+  .card {
+    &__title {
+      font-size: 20px;
+      font-weight: 700;
+    }
+    &__info {
+      font-size: 18px;
+    }
+    &__text {
+      font-size: 16px;
+    }
+  }
+}
