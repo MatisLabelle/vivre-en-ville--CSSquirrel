@@ -390,23 +390,19 @@ a {
   color: white;
   border: 0;
   border-radius: 50px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 20px 40px;
   margin: 5rem;
-  margin-top: 10%;
   right: 0;
   top: -20px;
   position: absolute;
   font-family: "Schibsted Grotesk";
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
 }
-
 .footer__donner:hover {
   background-color: white;
-  border-color: #e09a16;
-  border: solid 3px;
-  color: #e09a16;
+  color: #fbab1a;
+  border: 3px solid #fbab1a;
 }
 
 .partenaire {

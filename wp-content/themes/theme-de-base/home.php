@@ -324,7 +324,6 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
-            @
             <!--SECTION INFOLETTRE-->
             <section class="section info-lettre">
                 <div class="info-lettre__form">
