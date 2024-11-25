@@ -23,7 +23,7 @@
                     50, rue Ste-Catherine Ouest, bur. 480 Montréal (Québec) H2X 3V4
                 </p>
             </a>
-            <p class="p-footer">T. (514) 394-1125</p>
+            <p class="p-footer"><i class="fa fa-phone"></i> (514) 394-1125</p>
         </div>
         <div class="quebec">
             <h3 class="ville-footer">Québec</h3>
@@ -33,7 +33,7 @@
                     870, avenue De Salaberry, bureau 311 Québec (Québec) G1R 2T9
                 </p>
             </a>
-            <p class="p-footer">T. (418) 522-0011</p>
+            <p class="p-footer"><i class="fa fa-phone"></i> (418) 522-0011</p>
         </div>
         <div class="gatineau">
             <h3 class="ville-footer">Gatineau</h3>
@@ -42,11 +42,11 @@
                     200-A, boulevard Saint-Joseph Gatineau (Québec) J8Y 3W9
                 </p>
             </a>
-            <p class="p-footer">T. (819) 205-2053</p>
+            <p class="p-footer"><i class="fa fa-phone"></i> (819) 205-2053</p>
         </div>
     </div>
     <div class="partenaire">
-        <h3 class="partenaire-footer">Nos partenaire</h3>
+        <h3 class="partenaire-footer">Nos partenaires</h3>
         <div class="grid-footer__partenaire">
             <a href="https://carrefour.vivreenville.org/">
                 <img class="logo-footer" src="<?php echo get_template_directory_uri(); ?>/photos/carrefour.png"
