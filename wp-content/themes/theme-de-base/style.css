@@ -397,12 +397,13 @@ a {
   position: absolute;
   font-family: "Schibsted Grotesk";
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
 .footer__donner:hover {
   background-color: white;
-  color: #fbab1a;
-  border: 3px solid #fbab1a;
+  border: solid 3px #e09a16;
+  color: #e09a16;
+  transform: scale(1.1);
 }
 
 .partenaire {
