@@ -1,5 +1,13 @@
 <section>
-    <h2>404</h2>
-    <img src="<?php echo get_template_directory_uri(); ?>https://media.giphy.com/media/3HLMNi9U0yb4CDldVO/giphy.gif"
-        alt="404">
+    <div class="404 erreur">
+        <div class="mainbox">
+            <div class="titre404">
+                <span class="err">4</span>
+                <i class="far fa-question-circle fa-spin"></i>
+                <span class="err2">4</span>
+                <div class="msg">
+                    <a class="taville" href="./index.html">Cliques ici et retournons à ta ville. </a></p>
+                </div>
+            </div>
+        </div>
 </section>
