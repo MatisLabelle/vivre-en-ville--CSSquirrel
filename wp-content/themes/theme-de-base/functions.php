@@ -26,14 +26,11 @@ register_nav_menus(
 /* --------------------------------
 Function déclarant la barre latérale principale */
 function add_sidebars() {
+	/*
 	register_sidebar(array(	
-		/* 
-			1. 'main-sidebar' = Nom dans le code
-			2. 'Barre laterale principale' = Nom dans l'admin
-			3. 'Barre latérale principale du site' = Description dans l'admin */
 		'main-sidebar' => __( 'Barre laterale principale', 'Barre latérale principale du site' ), 
-		/* Dupliquer cette ligne si vous désirez déclarer d'autres sidebars */
 	));
+	*/
 } 
 /* Appel la fonction déclarant la barre latérale au moment de l'init des widgets */
 add_action('widgets_init', 'add_sidebars');
@@ -64,3 +61,17 @@ function add_style_and_js()  {
 
 /* Appel de la fonction ajoutant les styles et scripts */
 add_action('wp_enqueue_scripts', 'add_style_and_js'); 
+
+function enqueue_swiper_assets() {
+    // Enqueue Swiper CSS
+    wp_enqueue_style('swiper-css', 'https://unpkg.com/swiper/swiper-bundle.min.css');
+    
+    // Enqueue Swiper JS
+    wp_enqueue_script('swiper-js', 'https://unpkg.com/swiper/swiper-bundle.min.js', array(), null, true);
+}
+add_action('wp_enqueue_scripts', 'enqueue_swiper_assets');
+
+function enqueue_custom_js() {
+    wp_enqueue_script('custom-js', get_template_directory_uri() . '/js/custom.js', array('swiper-js'), null, true);
+}
+add_action('wp_enqueue_scripts', 'enqueue_custom_js');
