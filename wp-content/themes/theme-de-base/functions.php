@@ -61,17 +61,3 @@ function add_style_and_js()  {
 
 /* Appel de la fonction ajoutant les styles et scripts */
 add_action('wp_enqueue_scripts', 'add_style_and_js'); 
-
-function enqueue_swiper_assets() {
-    // Enqueue Swiper CSS
-    wp_enqueue_style('swiper-css', 'https://unpkg.com/swiper/swiper-bundle.min.css');
-    
-    // Enqueue Swiper JS
-    wp_enqueue_script('swiper-js', 'https://unpkg.com/swiper/swiper-bundle.min.js', array(), null, true);
-}
-add_action('wp_enqueue_scripts', 'enqueue_swiper_assets');
-
-function enqueue_custom_js() {
-    wp_enqueue_script('custom-js', get_template_directory_uri() . '/js/custom.js', array('swiper-js'), null, true);
-}
-add_action('wp_enqueue_scripts', 'enqueue_custom_js');

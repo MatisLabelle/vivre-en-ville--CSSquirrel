@@ -1,6 +1,6 @@
 <?php 
 /**
- * 	Template Name: faq
+ * 	Template Name: News article
  * 	Identique à page, mais avec une barre latérale
  */
 
