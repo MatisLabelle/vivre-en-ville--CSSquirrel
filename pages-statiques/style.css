@@ -613,18 +613,19 @@ a {
   width: 60vw;
   max-width: 600px;
   border-radius: 50px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 20px;
 }
 .info-lettre__email::-moz-placeholder {
-  color: white; /* Change this to any color you want */
-  opacity: 1; /* Ensure the color is not faded */
+  color: white;
+  /* Change this to any color you want */
+  opacity: 1;
+  /* Ensure the color is not faded */
 }
 .info-lettre__email::placeholder {
-  color: white; /* Change this to any color you want */
-  opacity: 1; /* Ensure the color is not faded */
+  color: white;
+  /* Change this to any color you want */
+  opacity: 1;
+  /* Ensure the color is not faded */
 }
 .info-lettre__input-group {
   position: relative;
