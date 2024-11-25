@@ -209,7 +209,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                     class="news-image" />
                 <div class="news-content">
                     <h3 class="news-title">Projet structurant de l'Est</h3>
-                    <h6 class="news-date">19 septembre 2024</h6>
+                    <h4 class="news-date">19 septembre 2024</h4>
                     <p class="news-summary">
                         Vivre en Ville appelle à adopter une approche cohérente et
                         ambitieuse 19 septembre 2024.
@@ -225,7 +225,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                     <h3 class="news-title">
                         Projet de loi 61 créant Mobilité Infra Québec
                     </h3>
-                    <h6 class="news-date">12 septembre 2024</h6>
+                    <h4 class="news-date">12 septembre 2024</h4>
                     <p class="news-summary">
                         De bonnes intentions dans un projet de loi imprécis qui suscite de
                         nombreuses questions.
@@ -239,7 +239,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                     class="news-image" />
                 <div class="news-content">
                     <h3 class="news-title">PL61</h3>
-                    <h6 class="news-date">19 septembre 2024</h6>
+                    <h4 class="news-date">19 septembre 2024</h4>
                     <p class="news-summary">
                         Pour une gouvernance favorisant le transport collectif.
                     </p>
