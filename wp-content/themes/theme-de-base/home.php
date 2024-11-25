@@ -205,7 +205,8 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
         <section class="news-section">
             <h2 class="titre-news">À la une</h2>
             <div class="news-card">
-                <img src="<?php echo get_template_directory_uri(); ?>./photos/road.jpg" alt="News 1" class="news-image" />
+                <img src="<?php echo get_template_directory_uri(); ?>./photos/road.jpg" alt="News 1"
+                    class="news-image" />
                 <div class="news-content">
                     <h3 class="news-title">Projet structurant de l'Est</h3>
                     <h6 class="news-date">19 septembre 2024</h6>
@@ -218,7 +219,8 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
             </div>
 
             <div class="news-card">
-                <img src="<?php echo get_template_directory_uri(); ?>./photos/lake.jpg" alt="News 2" class="news-image" />
+                <img src="<?php echo get_template_directory_uri(); ?>./photos/lake.jpg" alt="News 2"
+                    class="news-image" />
                 <div class="news-content">
                     <h3 class="news-title">
                         Projet de loi 61 créant Mobilité Infra Québec
@@ -233,7 +235,8 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
             </div>
 
             <div class="news-card">
-                <img src="<?php echo get_template_directory_uri(); ?>./photos/train.jpg" alt="News 3" class="news-image" />
+                <img src="<?php echo get_template_directory_uri(); ?>./photos/train.jpg" alt="News 3"
+                    class="news-image" />
                 <div class="news-content">
                     <h3 class="news-title">PL61</h3>
                     <h6 class="news-date">19 septembre 2024</h6>
@@ -257,7 +260,8 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                     <!-- Témoignage 1 -->
                     <div class="swiper-slide temoignane-1">
                         <div class="temoignage-content">
-                            <img src="<?php echo get_template_directory_uri(); ?>/photos/marie.jpg" alt="Marie L" class="temoignage-photo" />
+                            <img src="<?php echo get_template_directory_uri(); ?>/photos/marie.jpg" alt="Marie L"
+                                class="temoignage-photo" />
                             <h3 class="temoignage-nom">Marie L.</h3>
                             <h6 class="temoignage-profession"> Avocate </h6>
                             <p class="temoignage-texte">
@@ -277,7 +281,8 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                     <!-- Témoignage 2 -->
                     <div class="swiper-slide temoignane-2">
                         <div class="temoignage-content">
-                            <img src="<?php echo get_template_directory_uri(); ?>/photos/thomas.jpg" alt="Thomas G." class="temoignage-photo" />
+                            <img src="<?php echo get_template_directory_uri(); ?>/photos/thomas.jpg" alt="Thomas G."
+                                class="temoignage-photo" />
                             <h3 class="temoignage-nom">Thomas G.</h3>
                             <h6 class="temoignage-profession"> Physiciste </h6>
                             <p class="temoignage-texte">
@@ -298,7 +303,8 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                     <!-- Témoignage 3 -->
                     <div class="swiper-slide temoignane-3">
                         <div class="temoignage-content">
-                            <img src="<?php echo get_template_directory_uri(); ?>/photos/sophie.jpg" alt="Sophie" class="temoignage-photo" />
+                            <img src="<?php echo get_template_directory_uri(); ?>/photos/sophie.jpg" alt="Sophie"
+                                class="temoignage-photo" />
                             <h3 class="temoignage-nom">Sophie D.</h3>
                             <h6 class="temoignage-profession"> Professeure</h6>
                             <p class="temoignage-texte">
@@ -318,13 +324,13 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
-
+            @
             <!--SECTION INFOLETTRE-->
             <section class="section info-lettre">
                 <div class="info-lettre__form">
                     <h2 class="info-lettre__titre">S’abonner à l’infolettre</h2>
                     <div class="info-lettre__input-group">
-                        <input type="email" class="info-lettre__email" placeholder="Adresse courriel" />
+                        <input type="email" class="info-lettre__email" placeholder="exemple@domaine.com" />
                         <button class="info-lettre__submit" type="button"><svg xmlns="http://www.w3.org/2000/svg"
                                 width="20" height="20" viewBox="0 0 82 82" fill="none">
                                 <path d="M36.167 27.333L49.8337 40.9997L36.167 54.6663" stroke="#FBAB1A"
