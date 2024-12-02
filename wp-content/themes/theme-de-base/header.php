@@ -50,29 +50,13 @@
             </div>
         </div>
         <nav>
-            <a class="logo" href="#">
+            <a class="logo" href="<?php echo home_url('/'); ?>">
                 <img src="<?php echo get_template_directory_uri(); ?>/photos/LOGO.png" alt="logo" />
             </a>
-            <ul>
-                <li>
-                    <a href="/about.html">À propos</a>
-                </li>
-                <li>
-                    <a href="/news-hub.html">Actualités</a>
-                </li>
-                <li>
-                    <a href="/services-hub.html">Nos services</a>
-                </li>
-                <li>
-                    <a href="/equipe.html">Équipe</a>
-                </li>
-                <li>
-                    <a href="/contact.html">Contactez-nous</a>
-                </li>
-                <li>
-                    <button class="btn-donner">Donner</button>
-                </li>
-            </ul>
+            <?php 
+  wp_nav_menu(array('theme_location' => 'main-menu'));
+    ?>
+            <button class="btn-donner">Donner</button>
             <div class="nav-end">
                 <button class="btn-donner-2">Donner</button>
                 <div class="hamburger">
@@ -83,35 +67,9 @@
             </div>
         </nav>
         <div class="menubar">
-            <ul>
-                <li>
-                    <a href="/home.php">Accueil</a>
-                </li>
-                <li>
-                    <a href="/about.html">À propos</a>
-                </li>
-                <li>
-                    <a href="/news-hub.html">Actualités</a>
-                </li>
-                <li>
-                    <a href="/services-hub.html">Nos services</a>
-                </li>
-                <li>
-                    <a href="/equipe.html">Équipe</a>
-                </li>
-                <li>
-                    <a href="/contact.html">Contactez-nous</a>
-                </li>
-                <li>
-                    <a href="#">S'abonner</a>
-                </li>
-                <li>
-                    <a href="#">Rechercher</a>
-                </li>
-                <li>
-                    <a href="#">English</a>
-                </li>
-            </ul>
+            <?php 
+  wp_nav_menu(array('theme_location' => 'main-menu'));
+    ?>
         </div>
     </header>
 

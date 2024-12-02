@@ -49,10 +49,10 @@
       transform: scale(1.1);
     }
     &--1 {
-      height: 30vh;
+      height: fit-content;
 
       & img {
-        max-height: 30vh;
+        height: auto;
       }
       & h3 {
         font-size: 20px;

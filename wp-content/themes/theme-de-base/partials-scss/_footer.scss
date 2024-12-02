@@ -42,6 +42,12 @@ footer {
   /* Centrer les logos */
 }
 
+.logo-footer--vev {
+  width: 100px;
+  height: auto;
+  margin: 5%;
+}
+
 .p-footer {
   color: white;
   text-decoration: none;
@@ -84,7 +90,8 @@ footer {
   }
 
   .footer__donner {
-    top: -50px !important;
+    width: 20%;
+    font-size: 24px;
   }
 }
 
@@ -126,8 +133,6 @@ a {
     transform: scale(1.1); // Légère mise en avant au survol
   }
 }
-
-
 
 .partenaire {
   margin-bottom: 20px;

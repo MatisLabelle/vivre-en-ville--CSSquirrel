@@ -8,16 +8,12 @@
   width: 100vw;
 }
 
-
 .mainbox {
   display: flex;
   justify-content: center;
-  align-content: center;
-  padding: auto;
   margin: auto;
   height: 50vh;
   width: 100%;
-  max-width: 600px;
   position: relative;
 }
 
@@ -31,17 +27,15 @@
 .err2 {
   color: variables.$orange;
   font-size: 15vw;
-
 }
-
 
 .far {
   font-size: 12vw;
 }
 
-
 .titre404 {
   text-align: center;
+  display: block;
 }
 
 .msg {
@@ -49,7 +43,7 @@
   font-size: 25px;
   font-weight: 600;
   transition: transform 0.3s ease-in-out;
-  display: inline-block;
+  display: block;
 
   &:hover {
     animation: bounce 0.5s ease-in-out forwards;
@@ -86,9 +80,7 @@
   }
 }
 
-
-
-@include mixins.respond-to('md') {
+@include mixins.respond-to("md") {
   .mainbox {
     flex-direction: column;
   }
@@ -112,9 +104,7 @@
   }
 }
 
-
-@include mixins.respond-to('sm') {
-
+@include mixins.respond-to("sm") {
   .mainbox {
     flex-direction: column;
   }

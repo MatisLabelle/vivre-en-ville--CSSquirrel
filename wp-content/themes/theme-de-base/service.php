@@ -13,7 +13,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 
 <article>
     <section class="recherche">
-        <div class="breadcrumb"><a href="index.html">Accueil&nbsp;</a>
+        <div class="breadcrumb"><a href="<?php echo home_url('/'); ?>">Accueil&nbsp;</a>
             <p>>&nbsp;</p><a href="services-hub.html">Nos services&nbsp;</a>
             <p>>&nbsp;</p><a href="service.html">Recherche et innovation</a>
         </div>
@@ -54,11 +54,12 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                     d'alimenter la réflexion et de pouvoir transmettre ces connaissances aux acteurs québécois.</p>
             </div>
             <div class="bloc-3">
-                <img src="photos/image_service.jpg" alt="image_service">
+                <img src="<?php echo get_template_directory_uri(); ?>/photos/image_service.jpg" alt="image_service">
             </div>
         </div>
         <p class="recherche__text">Consultez les <a href="#" class="textLink">réalisations</a> de Vivre en Ville ou les
-            <a href="#" class="textLink">interventions par thématiques</a>.</p>
+            <a href="#" class="textLink">interventions par thématiques</a>.
+        </p>
         <h2 class="recherche__subTitle">Innover sur le terrain</h2>
         <p class="recherche__text">À la fine pointe de la connaissance, Vivre en Ville met ses recherches à profit dans
             le cadre de projets pilotes afin de stimuler l’émergence de nombreux projets innovants. Inspirées des

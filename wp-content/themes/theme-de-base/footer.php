@@ -8,7 +8,7 @@
 </main>
 
 <footer>
-    <img class="logo-footer" src="<?php echo get_template_directory_uri(); ?>/photos/LOGO.png" />
+    <img class="logo-footer--vev" src="<?php echo get_template_directory_uri(); ?>/photos/LOGO.png" />
     <a href="https://vivreenville.org/">
         <button class="footer__donner">Donner</button>
     </a>

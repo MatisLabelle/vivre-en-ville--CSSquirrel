@@ -328,6 +328,12 @@ footer {
   /* Centrer les logos */
 }
 
+.logo-footer--vev {
+  width: 100px;
+  height: auto;
+  margin: 5%;
+}
+
 .p-footer {
   color: white;
   text-decoration: none;
@@ -367,7 +373,8 @@ footer {
     font-size: 36px;
   }
   .footer__donner {
-    top: -50px !important;
+    width: 20%;
+    font-size: 24px;
   }
 }
 #copyright-footer {
@@ -1077,10 +1084,11 @@ a {
   transform: scale(1.1);
 }
 .news__card--1 {
-  height: 30vh;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .news__card--1 img {
-  max-height: 30vh;
+  height: auto;
 }
 .news__card--1 h3 {
   font-size: 20px;
@@ -1418,12 +1426,9 @@ a {
 .mainbox {
   display: flex;
   justify-content: center;
-  align-content: center;
-  padding: auto;
   margin: auto;
   height: 50vh;
   width: 100%;
-  max-width: 600px;
   position: relative;
 }
 
@@ -1445,6 +1450,7 @@ a {
 
 .titre404 {
   text-align: center;
+  display: block;
 }
 
 .msg {
@@ -1452,7 +1458,7 @@ a {
   font-size: 25px;
   font-weight: 600;
   transition: transform 0.3s ease-in-out;
-  display: inline-block;
+  display: block;
 }
 .msg:hover {
   animation: bounce 0.5s ease-in-out forwards;
@@ -1945,7 +1951,7 @@ section.recherche ul {
   width: 100%;
   gap: 20px;
   flex-wrap: wrap;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/photos/building.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./photos/building.jpg");
 }
 .boxcontact-container .boxcontact {
   flex: 1;
@@ -2087,9 +2093,20 @@ header {
   padding: 0 10%;
 }
 
+.menu {
+  margin: 0;
+}
+.menu a {
+  width: 100px;
+  margin: 0;
+}
+
 @media screen and (max-width: 767px) {
   header {
     padding: 0 5%;
+  }
+  .btn-donner {
+    display: none;
   }
 }
 /*---------- STYLES GENERAUX ----------*/

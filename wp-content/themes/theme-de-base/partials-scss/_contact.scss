@@ -2,99 +2,99 @@
 @use "mixins.scss";
 
 .boxcontact-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 100px;
-    z-index: 999;
-    width: 100%;
-    gap: 20px;
-    flex-wrap: wrap;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/photos/building.jpg");
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 100px;
+  z-index: 999;
+  width: 100%;
+  gap: 20px;
+  flex-wrap: wrap;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./photos/building.jpg");
 
+  .boxcontact {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fefefebe;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
-    .boxcontact {
-        flex: 1;
-        min-width: 300px;
-        max-width: 600px;
-        padding: 20px;
-        background-color: #fefefebe;
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        border-radius: 8px;
-        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-
-        h2 {
-            color: white;
-            padding: 5% 0;
-            font-size: 35px;
-            font-weight: 600;
-            display: flex;
-            justify-content: center;
-        }
-
-        /* Formulaire */
-        .contact-form {
-            margin: 0 auto;
-            max-width: 400px;
-
-            form {
-                display: flex;
-                flex-direction: column;
-            }
-
-            label {
-                margin-bottom: 8px;
-            }
-
-            input,
-            textarea {
-                padding: 10px;
-                margin-bottom: 20px;
-                border-radius: 4px;
-                width: 100%;
-            }
-
-            button {
-                margin: 0 auto;
-                padding: 10px 30px;
-                margin-top: 10px;
-                background-color: variables.$orange;
-                color: white;
-                border: none;
-                border-radius: 4px;
-                cursor: pointer;
-                position: relative;
-                overflow: hidden;
-                transition: all 0.3s ease-in-out;
-
-                &:hover {
-                    background-color: variables.$vert;
-                }
-            }
-        }
-
-        /* Coordonnées */
-        .contact-info {
-            h3 {
-                margin-bottom: 10px;
-                color: black;
-                font-weight: 500;
-            }
-
-            p {
-                margin-bottom: 8px;
-            }
-        }
+    h2 {
+      color: white;
+      padding: 5% 0;
+      font-size: 35px;
+      font-weight: 600;
+      display: flex;
+      justify-content: center;
     }
+
+    /* Formulaire */
+    .contact-form {
+      margin: 0 auto;
+      max-width: 400px;
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      label {
+        margin-bottom: 8px;
+      }
+
+      input,
+      textarea {
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+        width: 100%;
+      }
+
+      button {
+        margin: 0 auto;
+        padding: 10px 30px;
+        margin-top: 10px;
+        background-color: variables.$orange;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          background-color: variables.$vert;
+        }
+      }
+    }
+
+    /* Coordonnées */
+    .contact-info {
+      h3 {
+        margin-bottom: 10px;
+        color: black;
+        font-weight: 500;
+      }
+
+      p {
+        margin-bottom: 8px;
+      }
+    }
+  }
 }
 
 /* Responsive Design */
-@include mixins.respond-to('sm') {
-
-    .boxcontact {
-        max-width: 100%;
-        flex-direction: column;
-        margin-bottom: 20px;
-    }
+@include mixins.respond-to("sm") {
+  .boxcontact {
+    max-width: 100%;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
 }

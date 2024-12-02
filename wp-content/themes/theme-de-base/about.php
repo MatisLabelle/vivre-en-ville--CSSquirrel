@@ -13,7 +13,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 
 <article>
     <div class="about__chemin">
-        <a href="index.html">Acceuil </a>>
+        <a href="<?php echo home_url('/'); ?>">Acceuil </a>>
         <a href="about.html"> À propos de nous</a>>
     </div>
     <h1 class="about__title">À propos de nous</h1>
