@@ -32,13 +32,13 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 
                         <?php echo the_excerpt();?>
 
-                        <p class="card__info">22 août 2024</p>
+                        <p class="card__info"><?php the_field('date'); ?></p>
                     </div>
-                    <img class="card__img" src="<?php the_post_thumbnail();?>" />
+                    <img class="card__img" src="<?php the_post_thumbnail();?>">
                 </div>
             </a>
             <?php endwhile; ?>
-            <p class="news__pages">
+            <p class=" news__pages">
                 <span>Précedent</span> 1 2 3 4 5 <span>Suivant</span>
             </p>
         </div>
@@ -47,17 +47,6 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
             <ul class="archive__year">
                 <li>
                     2024
-                    <ul class="archive__month">
-                        <li>Septembre</li>
-                        <li>Août</li>
-                        <li>Juillet</li>
-                        <li>Juin</li>
-                        <li>May</li>
-                        <li>Avril</li>
-                        <li>Mars</li>
-                        <li>Février</li>
-                        <li>Janvier</li>
-                    </ul>
                 </li>
                 <li>2023</li>
                 <li>2022</li>

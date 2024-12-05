@@ -20,7 +20,7 @@
   &__archives {
     background-color: variables.$orange;
     padding: 10px;
-    width: 90vw;
+    width: 100%;
     color: white;
     left: 0;
     right: 0;
@@ -159,9 +159,6 @@
 
   .archive {
     &__year {
-      display: block;
-    }
-    &__month {
       display: block;
     }
   }
