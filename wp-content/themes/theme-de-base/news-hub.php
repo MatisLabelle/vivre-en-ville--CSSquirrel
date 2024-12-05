@@ -24,7 +24,9 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
             <?php 
             $arguments = array( // 👈 Tableau d'arguments
                 'post_type' => 'nouvelle',
-                'posts_per_page' => 5, 'offset' => 3
+                'posts_per_page' => 5, 'offset' => 3,
+                'orderby' => 'date',
+                'order' => 'ASC',
               );
             $nouvelles = new WP_Query($arguments);
             while ( $nouvelles->have_posts() ) : $nouvelles->the_post(); ?>
