@@ -7,6 +7,9 @@
     background-color: variables.$bleu;
     color: black;
     margin-bottom: 10px;
+    position: relative;
+    top: 0;
+    z-index: 999;
 }
 
 .alert-content {
@@ -30,7 +33,6 @@
     transition: background-color 0.3s ease;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .closebtn:hover {
