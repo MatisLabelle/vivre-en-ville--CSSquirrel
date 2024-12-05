@@ -38,6 +38,17 @@
 	?>>
 
     <header>
+
+        <div class="alert">
+            <div class="alert-content">
+                <p>Ce site web a été réalisé dans le cadre d'un projet scolaire et ne représente pas une plateforme
+                    officielle.</p>
+                <button class="closebtn" onclick="this.parentElement.parentElement.style.display='none';">J'ai
+                    compris</button>
+            </div>
+        </div>
+
+
         <!--La NAV BAR-->
         <!-- Top Bar Section -->
         <div class="">
