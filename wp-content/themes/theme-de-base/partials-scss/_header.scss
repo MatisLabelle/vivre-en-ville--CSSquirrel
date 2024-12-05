@@ -28,6 +28,9 @@
     border-radius: 20px;
     margin-left: 15px;
     transition: background-color 0.3s ease;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .closebtn:hover {
