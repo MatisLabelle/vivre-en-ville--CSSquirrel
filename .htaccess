@@ -155,11 +155,11 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
-RewriteBase /cssquirls/
+RewriteBase /vivre-en-ville--CSSquirrel/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /cssquirls/index.php [L]
+RewriteRule . /vivre-en-ville--CSSquirrel/index.php [L]
 </IfModule>
 
 # END WordPress
