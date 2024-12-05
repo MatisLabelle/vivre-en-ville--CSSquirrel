@@ -54,8 +54,8 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/photos/LOGO.png" alt="logo" />
             </a>
             <?php 
-  wp_nav_menu(array('theme_location' => 'main-menu'));
-    ?>
+            wp_nav_menu(array('theme_location' => 'main-menu'));
+            ?>
             <button class="btn-donner">Donner</button>
             <div class="nav-end">
                 <button class="btn-donner-2">Donner</button>

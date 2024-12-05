@@ -89,17 +89,13 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                 <div class="propos__mission">
                     <h3 class="propos__mission">Mission</h3>
                     <p class="propos__p">
-                        Organisation d'intérêt public, Vivre en Ville contribue, partout
-                        au Québec, au développement de collectivités viables, œuvrant tant
-                        à l'échelle du bâtiment qu'à celles de la rue, du quartier et de
-                        l'agglomération.
+                        <?php the_field('mission'); ?>
                     </p>
                 </div>
                 <div class="propos__approche">
                     <h3 class="propos__approche">Approche</h3>
                     <p class="propos__p">
-                        Vivre en Ville vise un profond changement dans le mode de
-                        développement des collectivités. 
+                        <?php the_field('approche'); ?>
                     </p>
                 </div>
             </div>
@@ -142,13 +138,11 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 
                 <section class="accordion">
                     <button class="accordion__button">
-                        <div class="accordion_title">Recherche et innovation</div>
+                        <div class="accordion_title"><?php the_field('orange-title'); ?></div>
                         <div class="accordion__icon">+</div>
                     </button>
                     <div class="accordion__panel">
-                        <p class="accordion__text">Explorer, diffuser et expérimenter les meilleures pratiques de
-                            développement de
-                            collectivités viables.
+                        <p class="accordion__text"><?php the_field('orange-text'); ?>
                         </p>
                         <a href="service.html"><button class="accordion__bouton">En savoir plus</button></a>
                     </div>
@@ -156,13 +150,11 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 
                 <section class="accordion">
                     <button class="accordion__button">
-                        <div class="accordion_title">Formation</div>
+                        <div class="accordion_title"><?php the_field('jaune-title'); ?></div>
                         <div class="accordion__icon">+</div>
                     </button>
                     <div class="accordion__panel">
-                        <p class="accordion__text">Explorer, diffuser et expérimenter les meilleures pratiques de
-                            développement de
-                            collectivités viables.
+                        <p class="accordion__text"><?php the_field('jaune-texte'); ?>
                         </p>
                         <button class="accordion__bouton">En savoir plus</button>
                     </div>
@@ -171,13 +163,11 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 
                 <section class="accordion">
                     <button class="accordion__button">
-                        <div class="accordion_title">Conseil et accompagnment</div>
+                        <div class="accordion_title"><?php the_field('vert-title'); ?></div>
                         <div class="accordion__icon">+</div>
                     </button>
                     <div class="accordion__panel">
-                        <p class="accordion__text">Explorer, diffuser et expérimenter les meilleures pratiques de
-                            développement de
-                            collectivités viables.
+                        <p class="accordion__text"><?php the_field('vert-texte'); ?>
                         </p>
                         <button class="accordion__bouton">En savoir plus</button>
                     </div>
@@ -186,13 +176,11 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 
                 <section class="accordion">
                     <button class="accordion__button">
-                        <div class="accordion_title">Sensibilisation</div>
+                        <div class="accordion_title"><?php the_field('bleu-title'); ?></div>
                         <div class="accordion__icon">+</div>
                     </button>
                     <div class="accordion__panel">
-                        <p class="accordion__text">Explorer, diffuser et expérimenter les meilleures pratiques de
-                            développement de
-                            collectivités viables.
+                        <p class="accordion__text"><?php the_field('bleu-text'); ?>
                         </p>
                         <button class="accordion__bouton">En savoir plus</button>
                     </div>
@@ -260,20 +248,11 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                     <!-- Témoignage 1 -->
                     <div class="swiper-slide temoignane-1">
                         <div class="temoignage-content">
-                            <img src="<?php echo get_template_directory_uri(); ?>/photos/marie.jpg" alt="Marie L"
-                                class="temoignage-photo" />
-                            <h3 class="temoignage-nom">Marie L.</h3>
-                            <h6 class="temoignage-profession"> Avocate </h6>
+                            <img src="<?php the_field('img-temoignage'); ?>" alt="Marie L" class="temoignage-photo" />
+                            <h3 class="temoignage-nom"><?php the_field('nom'); ?></h3>
+                            <h6 class="temoignage-profession"> <?php the_field('metier'); ?> </h6>
                             <p class="temoignage-texte">
-                                "Grâce à Vivre en ville, j'ai découvert de nombreuses initiatives locales qui m'ont
-                                permis de m'engager
-                                davantage dans ma communauté. Les événements et services proposés m'ont aidée à mieux
-                                connaître mon
-                                quartier
-                                et à rencontrer des personnes partageant les mêmes valeurs. Aujourd'hui, je me sens
-                                vraiment chez moi et
-                                je
-                                participe activement à la vie de la ville."
+                                <?php the_field('quote'); ?>
                             </p>
                         </div>
                     </div>
@@ -281,21 +260,12 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                     <!-- Témoignage 2 -->
                     <div class="swiper-slide temoignane-2">
                         <div class="temoignage-content">
-                            <img src="<?php echo get_template_directory_uri(); ?>/photos/thomas.jpg" alt="Thomas G."
+                            <img src="<?php the_field('img-temoignage-2'); ?>" alt="Thomas G."
                                 class="temoignage-photo" />
-                            <h3 class="temoignage-nom">Thomas G.</h3>
-                            <h6 class="temoignage-profession"> Physiciste </h6>
+                            <h3 class="temoignage-nom"><?php the_field('nom-2'); ?></h3>
+                            <h6 class="temoignage-profession"> <?php the_field('metier-2'); ?></h6>
                             <p class="temoignage-texte">
-                                "J'étais à la recherche d'un moyen de contribuer à la protection de l'environnement tout
-                                en restant
-                                proche
-                                de chez moi. Avec Vivre en ville, j'ai pu m'impliquer dans des projets de développement
-                                durable,
-                                rencontrer
-                                des experts locaux et même apporter des idées pour améliorer la qualité de vie dans
-                                notre quartier.
-                                C'est un
-                                vrai plaisir de voir l'impact que nous avons ensemble."
+                                <?php the_field('quote-2'); ?>
                             </p>
                         </div>
                     </div>
@@ -303,20 +273,11 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                     <!-- Témoignage 3 -->
                     <div class="swiper-slide temoignane-3">
                         <div class="temoignage-content">
-                            <img src="<?php echo get_template_directory_uri(); ?>/photos/sophie.jpg" alt="Sophie"
-                                class="temoignage-photo" />
-                            <h3 class="temoignage-nom">Sophie D.</h3>
-                            <h6 class="temoignage-profession"> Professeure</h6>
+                            <img src="<?php the_field('img-temoignage'); ?>" alt="Sophie" class="temoignage-photo" />
+                            <h3 class="temoignage-nom"><?php the_field('nom-3'); ?></h3>
+                            <h6 class="temoignage-profession"> <?php the_field('metier-3'); ?></h6>
                             <p class="temoignage-texte">
-                                "Après avoir déménagé en ville, je me sentais un peu perdue. Heureusement, Vivre en
-                                ville m'a aidée à
-                                trouver des activités adaptées à mes intérêts et à faire des rencontres enrichissantes.
-                                Leur plateforme
-                                est
-                                devenue mon guide pour découvrir les services et les événements qui animent ma nouvelle
-                                vie citadine.
-                                C'est
-                                vraiment une ressource indispensable pour les nouveaux arrivants !"
+                                <?php the_field('quote-3'); ?>
                             </p>
                         </div>
                     </div>

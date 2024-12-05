@@ -20,12 +20,15 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
     <h1 class="news__title">Actualités</h1>
     <div class="news__grid">
         <div class="news__list">
-            <?php 
-        $nouvelles = new WP_Query('post_type=nouvelle');
-        while ( $nouvelles->have_posts() ) : $nouvelles->the_post(); 
-?>
-            <a href="news-article.html">
 
+            <?php 
+            $arguments = array( // 👈 Tableau d'arguments
+                'post_type' => 'nouvelle',
+                'posts_per_page' => 5, 'offset' => 3
+              );
+            $nouvelles = new WP_Query($arguments);
+            while ( $nouvelles->have_posts() ) : $nouvelles->the_post(); ?>
+            <a href="<?php the_permalink()?>">
                 <div class="news__card news__card--1">
                     <div class="card__content">
                         <h3 class="card__title"><?php print the_title();?></h3>
@@ -34,12 +37,12 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 
                         <p class="card__info"><?php the_field('date'); ?></p>
                     </div>
-                    <img class="card__img" src="<?php the_post_thumbnail();?>">
+                    <img class="card__img" src="<?php the_post_thumbnail_url();?>">
                 </div>
             </a>
             <?php endwhile; ?>
             <p class=" news__pages">
-                <span>Précedent</span> 1 2 3 4 5 <span>Suivant</span>
+                <span>Voir plus</span>
             </p>
         </div>
         <div class="news__archives">
