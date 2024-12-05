@@ -1,0 +1,35 @@
+@use "mixins.scss";
+@use "variables.scss";
+
+
+.alert {
+    padding: 15px;
+    background-color: variables.$bleu;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.alert-content {
+    display: flex;
+    align-items: center;
+}
+
+.alert p {
+    margin: 0;
+    flex-grow: 1;
+}
+
+.closebtn {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-left: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.closebtn:hover {
+    background-color: rgb(199, 188, 171);
+}
