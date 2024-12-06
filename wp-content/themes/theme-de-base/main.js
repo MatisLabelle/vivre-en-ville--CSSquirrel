@@ -54,3 +54,48 @@ const toggleNav = () => {
   mobileNav.classList.toggle("hamburger-active");
 };
 mobileNav.addEventListener("click", () => toggleNav());
+
+// voir plus de nouvelles
+
+const ajaxUrl = ajaxData.ajaxUrl; // Récupère l'URL dynamique
+
+document.getElementById("load-more").addEventListener("click", function () {
+  const button = this;
+  const offset = parseInt(button.getAttribute("data-offset"), 10);
+  const order = button.getAttribute("data-order");
+
+  // Vérifiez si ajaxData est correctement défini
+  if (!ajaxData || !ajaxData.ajaxUrl) {
+    console.error("ajaxData n'est pas défini.");
+    return;
+  }
+
+  fetch(
+    `${ajaxData.ajaxUrl}?action=load_more_nouvelles&offset=${offset}&order=${order}`
+  )
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`Erreur HTTP ! Statut : ${response.status}`);
+      }
+      return response.text();
+    })
+    .then((data) => {
+      if (data.trim() === "") {
+        button.style.display = "none"; // Cache le bouton si aucune donnée
+      } else {
+        document
+          .querySelector(".news__list")
+          .insertAdjacentHTML("beforeend", data);
+        button.setAttribute("data-offset", offset + 4); // Augmente l'offset
+      }
+    })
+    .catch((error) =>
+      console.error("Erreur lors du chargement des nouvelles :", error)
+    );
+});
+// menu deroulant order
+
+document.getElementById("order").addEventListener("change", function () {
+  const form = document.getElementById("order-form");
+  form.submit(); // Soumet le formulaire pour recharger la page avec le nouvel ordre
+});

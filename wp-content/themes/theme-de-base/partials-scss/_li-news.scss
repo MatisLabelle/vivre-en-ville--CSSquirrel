@@ -91,6 +91,10 @@
   }
 }
 
+#order-form {
+  margin: 5vw;
+}
+
 .card {
   &__img {
     width: 100%;
@@ -108,6 +112,9 @@
     bottom: 0;
     position: relative;
     margin: 0;
+  }
+  &__content {
+    color: black;
   }
 }
 

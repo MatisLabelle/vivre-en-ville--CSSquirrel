@@ -1149,6 +1149,10 @@ a {
   margin: 0;
 }
 
+#order-form {
+  margin: 5vw;
+}
+
 .card__img {
   width: 100%;
   height: 100%;
@@ -1166,6 +1170,9 @@ a {
   bottom: 0;
   position: relative;
   margin: 0;
+}
+.card__content {
+  color: black;
 }
 
 @media screen and (min-width: 768px) {
@@ -1220,7 +1227,8 @@ a {
   margin: 10px 5%;
 }
 .actu__img {
-  width: 90vw;
+  width: auto;
+  max-height: 20vh;
 }
 .actu__credit {
   font-size: 12px;
@@ -1283,6 +1291,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  overflow: hidden;
 }
 .actu__plus--1 {
   width: 28vw;

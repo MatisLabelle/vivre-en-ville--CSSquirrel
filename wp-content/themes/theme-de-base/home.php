@@ -192,48 +192,39 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
         <!--SECTION NOUVELLES -->
         <section class="news-section">
             <h2 class="titre-news">À la une</h2>
+
+            <?php 
+            $order = isset($_GET['order']) ? $_GET['order'] : 'DESC';
+            $arguments = array(
+                'post_type' => 'nouvelle',
+                'posts_per_page' => 3,
+                'orderby' => 'date',
+                'order' => "DESC",
+                'meta_key' => 'article', // Assurez-vous que ce champ existe
+            );
+            $nouvelles = new WP_Query($arguments);
+            if ( $nouvelles->have_posts() ) :
+            $first = true;
+            while ( $nouvelles->have_posts() ) : $nouvelles->the_post(); ?>
+
             <div class="news-card">
-                <img src="<?php echo get_template_directory_uri(); ?>./photos/road.jpg" alt="News 1"
-                    class="news-image" />
+                <img src="<?php the_post_thumbnail_url();?>" alt="News 1" class="news-image" />
                 <div class="news-content">
-                    <h3 class="news-title">Projet structurant de l'Est</h3>
-                    <h4 class="news-date">19 septembre 2024</h4>
+                    <h3 class="news-title"><?php print the_title();?></h3>
+                    <h4 class="news-date"><?php the_field('date'); ?></h4>
                     <p class="news-summary">
-                        Vivre en Ville appelle à adopter une approche cohérente et
-                        ambitieuse 19 septembre 2024.
+                        <?php the_field('article');?>
                     </p>
-                    <a href="#" class="news-link">Lire plus</a>
+                    <a href="<?php the_permalink()?>" class="news-link">Lire plus</a>
                 </div>
             </div>
 
-            <div class="news-card">
-                <img src="<?php echo get_template_directory_uri(); ?>./photos/lake.jpg" alt="News 2"
-                    class="news-image" />
-                <div class="news-content">
-                    <h3 class="news-title">
-                        Projet de loi 61 créant Mobilité Infra Québec
-                    </h3>
-                    <h4 class="news-date">12 septembre 2024</h4>
-                    <p class="news-summary">
-                        De bonnes intentions dans un projet de loi imprécis qui suscite de
-                        nombreuses questions.
-                    </p>
-                    <a href="#" class="news-link">Lire plus</a>
-                </div>
-            </div>
-
-            <div class="news-card">
-                <img src="<?php echo get_template_directory_uri(); ?>./photos/train.jpg" alt="News 3"
-                    class="news-image" />
-                <div class="news-content">
-                    <h3 class="news-title">PL61</h3>
-                    <h4 class="news-date">19 septembre 2024</h4>
-                    <p class="news-summary">
-                        Pour une gouvernance favorisant le transport collectif.
-                    </p>
-                    <a href="#" class="news-link">Lire plus</a>
-                </div>
-            </div>
+            <?php
+                $first = false;    
+                endwhile; 
+                wp_reset_postdata(); 
+                endif;
+            ?>
 
             <h3 class="titre voir-plus">
                 <a href="liste-nouvelle.html"> Voir toutes les publications > </a>

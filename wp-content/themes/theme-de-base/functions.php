@@ -38,26 +38,83 @@ add_action('widgets_init', 'add_sidebars');
 
 /* -------------------------------- 
 Function ajoutant les styles et scripts */
-function add_style_and_js()  { 
-	/* Ajoute le fichier style.css du theme WordPress actif 
-	  1. 'default' = ID de référence à donner au à la feuille de style
-		2. get_template_directory_uri() . '/style.css' = Chemin où ce trouve le fichier CSS en question
-	*/
-	wp_enqueue_style('default', get_template_directory_uri() . '/style.css?v='.time());
+function add_styles_and_scripts() { 
+    // Ajout du fichier CSS principal
+    wp_enqueue_style(
+        'default', 
+        get_template_directory_uri() . '/style.css?v='.time()
+    );
 
-	/* Pour ajoutez une feuille de style supplémentaire, copier la ligne précédente et ajuster le chemin du fichier de façon relative vers votre nouveau fichier CSS */
+    // Ajout du fichier JavaScript principal
+    wp_enqueue_script(
+        'main-js', 
+        get_template_directory_uri() . '/main.js?v='.time(), 
+        array('jquery'), // Dépendances (si besoin, ex : jQuery)
+        null, 
+        true // Charge dans le footer
+    );
 
-	/* Ajoute le fichier main.js du theme WordPress actif 
-	   1. 'default' = ID de référence à donner au script
-		 2. get_template_directory_uri() . '/main.js' = Chemin où ce trouve le fichier JS en question
-		 3. array() = Liste des dépendances de ce script (généralement vide)
-		 4. false = Si un no de version doit être ajouté (généralement à false)
-		 5. true = Est-ce que le script doit-être ajouté à la fin du body. Si mis à false le script est ajouter dans le head à la place
-	*/
-	wp_enqueue_script('default', get_template_directory_uri() . '/main.js?v='.time(), array(), false, true);
-
-	/* Pour ajoutez un script, copier la ligne précédente et ajuster le chemin de façon relative vers votre nouveau fichier JS */
+    // Localisation des données pour AJAX
+    wp_localize_script(
+        'main-js',
+        'ajaxData',
+        array(
+            'ajaxUrl' => admin_url('admin-ajax.php'), // URL pour les appels AJAX
+        )
+    );
 }
+add_action('wp_enqueue_scripts', 'add_styles_and_scripts'); 
 
-/* Appel de la fonction ajoutant les styles et scripts */
-add_action('wp_enqueue_scripts', 'add_style_and_js'); 
+function load_more_nouvelles() {
+    $offset = intval($_GET['offset']);
+    $order = sanitize_text_field($_GET['order']);
+
+    $arguments = array(
+        'post_type' => 'nouvelle',
+        'posts_per_page' => 4,
+        'offset' => $offset,
+        'orderby' => 'date',
+        'order' => $order,
+    );
+
+    $nouvelles = new WP_Query($arguments);
+
+    if ($nouvelles->have_posts()) :
+        while ($nouvelles->have_posts()) : $nouvelles->the_post(); ?>
+<a href="<?php the_permalink(); ?>">
+    <div class="news__card">
+        <div class="card__content">
+            <h3 class="card__title"><?php the_title(); ?></h3>
+            <p class="card__info"><?php the_field('date'); ?></p>
+        </div>
+        <img class="card__img" src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
+    </div>
+</a>
+<?php endwhile;
+    else :
+        echo ''; // Rien à afficher
+    endif;
+
+    wp_die();
+}
+add_action('wp_ajax_load_more_nouvelles', 'load_more_nouvelles');
+add_action('wp_ajax_nopriv_load_more_nouvelles', 'load_more_nouvelles');
+
+
+
+
+function enqueue_custom_scripts() {
+    wp_enqueue_script(
+        'main-js', 
+        get_template_directory_uri() . '/js/main.js', 
+        array('jquery'), 
+        null, 
+        true
+    );
+
+    // Passer l'URL AJAX à JavaScript
+    wp_localize_script('main-js', 'ajaxData', array(
+        'ajaxUrl' => admin_url('admin-ajax.php'),
+    ));
+}
+add_action('wp_enqueue_scripts', 'enqueue_custom_scripts');

@@ -20,31 +20,47 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
     <h1 class="news__title">Actualités</h1>
     <div class="news__grid">
         <div class="news__list">
+            <form method="GET" id="order-form">
+                <label for="order">Trier par :</label>
+                <select name="order" id="order" onchange="this.form.submit()">
+                    <option value="DESC" <?php selected($_GET['order'], 'DESC'); ?>>Plus récentes</option>
+                    <option value="ASC" <?php selected($_GET['order'], 'ASC'); ?>>Plus anciennes</option>
+                </select>
+            </form>
 
             <?php 
-            $arguments = array( // 👈 Tableau d'arguments
+            $order = isset($_GET['order']) ? $_GET['order'] : 'DESC';
+            $arguments = array(
                 'post_type' => 'nouvelle',
-                'posts_per_page' => 5, 'offset' => 3,
+                'posts_per_page' => 4,
                 'orderby' => 'date',
-                'order' => 'ASC',
-              );
+                'order' => $order,
+                'meta_key' => 'article', // Assurez-vous que ce champ existe
+            );
             $nouvelles = new WP_Query($arguments);
+            if ( $nouvelles->have_posts() ) :
+            $first = true;
             while ( $nouvelles->have_posts() ) : $nouvelles->the_post(); ?>
             <a href="<?php the_permalink()?>">
                 <div class="news__card news__card--1">
                     <div class="card__content">
                         <h3 class="card__title"><?php print the_title();?></h3>
 
-                        <?php echo the_excerpt();?>
+                        <?php the_field('article');?>
 
                         <p class="card__info"><?php the_field('date'); ?></p>
                     </div>
                     <img class="card__img" src="<?php the_post_thumbnail_url();?>">
                 </div>
             </a>
-            <?php endwhile; ?>
+            <?php
+                $first = false;    
+                endwhile; 
+                wp_reset_postdata(); 
+                endif;
+            ?>
             <p class=" news__pages">
-                <span>Voir plus</span>
+                <button id="load-more" data-offset="4" data-order="DESC">Voir plus</button>
             </p>
         </div>
         <div class="news__archives">
@@ -65,6 +81,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                 <li>2014</li>
                 <li>2013</li>
             </ul>
+
             <p class="archive__more">Voir plus</p>
         </div>
     </div>
