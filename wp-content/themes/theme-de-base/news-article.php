@@ -63,14 +63,8 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
             <a href="<?php the_permalink()?>">
                 <div class="actu__plus--1">
                     <img src="<?php the_post_thumbnail_url();?>" alt="News 1" class="news-image" />
-                    <div class="news-content">
-                        <h3 class="news-title"><?php print the_title();?></h3>
-                        <h4 class="news-date"><?php the_field('date'); ?></h4>
-                        <p class="news-summary">
-                            <?php the_field('article');?>
-                        </p>
 
-                    </div>
+                    <h3><?php print the_title();?></h3>
                 </div>
             </a>
 

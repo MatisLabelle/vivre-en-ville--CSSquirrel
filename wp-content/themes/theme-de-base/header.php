@@ -43,7 +43,6 @@
         <div class="">
             <div class="topbar">
                 <div class="topbar-items">
-                    <a href="#" class="topbar-link">English</a>
                     <a href="#" class="topbar-link">Recherche</a>
                     <a href="#" class="topbar-link">S'abonner</a>
                 </div>
