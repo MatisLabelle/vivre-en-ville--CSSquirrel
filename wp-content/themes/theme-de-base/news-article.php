@@ -26,7 +26,6 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
     <div class="actu__post">
         <img class="actu__img" src="<?php the_post_thumbnail_url();?>" />
         <p class="actu__credit">PHOTO PEXEL</p>
-        <h2 class="actu__info">Québec, le 22 août 2024</h2>
 
         <div class="actu__text">
             <?php the_content(); ?>
@@ -44,7 +43,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 
     </div>
     <div class="actu__more">
-        <h2 class="actu__alike">Articles Similaires</h2>
+        <h2 class="actu__alike"><?php the_field('more');?></h2>
         <div class="actu__plus">
             <?php 
             $order = isset($_GET['order']) ? $_GET['order'] : 'DESC';
@@ -77,7 +76,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
             ?>
         </div>
         <div class="actu__cta">
-            <h2 class="actu__help">Aidez nous!</h2>
+            <h2 class="actu__help"><?php the_field('help');?></h2>
             <button class="actu__donner">Donner</button>
         </div>
     </div>
