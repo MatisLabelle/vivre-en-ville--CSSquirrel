@@ -1,9 +1,10 @@
 <?php
 /**
- * Template Name: About
- * Template Post Type: post, about-us-card
- */
-
+* Template Name: About
+* Template Post Type: about-us-card, page, post
+* Modèle permettant d'afficher une page.
+*/
+ 
 get_header(); // Affiche header.php
 
 if (have_posts()) :
