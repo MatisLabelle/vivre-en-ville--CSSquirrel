@@ -1,14 +1,12 @@
 <?php 
 /**
- * 	Template Name: Nous contacter
- * 	Identique à page, mais avec une barre latérale
+ * Template Name: Nous contacter
  */
 
 get_header(); // Affiche header.php
 
 if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ? 
-	// Si oui, bouclons au travers les pages (logiquement, il n'y en aura qu'une)
-	while ( have_posts() ) : the_post(); 
+    while ( have_posts() ) : the_post(); 
 ?>
 
 <article>
@@ -37,34 +35,43 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
         <div class="boxcontact">
             <div class="contact-info">
                 <h2>Nous Joindre</h2>
+
+                <?php
+                // Requête pour récupérer les adresses (Post Type "adresse")
+                $args = array(
+                    'post_type' => 'adresse', // Le nom de votre Post Type personnalisé
+                    'posts_per_page' => -1 // Récupérer toutes les adresses disponibles
+                );
+                $adresse_query = new WP_Query($args);
+
+                // Vérifier si des adresses existent
+                if ($adresse_query->have_posts()) : 
+                    while ($adresse_query->have_posts()) : $adresse_query->the_post();
+                        // Afficher les informations de chaque adresse
+                ?>
                 <div class="location">
-                    <h3>Montréal</h3>
-                    <p>Maison du développement durable</p>
-                    <p>50, rue Ste-Catherine Ouest, bur. 480</p>
-                    <p>Montréal (Québec) H2X 3V4</p>
-                    <p>T. (514) 394-1125</p>
+                    <h3><?php the_title(); ?></h3> <!-- Affiche le titre du post (Nom de l'endroit) -->
+                    <p><?php the_field('place_name'); ?></p> <!-- Nom du lieu -->
+                    <p><?php the_field('address'); ?></p> <!-- Adresse -->
+                    <p><?php the_field('postal_code'); ?></p> <!-- Code postal -->
+                    <p>T. <?php the_field('phone'); ?></p> <!-- Numéro de téléphone -->
                 </div>
-                <div class="location">
-                    <h3>Québec</h3>
-                    <p>Centre culture et environnement Frédéric Back</p>
-                    <p>870, avenue De Salaberry, bureau 311</p>
-                    <p>Québec (Québec) G1R 2T9</p>
-                    <p>T. (418) 522-0011</p>
-                </div>
-                <div class="location">
-                    <h3>Gatineau</h3>
-                    <p>200-A, boulevard Saint-Joseph</p>
-                    <p>Gatineau (Québec) J8Y 3W9</p>
-                    <p>T. (819) 205-2053</p>
-                </div>
+                <?php
+                    endwhile;
+                    wp_reset_postdata(); // Réinitialise la requête après le custom loop
+                else :
+                    // Message si aucune adresse n'est disponible
+                    echo '<p>Aucune adresse disponible pour le moment.</p>';
+                endif;
+                ?>
             </div>
         </div>
     </div>
 </article>
-<?php endwhile; // Fermeture de la boucle
 
+<?php endwhile; // Fermeture de la boucle
 else : // Si aucune page n'a été trouvée
-	get_template_part( 'partials/404' ); // Affiche partials/404.php
+    get_template_part( 'partials/404' ); // Affiche partials/404.php
 endif;
 
 get_footer(); // Affiche footer.php 
