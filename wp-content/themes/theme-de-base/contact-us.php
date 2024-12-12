@@ -19,13 +19,14 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                 <h2>Contactez-nous</h2>
                 <form action="/submit_form" method="POST">
                     <label for="name">Nom & Prénom:</label>
-                    <input type="text" id="name" name="name" placeholder="Entrez votre nom et prénom" required>
+                    <input type="text" id="name" name="name" placeholder="<?php the_field('first-last-name'); ?>"
+                        required>
 
                     <label for="email">Adresse courriel:</label>
-                    <input type="email" id="email" name="email" placeholder="Entrez votre adresse courriel" required>
+                    <input type="email" id="email" name="email" placeholder="<?php the_field('email'); ?>" required>
 
                     <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" placeholder="Écrivez votre message ici"
+                    <textarea id="message" name="message" rows="4" placeholder="<?php the_field('message'); ?>"
                         required></textarea>
 
                     <button type="submit">Envoyer</button>
@@ -33,33 +34,36 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
             </div>
         </div>
 
-        <!-- Coordonnées -->
+        <!-- Montreal -->
         <div class="boxcontact">
             <div class="contact-info">
                 <h2>Nous Joindre</h2>
+                <!-- Coordonnées -->
                 <div class="location">
-                    <h3>Montréal</h3>
-                    <p>Maison du développement durable</p>
-                    <p>50, rue Ste-Catherine Ouest, bur. 480</p>
-                    <p>Montréal (Québec) H2X 3V4</p>
-                    <p>T. (514) 394-1125</p>
+                    <h3><?php the_field('locations'); ?></h3>
+                    <p><?php the_field('place_name'); ?></p>
+                    <p><?php the_field('address'); ?></p>
+                    <p><?php the_field('postal_code'); ?></p>
+                    <p><?php the_field('phone'); ?></p>
                 </div>
+                <!-- Quebec -->
                 <div class="location">
-                    <h3>Québec</h3>
-                    <p>Centre culture et environnement Frédéric Back</p>
-                    <p>870, avenue De Salaberry, bureau 311</p>
-                    <p>Québec (Québec) G1R 2T9</p>
-                    <p>T. (418) 522-0011</p>
+                    <h3><?php the_field('locations_2'); ?></h3>
+                    <p><?php the_field('place_name_2'); ?></p>
+                    <p><?php the_field('address_2'); ?></p>
+                    <p><?php the_field('postal_code_2'); ?></p>
+                    <p><?php the_field('phone_2'); ?></p>
                 </div>
+                <!-- Gatineau -->
                 <div class="location">
-                    <h3>Gatineau</h3>
-                    <p>200-A, boulevard Saint-Joseph</p>
-                    <p>Gatineau (Québec) J8Y 3W9</p>
-                    <p>T. (819) 205-2053</p>
+                    <h3><?php the_field('locations_3'); ?></h3>
+                    <p><?php the_field('address_3'); ?></p>
+                    <p><?php the_field('postal_code_3'); ?></p>
+                    <p><?php the_field('phone_3'); ?></p>
                 </div>
             </div>
         </div>
-    </div>
+
 </article>
 <?php endwhile; // Fermeture de la boucle
 
