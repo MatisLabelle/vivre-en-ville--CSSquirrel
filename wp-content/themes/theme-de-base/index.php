@@ -1,6 +1,6 @@
 <?php 
 /**
- * 	Template Name: Acceuil
+ * 	Template Name: Index
  * 	Identique à page, mais avec une barre latérale
  */
 
