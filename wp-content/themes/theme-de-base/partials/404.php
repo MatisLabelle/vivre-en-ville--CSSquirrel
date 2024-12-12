@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Post Type: url, url-404
+ * Template Name: 404
  */
 
 get_header(); // Affiche header.php
@@ -24,7 +24,10 @@ get_header(); // Affiche header.php
                     ?>
                     <a class="taville" href="<?php echo esc_url($redirect_url); ?>">
                         Cliques ici et retournons à ta ville.
-                    </a>
+                        <br>
+                        <br>
+                        <a class="taville" href="<?php echo esc_url($redirect_url); ?>">
+                            Click here & go back to your city.
                 </div>
             </div>
         </div>

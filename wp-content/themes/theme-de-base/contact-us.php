@@ -40,7 +40,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                 <!-- Montreal -->
                 <div class="location">
                     <!--Rajout manuel vu que le field location marche pas-->
-                    <h3><?php the_field('location'); ?></h3>
+                    <h3><?php the_field('locations'); ?></h3>
                     <p><?php the_field('place_name');?></p>
                     <p><?php the_field('address'); ?></p>
                     <p><?php the_field('postal_code');?></p>
