@@ -19,14 +19,15 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                 <h2><?php the_field('contactez-nous-titre');?></h2>
                 <form action="/submit_form" method="POST">
                     <label for="name"><?php the_field('first-last-name');?>:</label>
-                    <input type="text" id="name" name="name" placeholder="Entrez votre nom et prénom" required>
+                    <input type="text" id="name" name="name" placeholder="Nom/Name" required>
 
                     <label for="email"><?php the_field('email');?></label>
-                    <input type="email" id="email" name="email" placeholder="Entrez votre adresse courriel" required>
+                    <input type="email" id="email" name="email"
+                        placeholder="Entrez votre adresse courriel / Enter your email address" required>
 
                     <label for="message"><?php the_field('message');?>:</label>
-                    <textarea id="message" name="message" rows="4" placeholder="Écrivez votre message ici"
-                        required></textarea>
+                    <textarea id="message" name="message" rows="4"
+                        placeholder="Écrivez votre message ici / Write your message here" required></textarea>
 
                     <button type="submit">Envoyer</button>
                 </form>
