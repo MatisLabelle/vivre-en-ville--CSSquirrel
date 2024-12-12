@@ -3,7 +3,10 @@
 	/* Ce fichier est présent sur chaque page
 	/* Vous pouvez y ajouter des fonctions au besoin
 	/*-----------------------------------------------------------------------------------*/
-
+    while (ob_get_level()) {
+        ob_end_clean();
+    }
+    
 /* --------------------------------
 Ajoute les vignettes dans les posts de type Article */
 add_theme_support( 'post-thumbnails' );

@@ -87,9 +87,9 @@
             </div>
         </nav>
         <div class="menubar">
-            <?php/*
+            <!-- 
             wp_nav_menu(array('theme_location' => 'main-menu'));
-            */?>
+            --->
             <ul>
                 <li>
                     <a href="<?php echo home_url('/'); ?>">Accueil</a>
