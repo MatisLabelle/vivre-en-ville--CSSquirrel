@@ -1,7 +1,7 @@
 <?php
 /**
 * Template Name: About
-* Template Post Type: about-us-card, page, post
+* Template Post Type: post, about-us-card
 * Modèle permettant d'afficher une page.
 */
  
@@ -20,11 +20,11 @@ if (have_posts()) :
 
         <!-- Section pour la carte "Notre approche" (ID 179) -->
         <div class="approche">
-            <h2 class="approche__title">À propos de nous</h2>
             <?php
             // Récupérer la carte "À propos de nous" en utilisant son ID (179)
             $card_1 = get_post(179); 
             if ($card_1) :
+                $card_1_title = get_field('title', $card_1->ID);
                 $card_1_description = get_field('description', $card_1->ID);
                 $card_1_content = get_field('content', $card_1->ID);
             ?>
@@ -37,11 +37,11 @@ if (have_posts()) :
 
         <!-- Section pour la carte "Notre mission" (ID 180) -->
         <div class="mission">
-            <h2 class="mission__title">Notre mission</h2>
             <?php
             // Récupérer la carte "Notre mission" en utilisant son ID (180)
             $card_2 = get_post(180); 
             if ($card_2) :
+                $card_2_title = get_field('title', $card_2->ID);
                 $card_2_description = get_field('description', $card_2->ID);
                 $card_2_content = get_field('content', $card_2->ID);
             ?>
@@ -59,6 +59,7 @@ if (have_posts()) :
             // Récupérer la carte "Un peu d'histoire" en utilisant son ID (181)
             $card_3 = get_post(181); 
             if ($card_3) :
+                $card_3_title = get_field('title', $card_3->ID);
                 $card_3_description = get_field('description', $card_3->ID);
                 $card_3_content = get_field('content', $card_3->ID);
             ?>
