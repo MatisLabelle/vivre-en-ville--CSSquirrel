@@ -219,7 +219,7 @@ class Service extends AbstractModel
      */
     public function getServiceName()
     {
-        return $this->definition['metadata']['serviceIdentifier'] ?? null;
+        return $this->definition['metadata']['serviceIdentifier'];
     }
 
     /**

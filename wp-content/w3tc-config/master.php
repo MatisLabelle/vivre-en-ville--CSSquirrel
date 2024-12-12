@@ -1,5 +1,5 @@
 <?php exit; ?>{
-    "version": "2.8.1",
+    "version": "2.8.0",
     "cluster.messagebus.debug": false,
     "cluster.messagebus.enabled": false,
     "cluster.messagebus.sns.region": "",
@@ -102,7 +102,7 @@
     "objectcache.enabled_for_wp_admin": false,
     "objectcache.fallback_transients": true,
     "objectcache.engine": "file",
-    "objectcache.file.gc": 600,
+    "objectcache.file.gc": 3600,
     "objectcache.file.locking": false,
     "objectcache.memcached.servers": [
         "127.0.0.1:11211"
@@ -1041,9 +1041,5 @@
     "imageservice.configuration_overloaded": true,
     "fragmentcache": {
         "engine": "file"
-    },
-    "pgcache.bad_behavior_path": "",
-    "newrelic": {
-        "monitoring_type": "apm"
     }
 }

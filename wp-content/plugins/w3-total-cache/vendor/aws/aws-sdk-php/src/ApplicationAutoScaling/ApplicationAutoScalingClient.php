@@ -19,8 +19,6 @@ use Aws\AwsClient;
  * @method \GuzzleHttp\Promise\Promise describeScalingPoliciesAsync(array $args = [])
  * @method \Aws\Result describeScheduledActions(array $args = [])
  * @method \GuzzleHttp\Promise\Promise describeScheduledActionsAsync(array $args = [])
- * @method \Aws\Result getPredictiveScalingForecast(array $args = [])
- * @method \GuzzleHttp\Promise\Promise getPredictiveScalingForecastAsync(array $args = [])
  * @method \Aws\Result listTagsForResource(array $args = [])
  * @method \GuzzleHttp\Promise\Promise listTagsForResourceAsync(array $args = [])
  * @method \Aws\Result putScalingPolicy(array $args = [])

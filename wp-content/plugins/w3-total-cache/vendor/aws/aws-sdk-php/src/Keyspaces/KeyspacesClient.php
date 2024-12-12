@@ -39,8 +39,6 @@ use Aws\AwsClient;
  * @method \GuzzleHttp\Promise\Promise tagResourceAsync(array $args = [])
  * @method \Aws\Result untagResource(array $args = [])
  * @method \GuzzleHttp\Promise\Promise untagResourceAsync(array $args = [])
- * @method \Aws\Result updateKeyspace(array $args = [])
- * @method \GuzzleHttp\Promise\Promise updateKeyspaceAsync(array $args = [])
  * @method \Aws\Result updateTable(array $args = [])
  * @method \GuzzleHttp\Promise\Promise updateTableAsync(array $args = [])
  */

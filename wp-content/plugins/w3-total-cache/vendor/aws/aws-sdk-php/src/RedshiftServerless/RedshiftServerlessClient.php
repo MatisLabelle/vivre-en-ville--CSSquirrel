@@ -67,8 +67,6 @@ use Aws\AwsClient;
  * @method \GuzzleHttp\Promise\Promise listCustomDomainAssociationsAsync(array $args = [])
  * @method \Aws\Result listEndpointAccess(array $args = [])
  * @method \GuzzleHttp\Promise\Promise listEndpointAccessAsync(array $args = [])
- * @method \Aws\Result listManagedWorkgroups(array $args = [])
- * @method \GuzzleHttp\Promise\Promise listManagedWorkgroupsAsync(array $args = [])
  * @method \Aws\Result listNamespaces(array $args = [])
  * @method \GuzzleHttp\Promise\Promise listNamespacesAsync(array $args = [])
  * @method \Aws\Result listRecoveryPoints(array $args = [])
