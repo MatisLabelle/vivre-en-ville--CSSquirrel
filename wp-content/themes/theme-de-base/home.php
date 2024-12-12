@@ -68,7 +68,8 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                 </defs>
             </svg>
             <div class="hero__text">
-                <span class="hero__orange"><?php the_field('slogan-orange');?></span> <?php the_field('slogan');?>
+                <span class="hero__orange">Mieux construire</span> nos bâtiments, nos
+                rues, nos quartiers, nos agglomérations
                 <br />
                 <a href="https://vivreenville.org/">
                     <button class="hero__donner"><?php the_field('btn-donner'); ?></button>

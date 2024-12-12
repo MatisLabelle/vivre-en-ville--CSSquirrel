@@ -9,6 +9,7 @@ get_header(); // Display header.php
 if ( have_posts() ) : 
     while ( have_posts() ) : the_post(); 
 ?>
+
 <article>
     <div class="about__chemin">
         <a href="<?php echo home_url('/'); ?>">Accueil</a> >
@@ -23,27 +24,19 @@ if ( have_posts() ) :
                 <?php
                 $args = array(
                     'post_type' => 'about-us-card',
-                    'posts_per_page' => -1,
+                    'posts_per_page' => -1
                 );
                 $about_us_cards = get_posts($args);
-                
-                if ($about_us_cards) {
-                    foreach ($about_us_cards as $card) {
-                        $card_title = get_field('title', $card->ID);
-                        $card_description = get_field('description', $card->ID);
-                        $card_content = get_field('content', $card->ID);
-                ?>
+                foreach ($about_us_cards as $card) {
+                    ?>
+                <p>
+                    <?php echo get_field('description', $card->ID); ?>
+                </p>
                 <li>
-                    <h3><?php echo esc_html($card_title ?: 'No Title Available'); ?></h3>
-                    <p><?php echo esc_html($card_description ?: 'No Description Available'); ?></p>
-                    <p><?php echo esc_html($card_content ?: 'No Content Available'); ?></p>
+                    <strong><?php echo get_field('title', $card->ID); ?></strong>
+                    <?php echo get_field('content', $card->ID); ?>
                 </li>
-                <?php 
-                    }
-                } else {
-                    echo '<p>No About Us Cards found.</p>';
-                }
-                ?>
+                <?php } ?>
             </ul>
         </div>
 
@@ -51,10 +44,10 @@ if ( have_posts() ) :
         <div class="mission">
             <h2 class="mission__title"><?php the_field('title'); ?></h2>
             <p class="mission__text">
-                <i class="mission__alt"><?php the_field('description'); ?></i>
+                <i class="mission__alt"><?php the_field('title'); ?></i>
             </p>
             <p class="mission__text">
-                <?php the_field('content'); ?>
+                <?php echo get_field('content'); ?>
             </p>
         </div>
 
@@ -62,10 +55,10 @@ if ( have_posts() ) :
         <div class="histoire">
             <h2 class="histoire__title"><?php the_field('title'); ?></h2>
             <p class="histoire__text">
-                <?php the_field('description'); ?>
+                <?php echo get_field('content'); ?>
             </p>
             <p class="histoire__text">
-                <?php the_field('content'); ?>
+                <?php echo get_field('content'); ?>
             </p>
         </div>
     </div>

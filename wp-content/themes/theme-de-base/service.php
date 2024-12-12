@@ -2,6 +2,7 @@
 /**
  * 	Template Name: Service
  * 	Identique à page, mais avec une barre latérale
+ *
  */
 
 get_header(); // Affiche header.php
