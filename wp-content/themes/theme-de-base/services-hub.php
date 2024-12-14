@@ -18,9 +18,9 @@ if (have_posts()): // Est-ce que nous avons des pages à afficher ?
             <section class="services_hub">
                 <div class="about__chemin">
                     <a href="<?php echo home_url('/'); ?>">Acceuil </a>>
-                    <a href="about.html"> Nos services</a>>
+                    <a href="service-hub.html"> Nos services</a>>
                 </div>
-                <h1>Nos services</h1>
+                <h1><?php the_title(); ?></h1>
                 <div class="presentation">
                     <p class="text"><?php the_content(); ?></p>
                 </div>

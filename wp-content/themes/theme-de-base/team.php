@@ -18,10 +18,10 @@ if (have_posts()):
                 <div class="equipe__container">
                     <div class="chemin">
                         <a href="<?php echo home_url('/'); ?>">Acceuil </a>>
-                        <a href="news-hub.html"> Équipe</a>
+                        <a href="news-hub.html"> Notre équipe</a>
                     </div>
                     <div class="equipe__description">
-                        <h2 class="equipe__title">Notre équipe</h2>
+                        <h2 class="equipe__title"><?php the_title(); ?></h2>
                         <p class="equipe__text">Son équipe polyvalente, rigoureuse et engagée fait de Vivre en Ville un acteur
                             reconnu au service des collectivités viables au Québec.</p>
                     </div>

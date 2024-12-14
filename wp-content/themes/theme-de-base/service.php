@@ -1,8 +1,7 @@
 <?php
 /**
- * Template Name: Service
- * Template Post Type: service-page, page, post
- * Modèle permettant d'afficher une page.
+ *  Template Name: Service
+ *  Identique à page, mais avec une barre latérale
  */
 
 get_header(); // Affiche header.php
@@ -15,54 +14,58 @@ if (have_posts()): // Est-ce que nous avons des pages à afficher ?
 
         <article>
             <section class="recherche">
-                <div class="breadcrumb">
-                    <a href="<?php echo home_url('/'); ?>">Accueil&nbsp;</a>
-                    <p>>&nbsp;</p><a href="services-hub.html">Nos services&nbsp;</a>
-                    <p>>&nbsp;</p><a href="service.html">Recherche et innovation</a>
+                <div class="breadcrumb" style="display: flex; flex-direction: row;">
+                    <a href="<?php echo home_url('/'); ?>">Acceuil </a>>
+                    <a href="service-hub.html"> Nos services</a>>
+                    <a href="service.html"> Recherche et innovation</a>
                 </div>
+
                 <h1 class="recherche__title"><?php the_title(); ?></h1>
                 <h2 class="recherche__subTitle"><?php the_field('subtitle'); ?></h2>
-                <p class="recherche__text"><?php the_field('intro_text'); ?></p>
+                <p class="recherche__text"><?php the_field('description'); ?></p>
+
                 <div class="recherche__section">
                     <div class="bloc-1">
-                        <h3 class="recherche__miniTitle"><?php the_field('current_research_title'); ?></h3>
-                        <p class="recherche__text"><?php the_field('current_research_description'); ?></p>
+                        <h3 class="recherche__miniTitle"><?php the_field('bloc1_title'); ?></h3>
+                        <p class="recherche__text"><?php the_field('bloc1_description'); ?></p>
                         <ul class="recherche__list">
-                            <?php if (have_rows('current_research_topics')): ?>
-                                <?php while (have_rows('current_research_topics')):
-                                    the_row(); ?>
-                                    <li><?php the_sub_field('topic'); ?></li>
-                                <?php endwhile; ?>
-                            <?php endif; ?>
+                            <li><?php the_field('recherche1'); ?></li>
+                            <li><?php the_field('recherche2'); ?></li>
+                            <li><?php the_field('recherche3'); ?></li>
+                            <li><?php the_field('recherche4'); ?></li>
+                            <li><?php the_field('recherche5'); ?></li>
+                            <li><?php the_field('recherche6'); ?></li>
+                            <li><?php the_field('recherche7'); ?></li>
+                            <li><?php the_field('recherche8'); ?></li>
                         </ul>
                     </div>
                     <div class="bloc-2">
-                        <h3 class="recherche__miniTitle"><?php the_field('research_missions_title'); ?></h3>
-                        <p class="recherche__text"><?php the_field('research_missions_description'); ?></p>
+                        <h3 class="recherche__miniTitle"><?php the_field('bloc2_title'); ?></h3>
+                        <p class="recherche__text"><?php the_field('bloc2_description'); ?></p>
                     </div>
                     <div class="bloc-3">
-                        <img src="<?php the_field('image'); ?>" alt="<?php the_field('image_alt'); ?>">
+                        <img src="<?php the_field('bloc_image'); ?>" alt="image_service">
                     </div>
                 </div>
-                <p class="recherche__text">Consultez les <a href="<?php the_field('realizations_link'); ?>"
-                        class="textLink">réalisations</a> de Vivre en Ville ou les <a href="<?php the_field('themes_link'); ?>"
-                        class="textLink">interventions par thématiques</a>.</p>
-                <h2 class="recherche__subTitle"><?php the_field('innovation_title'); ?></h2>
-                <p class="recherche__text"><?php the_field('innovation_description'); ?></p>
-                <h3 class="recherche__miniTitle"><?php the_field('pilot_projects_title'); ?></h3>
+
+                <p class="recherche__text">
+                    Consultez les <a href="#" class="textLink">réalisations</a> de Vivre en Ville ou les
+                    <a href="#" class="textLink">interventions par thématiques</a>.
+                </p>
+
+                <h2 class="recherche__subTitle"><?php the_field('subtitle2'); ?></h2>
+                <p class="recherche__text"><?php the_field('description2'); ?></p>
+
+                <h3 class="recherche__miniTitle"><?php the_field('mini_title'); ?></h3>
                 <ul>
-                    <?php if (have_rows('pilot_projects')): ?>
-                        <?php while (have_rows('pilot_projects')):
-                            the_row(); ?>
-                            <li>
-                                <a href="<?php the_sub_field('project_link'); ?>"
-                                    class="textLink"><?php the_sub_field('project_name'); ?></a>
-                            </li>
-                        <?php endwhile; ?>
-                    <?php endif; ?>
+                    <li><?php the_field('projet1'); ?></li>
+                    <li><?php the_field('projet2'); ?></li>
+                    <li><?php the_field('projet3'); ?></li>
+                    <li><?php the_field('projet4'); ?></li>
                 </ul>
             </section>
         </article>
+
     <?php endwhile; // Fermeture de la boucle
 
 else: // Si aucune page n'a été trouvée
