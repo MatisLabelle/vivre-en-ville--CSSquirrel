@@ -66,6 +66,7 @@ get_header(); // Affiche header.php
             <p>Aucune information disponible pour cette carte.</p>
             <?php endif; ?>
         </div>
+
     </div>
 </article>
 <?php

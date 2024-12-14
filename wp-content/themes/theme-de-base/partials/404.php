@@ -23,9 +23,11 @@ get_header(); // Affiche header.php
                     $redirect_url = $url_404 ? $url_404 : $fallback_url;
                     ?>
                     <a class="taville" href="<?php echo esc_url($redirect_url); ?>">
-                        Oops!
+                        Cliques ici et retournons à ta ville.
                         <br>
                         <br>
+                        <a class="taville" href="<?php echo esc_url($redirect_url); ?>">
+                            Click here & go back to your city.
                 </div>
             </div>
         </div>
