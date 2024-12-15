@@ -19,7 +19,7 @@ get_header(); // Affiche header.php
                     $url_404 = get_field('url-404');
                     
                     // Utiliser l'URL si elle existe, sinon fallback vers une URL par défaut
-                    $fallback_url = 'http://localhost/css_squirrel_vivre_en_ville/index.php/acceuil/';
+                    $fallback_url = 'cssquirrel.tim-momo.com';
                     $redirect_url = $url_404 ? $url_404 : $fallback_url;
                     ?>
                     <a class="taville" href="<?php echo esc_url($redirect_url); ?>">

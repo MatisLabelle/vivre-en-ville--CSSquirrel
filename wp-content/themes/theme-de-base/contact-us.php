@@ -6,8 +6,7 @@
 
 get_header(); // Affiche header.php
 
-if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ? 
-	// Si oui, bouclons au travers les pages (logiquement, il n'y en aura qu'une)
+if ( have_posts() ) : 
 	while ( have_posts() ) : the_post(); 
 ?>
 
@@ -19,16 +18,15 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                 <h2><?php the_field('contactez-nous-titre');?></h2>
                 <form action="/submit_form" method="POST">
                     <label for="name"><?php the_field('first-last-name');?>:</label>
-                    <input type="text" id="name" name="name" placeholder="Entrez votre nom et prénom" required>
+                    <input type="text" id="name" name="name" placeholder="Nom / Name" required>
 
                     <label for="email"><?php the_field('email');?></label>
-                    <input type="email" id="email" name="email" placeholder="Entrez votre adresse courriel" required>
+                    <input type="email" id="email" name="email" placeholder="Adresse courriel / Email" required>
 
                     <label for="message"><?php the_field('message');?>:</label>
-                    <textarea id="message" name="message" rows="4" placeholder="Écrivez votre message ici"
-                        required></textarea>
+                    <textarea id="message" name="message" rows="4" placeholder="Message" required></textarea>
 
-                    <button type="submit">Envoyer</button>
+                    <button type="submit"><?php the_field('envoyer_bouton'); ?></button>
                 </form>
             </div>
         </div>
