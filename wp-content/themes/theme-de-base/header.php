@@ -38,7 +38,7 @@
 ?>>
 
     <header>
-   
+
         <?php wp_head(); ?>
         <!-- Top Bar Section -->
         <div class="">
@@ -51,14 +51,14 @@
             </div>
         </div>
         <nav>
-          
+
             <a class="logo" href="<?php echo home_url('/'); ?>">
                 <img src="<?php echo get_template_directory_uri(); ?>/photos/LOGO.png" alt="logo" />
             </a>
             <?php 
             wp_nav_menu(array('theme_location' => 'main-menu'));
             ?>
-           <!-- <ul>
+            <!-- <ul>
                 <li>
                     <a href="<?php echo home_url('/about/'); ?>">À propos</a>
                 </li>
