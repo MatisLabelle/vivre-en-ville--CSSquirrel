@@ -44,9 +44,8 @@
         <div class="">
             <div class="topbar">
                 <div class="topbar-items">
-                    <a href="#" class="topbar-link">English</a>
-                    <a href="#" class="topbar-link">Recherche</a>
-                    <a href="#" class="topbar-link">S'abonner</a>
+                    <a href="https://vivreenville.org/en" class="topbar-link">Recherche</a>
+                    <a href="https://activites.vivreenville.org/fr/membres/adhesion/" class="topbar-link">S'abonner</a>
                 </div>
             </div>
         </div>
@@ -115,9 +114,6 @@
                 </li>
                 <li>
                     <a href="#">Rechercher</a>
-                </li>
-                <li>
-                    <a href="#">English</a>
                 </li>
             </ul>
         </div>
